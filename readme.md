@@ -28,7 +28,7 @@ Installation of MPress is relatively straightforward, however an installer is co
 
 * git clone https://github.com/MadMikeyB/MPress.git
 * Import the schema from /app/database/mpress.sql
-* Edit /app/config/database.php and change the database details within to point to the new MPress database
+* Edit /app/config/database.php.default (rename to database.php) and change the database details within to point to the new MPress database
 * Edit /app/config/app.php and change the URL and Secret Key values. You may also disable debug mode if you're using MPress in production.
 * Navigate to yoursite.com/admin and log in with the username and password of "admin".
 
