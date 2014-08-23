@@ -5,6 +5,7 @@ class UserController extends BaseController
 	/*
 	 * Show our login form.
 	 */
+	
 	public function showLogin()
 	{
 		if ( Auth::check() === true ) 
@@ -27,6 +28,7 @@ class UserController extends BaseController
 	/*
 	 * Process our login attempt.
 	 */
+	
 	public function processLogin()
 	{
 		$userdata = array(
@@ -90,11 +92,42 @@ class UserController extends BaseController
 	/*
 	 * Process our logout attempt.
 	 */
+	
 	public function processLogout()
 	{
 		Auth::logout();
 		return Redirect::to('/');
 	}
+	
+	/*
+	 * Process user edit in the Admin Panel
+	 */
+	
+	public function processEdit()
+	{
+		$userdata = array(
+				'username'	=> Input::get('username'),
+				'nickname'	=> Input::get('nickname'),
+				'email'		=> Input::get('email'),
+				'password'	=> Input::get('password'),
+		);
+		
+		$u = User::findByUsername($userdata['username']);
+		
+		// add user
+		$user						= User::find($u->id);
+		$user->username				= $userdata['username'];
+		$user->nickname				= $userdata['nickname'];
+		$user->email				= $userdata['email'];
+		$user->password				= Hash::make($userdata['password']);
+		$user->save();
+		
+		return Redirect::to('admin/register')->with('success', 'User Updated :)');
+	}
+	
+	/*
+	 * Process our password reset
+	 */
 	
 	public function updatePassword()
 	{

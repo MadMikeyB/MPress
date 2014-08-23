@@ -38,6 +38,15 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	{
 		return $this->password;
 	}
+	
+	public static function findByUsername( $slug )
+	{
+		$member	= DB::table('users')->where('username', $slug)->first();
+		if ( $member )
+		{
+			return $member;
+		}
+	}
 
 	/**
 	 * Get the e-mail address where password reminders are sent.
