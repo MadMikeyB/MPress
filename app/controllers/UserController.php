@@ -95,4 +95,17 @@ class UserController extends BaseController
 		Auth::logout();
 		return Redirect::to('/');
 	}
+	
+	public function updatePassword()
+	{
+		$credentials = array('email' => Input::get('email'));
+	
+		return Password::reset($credentials, function($user, $password)
+		{
+			$user->password = Hash::make($password);
+			$user->save();
+	
+			return Redirect::to('login')->with('flash', 'Your password has been reset');
+		});
+	}
 }

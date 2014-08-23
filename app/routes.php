@@ -188,6 +188,10 @@ Route::post('password/remind', function()
        	$message->subject('Your Password Reminder');
 	});
 });
+Route::post('password/reset/{token}', array(
+	'uses' => 'UserController@updatePassword',
+	'as' => 'password.update'
+));
 
 // catch pages?
 // NB... sort of a wildcard to allow URL's without something like /page/ in them.
