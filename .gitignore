@@ -1,2 +1,12 @@
 app/config/database.php
 public_html/uploads/
+.composer
+.settings
+.DS_Store
+.bash_history
+.bash_logout
+.bashrc
+.buildpath
+.profile
+.project
+.gitignore

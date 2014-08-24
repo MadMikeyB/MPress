@@ -36,10 +36,8 @@
 <div class="moderation">
 	<nav>
 		<ul>
-			<li>{{ HTML::link('edit/' . $post->title_seo, 'Edit') }}</li> 
-			<li>&bull;</li> 
+			<li>{{ HTML::link('edit/' . $post->title_seo, 'Edit') }}</li>
 			<li>{{ HTML::link('delete/' . $post->title_seo, 'Delete') }}</li> 
-			<li>&bull;</li> 
 			<li>{{ HTML::link('lock/' . $post->title_seo, 'Lock') }}</li>
 		</ul>
 	</nav>
@@ -49,7 +47,7 @@
 <hr />
 @if ( $post->comments == 1 )
 <div class="comments">
-<div class="fb-comments" data-href="http://mikeylicio.us/article/{{ $post->title_seo }}" data-width="580" data-num-posts="10"></div>
+<div class="fb-comments" data-href="http://{{-- $settings->site_url --}}{{ $_SERVER['HTTP_HOST'] }}/article/{{ $post->title_seo }}" data-width="580" data-num-posts="10"></div>
 </div>
 @endif
 

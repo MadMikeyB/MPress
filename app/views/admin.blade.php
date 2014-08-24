@@ -86,7 +86,7 @@
 			<div class="box-body">
 				<ul>
 					@foreach ( $stats['mostviewed'] as $p )
-						<li><a href="/{{ $p->title_seo }}">{{ $p->title }}</a> with {{ $p->views }} views</li>
+						<li><a href="/article/{{ $p->title_seo }}">{{ $p->title }}</a> with {{ $p->views }} views</li>
 					@endforeach
 				</ul>
 			</div>

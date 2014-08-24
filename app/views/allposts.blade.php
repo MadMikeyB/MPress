@@ -51,7 +51,7 @@
 	</ul>
 	@endif
 	
-	<ul class="sitefriends list-unstyled">
+	{{-- <ul class="sitefriends list-unstyled">
 		<li class="header"><h3>Site Friends</h3></li>
 		<!--  TODO MAKE FOREACH -->
 		<li><a href="http://30daychallenges.net" rel="me" target="_blank">30 Day Challenges</a></li>
@@ -59,7 +59,7 @@
 		<li><a href="http://mrfloris.com" rel="friend" target="_blank">MrFloris.com</a></li>
 		<li><a href="http://offtopichut.com" rel="me" target="_blank">Off Topic Hut</a></li>
 		<li><a href="http://thegeekdistrict.com" rel="me" target="_blank">The Geek District</a></li>
-	</ul>
+	</ul> --}}
 	
 	<ul class="fb list-unstyled">
 		<li><div class="fb-activity" data-app-id="{{-- $settings->fbappid --}}" data-width="{{-- $settings->fbappwidth --}}" data-height="{{-- $settings->fbappheight --}}" data-header="{{-- $settings->fbappheader --}}" data-font="{{-- $settings->fbappfont --}}" data-recommendations="{{-- $settings->fbappreccommendations --}}"></div></li>
