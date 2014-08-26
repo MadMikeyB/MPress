@@ -4,10 +4,7 @@
 <div class="blog-post">
 	<h1 class="blog-post-title">{{ $post->title }}</h1>
  		@if ( $post->created_at != '0000-00-00 00:00:00' )
-		<p class="blog-post-meta"><time datetime="{{ $post->created_at }}">{{ DateController::showTimeAgo($post->created_at) }}</time> by <a href="/author/{{ $post->author }}">{{ $post->author }}</a>
-		@endif
- 		<p>
-	 	@if ( $post->image )
+		<p class="blog-post-meta"><time datetime="{{ $post->created_at }}">{{ DateController::showTimeAgo($post->created_at) }}</time> by <a href="/author/{{ $post->author }}">{{ $post->author }}</a> {{--@if ( $settings->show_category_on_post )--}} in <a href="/archives/{{ $post->category }}">{{ $post->category }}</a> {{--@endif--}}
 		<a class="pull-right" href="/article/{{ $post->title_seo }}">
 			<img class="media-object" data-src="holder.js/300x200" alt="300x200" src="{{ $post->image }}" style="width: 300px; height: 200px;">
 		</a>
@@ -55,7 +52,7 @@
 
 @section('sidebar')
 <nav>
-	<ul class="sitefriends">
+	{{--<ul class="sitefriends">
 		<li class="header"><h3>Site Friends</h3></li>
 		<!--  TODO MAKE FOREACH -->
 		<li><a href="http://30daychallenges.net" rel="me" target="_blank">30 Day Challenges</a></li>
@@ -63,9 +60,9 @@
 		<li><a href="http://mrfloris.com" rel="friend" target="_blank">MrFloris.com</a></li>
 		<li><a href="http://offtopichut.com" rel="me" target="_blank">Off Topic Hut</a></li>
 		<li><a href="http://thegeekdistrict.com" rel="me" target="_blank">The Geek District</a></li>
-	</ul>
+	</ul>--}}
 	
-	<ul>
+	<ul style="list-style:none;">
 		<li><div class="fb-activity" data-app-id="128735053915709" data-width="300" data-height="300" data-header="false" data-font="verdana" data-recommendations="true"></div></li>
 	</ul>
 </nav>

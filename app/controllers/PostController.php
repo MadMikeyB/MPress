@@ -183,6 +183,13 @@ class PostController extends BaseController
 		{
 			$image = $post->image;
 		}
+		
+		$cat = Input::get('category');
+		
+		if ( empty( $cat ) )
+		{
+			$cat = 'uncategorized';
+		}
 
 		$body = Input::get('body');
 
@@ -217,6 +224,7 @@ class PostController extends BaseController
 							'title'		=>	Input::get('title'),
 							//'body'		=>	Input::get('body'),
 							'body'		=>	$body,
+							'category'	=>	$cat,
 							'author_id'	=>	Input::get('author_id'),
 							'author'	=>	Auth::user()->nickname,
 							'title_seo'	=>	$post->title_seo,

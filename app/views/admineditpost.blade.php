@@ -22,6 +22,12 @@
  {{ $errors->first('title', '<p class="error">:message</p>') }}
  <p>{{ Form::text('title', $post->title, array('class' => 'form-control')) }}</p>
  </div>
+ <div class="form-group">
+	<!-- category field -->
+	<p>{{ Form::label('category', 'Category') }}</p>
+	{{ $errors->first('category', '<p class="error">:message</p>') }}
+	<p>{{ Form::text('category', Input::old('title'), array('class' => 'form-control')) }}</p>
+ </div>
  <!--  slug -->
  <div class="form-group">
  <p>{{ Form::label('title_seo', 'Slug') }}</p>
