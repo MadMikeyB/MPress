@@ -111,7 +111,7 @@
     </div><!-- /.container -->
 
     <div class="blog-footer">
-      <p>Powered by <a href="http://mikeylicio.us/mikeypress" title="MikeyPress - Open Source, Free, Lightweight, Simple Content Management System" role="copyright" target="_blank" rel="dofollow">MPress</a> &copy; 2012 &mdash; {{ date('Y') }}</p>
+      <p>Powered by <a href="http://mpresscms.com" title="MPress - Open Source, Free, Lightweight, Simple Content Management System" role="copyright" target="_blank" rel="dofollow">MPress</a> &copy; 2012 &mdash; {{ date('Y') }}</p>
       <p>
        	<small>Built with <a href="http://laravel.com" target="_blank">Laravel</a>, <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> &amp; &hearts;</small>
       </p>
