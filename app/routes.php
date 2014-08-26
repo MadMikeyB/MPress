@@ -38,10 +38,14 @@ Route::get('article/{id}', 'PostController@showPost');
  });
 
 // edit post
-Route::get('edit/{id}', 'PostController@editPost');
+Route::get('admin/edit/{id}', 'PostController@editPost');
+// edit page
+Route::get('admin/edit/page/{id}', 'PageController@editPage');
 
 // delete post
-Route::get('delete/{id}', 'PostController@deletePost');
+Route::get('admin/delete/{id}', 'PostController@deletePost');
+// delete page
+Route::get('admin/delete/page/{id}', 'PageController@deletePage');
 
 // lock post comments
 Route::get('lock/{id}', 'PostController@lockPost');
@@ -163,11 +167,13 @@ Route::get('/menu', function() {
 
 // posting new post
 Route::post('admin/posts', 'PostController@processPost');
-Route::post('edit/{id}', 'PostController@processEdit');
+Route::post('admin/edit/{id}', 'PostController@processEdit');
 // logging in
 Route::post('login', 'UserController@processLogin');
 // creating a page
 Route::post('admin/pages', 'PageController@processPage');
+// editing a page
+Route::post('admin/edit/page/{id}', 'PageController@processPageEdit');
 // creating a user
 Route::post('admin/register', 'UserController@processRegister');
 // creating a menu item

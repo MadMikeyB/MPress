@@ -28,8 +28,8 @@
 				<td>{{ Str::limit($p->body, 140) }} (<a href="/article/{{ $p->title_seo }}">Read more</a>)</td>
 				<td>{{ $p->views }}</td>
 				<td>{{ $p->category }}</td>
-				<td><a href="/edit/{{ $p->title_seo }}" class="btn btn-default">Edit</a></td>
-				<td><a href="/delete/{{ $p->title_seo }}"class="btn btn-danger">Delete</a></td>
+				<td><a href="admin/edit/{{ $p->title_seo }}" class="btn btn-default">Edit</a></td>
+				<td><a href="admin/delete/{{ $p->title_seo }}" class="btn btn-danger">Delete</a></td>
 			</tr>
 			@endforeach
 		</table>

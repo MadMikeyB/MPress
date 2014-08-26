@@ -94,4 +94,98 @@ class PageController extends BaseController
 
 		return Redirect::to($page->slug);
 	}
+	
+	public function editPage( $slug )
+	{
+		$page = Page::findBySlug($slug);
+		$user = Auth::user();
+		
+		if ( ! $page )
+		{
+			return App::abort(404);
+		}
+		
+		if ( ! $user )
+		{
+			return App::abort(500);
+		}
+		
+		return View::make('admineditpage')->with('page', $page)->with('user', $user);
+	}
+	
+	public function processPageEdit( $slug )
+	{
+		if ( Auth::check() )
+		{
+			if ( $slug )
+			{
+				$page = Page::findBySlug($slug);
+				
+				if ( $page )
+				{
+					$data = array(
+								'id'	=> $page->id,
+								'title'	=> Input::get('title'),
+								'slug'	=> Input::get('slug'),
+								'body'	=> Input::get('body'),
+							);
+					
+					$rules = array(
+							'title' 	=> 'required|min:3|max:128',
+							'slug'	=> 'required|min:3|max:128',
+							'body'		=> 'required',
+					);
+					
+					$v = Validator::make($data, $rules);
+					
+					if ( $v->fails() )
+					{
+						return Redirect::to('admin/pages')->with('user', Auth::user())->with_errors($v)->with_input();
+					}
+					
+					Page::updatePage( $data );
+						
+					return Redirect::to( 'admin/pages/all' );
+				}
+				else
+				{
+					return App::abort(404);
+				}
+			}
+		}
+		else
+		{
+			return App::abort(500);
+		}
+	}
+	
+	public function deletePage($id)
+	{
+		if ( Auth::check() )
+		{
+			if ( $id )
+			{
+				$p = Page::findBySlug($id);
+				$page = Page::find($p->id);
+				if ( $page )
+				{
+					$page->delete();
+					Notification::success('Page Deleted');
+					return Redirect::to( '/admin/pages/all' );
+				}
+				else
+				{
+					return View::make('errorpage')->with('page', $id);
+				}
+			}
+			else
+			{
+				return View::make('errorpage')->with('page', $id);
+			}
+		}
+		else
+		{
+			return View::make('errorpage')->with('page', $id);
+		}
+	}
 }

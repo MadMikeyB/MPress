@@ -36,8 +36,8 @@
 <div class="moderation">
 	<nav>
 		<ul>
-			<li>{{ HTML::link('edit/' . $post->title_seo, 'Edit') }}</li>
-			<li>{{ HTML::link('delete/' . $post->title_seo, 'Delete') }}</li> 
+			<li>{{ HTML::link('admin/edit/' . $post->title_seo, 'Edit') }}</li>
+			<li>{{ HTML::link('admin/delete/' . $post->title_seo, 'Delete') }}</li> 
 			<li>{{ HTML::link('lock/' . $post->title_seo, 'Lock') }}</li>
 		</ul>
 	</nav>

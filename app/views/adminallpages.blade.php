@@ -13,16 +13,16 @@
 				<td>Title</td>
 				<td>Slug</td>
 				<td>Body</td>
-				{{--<td></td>--}}
-				{{--<td></td>--}}
+				<td></td>
+				<td></td>
 			</tr>
 			@foreach ( $pages as $p )
 			<tr>
 				<td>{{ $p->title }}</td>
 				<td>{{ $p->slug }}</td>
 				<td>{{ Str::limit($p->body, 140) }} (<a href="/{{ $p->slug }}">Read more</a>)</td>
-				{{--<td><a href="/edit/{{ $p->slug }}">Edit</a></td>--}}
-				{{--<td><a href="/delete/{{ $p->slug }}">Delete</a></td>--}}
+				<td><a href="admin/edit/page/{{ $p->slug }}" class="btn btn-default">Edit</a></td>
+				<td><a href="admin/delete/page/{{ $p->slug }}" class="btn btn-danger">Delete</a></td>
 			</tr>
 			@endforeach
 		</table>
