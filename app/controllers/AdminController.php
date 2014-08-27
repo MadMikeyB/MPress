@@ -131,5 +131,54 @@ class AdminController extends BaseController
 			}
 		}
 	}
+	
+	/*
+	 * Settings
+	 */
+	
+	/*
+	 * Add Setting
+	 */
+	
+	public function showAddSetting()
+	{
+		
+	}
+	
+	/*
+	 * Process Add Setting
+	 */
+	
+	public function processAddSetting()
+	{
+		
+	}
+	
+	/*
+	 * Settings List
+	 */
+	
+	public function showSettingsList()
+	{
+		if ( Auth::check() !== true )
+		{
+			return Redirect::to('adminlogin');
+		}
+		
+		$settings = Setting::findSettings();
+		
+		return View::make('adminsettingslist')->with('settings', $settings);
+	}
+	
+	/*
+	 * Process Settings List Update
+	 */
+	
+	public function processSettingsUpdate()
+	{
+		
+	}
+	
+	
 
 }

@@ -135,6 +135,9 @@ Route::get('admin/menu/delete/{id}', 'PageController@processMenuDelete');
 // new conversion form
 Route::get('admin/convert/wp', 'AdminController@showWpConvertForm');
 
+// settings list
+Route::get('admin/settings', 'AdminController@showSettingsList');
+
 // log out
 Route::get('logout', 'UserController@processLogout');
 

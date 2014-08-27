@@ -115,7 +115,7 @@
         <!-- Bootstrap -->
         <script src="http://{{ $_SERVER['HTTP_HOST'] }}/packages/admin/js/bootstrap.min.js" type="text/javascript"></script>
         <!-- AdminLTE App -->
-        {{-- <script src="http://{{ $_SERVER['HTTP_HOST'] }}/packages/admin/js/AdminLTE/app.js" type="text/javascript"></script> --}}
+        <script src="http://{{ $_SERVER['HTTP_HOST'] }}/packages/admin/js/AdminLTE/app.js" type="text/javascript"></script>
 
     </body>
 </html>

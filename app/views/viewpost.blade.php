@@ -62,7 +62,7 @@
 		<li><a href="http://thegeekdistrict.com" rel="me" target="_blank">The Geek District</a></li>
 	</ul>--}}
 	
-	<ul style="list-style:none;">
+	<ul style="list-style:none;" >
 		<li><div class="fb-activity" data-app-id="128735053915709" data-width="300" data-height="300" data-header="false" data-font="verdana" data-recommendations="true"></div></li>
 	</ul>
 </nav>
