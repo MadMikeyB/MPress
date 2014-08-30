@@ -28,7 +28,7 @@
  		<div class="form-group">
 			<!-- password field -->
 			<p>{{ Form::label('password', 'Password') }}</p>
-			<p>{{ Form::password(NULL, array('class' => 'form-control')) }}</p>
+			<p>{{ Form::password('password', array('class' => 'form-control')) }}</p>
 		</div>
 	</div>
  <div class="box-footer">

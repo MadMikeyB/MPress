@@ -113,7 +113,7 @@ class UserController extends BaseController
 		);
 		
 		$u = User::findByUsername($userdata['username']);
-		
+
 		// add user
 		$user						= User::find($u->id);
 		$user->username				= $userdata['username'];
