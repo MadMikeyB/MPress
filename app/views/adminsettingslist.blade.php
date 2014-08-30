@@ -13,14 +13,16 @@
 				
 				
 						@if ( $s->type == 'checkbox' )
-						<div class="{{ $s->type }}">
-							<label class="" for="{{ $s->key }}">
-							<input type="checkbox" id="{{ $s->key }}" @if ( $s->value == '1')checked@endif>
-								{{ $s->name }}
-							</label>
+						<br />
+						<div class="input-group">
+						 	<span class="input-group-addon">
+						 		<input name="{{ $s->key }}"  id="{{ $s->key }}" type="checkbox">
+						 	</span>
+						 	  	<input type="text" disabled="" value="{{ $s->name }}" class="form-control" style="cursor:default;">
 						</div>
 						@endif
 						@if ( $s->type == 'text' )
+						<br />
 							<label for="{{ $s->key }}">{{ $s->name }}</label>
 							<input type="{{ $s->type }}" class="form-control" id="{{ $s->key }}" placeholder="" value="{{ $s->value }}">
 						@endif

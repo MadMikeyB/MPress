@@ -170,7 +170,6 @@ class PageController extends BaseController
 				if ( $page )
 				{
 					$page->delete();
-					Notification::success('Page Deleted');
 					return Redirect::to( '/admin/pages/all' );
 				}
 				else
