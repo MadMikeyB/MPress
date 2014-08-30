@@ -96,6 +96,7 @@ class UserController extends BaseController
 	public function processLogout()
 	{
 		Auth::logout();
+		Session::flush();
 		return Redirect::to('/');
 	}
 	

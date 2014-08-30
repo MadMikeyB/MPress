@@ -132,6 +132,26 @@ class AdminController extends BaseController
 		}
 	}
 	
+	public function lockSession()
+	{
+		if ( Auth::check() )
+		{
+			// put current username in session so we can use it later
+			Session::put('oldusername', Auth::user()->username);
+			Session::put('oldnickname', Auth::user()->nickname);
+			// log out
+			Auth::logout();
+			return Redirect::to('/admin/locked');
+		}
+	}
+	
+	public function lockScreen()
+	{
+		$username = Session::get('oldusername');
+		$nickname = Session::get('oldnickname');
+		return View::make('adminlockscreen')->with('username', $username)->with('nickname', $nickname);
+	}
+	
 	/*
 	 * Settings
 	 */

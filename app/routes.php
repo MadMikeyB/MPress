@@ -138,6 +138,10 @@ Route::get('admin/convert/wp', 'AdminController@showWpConvertForm');
 // settings list
 Route::get('admin/settings', 'AdminController@showSettingsList');
 
+// lock session
+Route::get('admin/session/lock', 'AdminController@lockSession');
+Route::get('admin/locked', 'AdminController@lockScreen');
+
 // log out
 Route::get('logout', 'UserController@processLogout');
 
