@@ -19,13 +19,15 @@
 		 	<p>{{ Form::text('title', Input::old('title'), array('class' => 'form-control')) }}</p>
 		 </div>
 		 
+		 
+		 
 		 <div class="form-group">
 			 <!-- category field -->
 			 <p>{{ Form::label('category', 'Category') }}</p>
 			 {{ $errors->first('category', '<p class="error">:message</p>') }}
 			 <p>{{ Form::text('category', Input::old('title'), array('class' => 'form-control')) }}</p>
 			 <p><em>or.. choose from the below previous categories!</em></p>
-			 <p>{{ Form::select('existing_category', $categories); }}
+			 <p>{{ Form::select('existing_category', $categories, null, array('class' => 'form-control') ); }}
 		 </div>
 		 
 		 <div class="form-group">
@@ -37,26 +39,33 @@
 		 
 		 <div class="form-group">
 			 <!-- image -->
-			 <p>{{ Form::label('image', 'Article Image (Optional)') }}</p>
+			 <p>{{ Form::label('image', 'Article Image') }}</p>
 			 <p>{{ Form::file('image') }}</p>
+			 <p class="help-block">This is entirely optional, but will display alongside the article if set.</p>
 		 </div>
 		 
-		 <div class="form-group">
-			 <!-- slider -->
-			 <p>{{ Form::label('slider', 'Feature on Slider?' ); }}</p>
-			 <p>{{ Form::checkbox('slider'); }}</p>
+		 <div class="input-group">
+		 	<span class="input-group-addon">
+		 		<input name="slider"  id="slider" type="checkbox">
+		 	</span>
+		 	<input type="text" disabled="" value="Feature on Slider?" class="form-control" style="cursor:default;">
 		 </div>
-		 
-		 <div class="form-group">
-			 <!-- featured -->
-			 <p>{{ Form::label('featured', 'Feature in Sidebar?' ); }}</p>
-			 <p>{{ Form::checkbox('featured'); }}</p>
+		 <br />
+		
+		 <div class="input-group">
+		 	<span class="input-group-addon">
+		 		<input name="featured"  id="featured" type="checkbox">
+		 	</span>
+		 	<input type="text" disabled="" value="Feature in Sidebar?" class="form-control" style="cursor:default;">
 		 </div>
+		 <br />
+
 	</div>
 	
 	 <!-- submit button -->
 	<div class="box-footer">
-		<p>{{ Form::submit('Create', array('class' => 'btn btn-primary')) }}</p>
+		<p>{{ Form::submit('Create', array('class' => 'btn btn-primary pull-right')) }}</p>
+		 <div class="clearfix clear"></div>
 	</div>
 	{{ Form::close() }}
 </div> 
@@ -66,6 +75,7 @@
 	<ul class="sidebar-menu">
 		<li><a href="/"><i class="fa fa-home"></i> Home</a></li>
 		<li><a href="/admin"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+		<li><a href="../admin/settings"><i class="fa fa-cogs"></i> Settings</a></li>
 		<li><a href="/admin/register"><i class="fa fa-users"></i> New User</a></li>
 		<li><a href="/admin/menu"><i class="fa fa-th"></i> New Menu Item</a></li>
 		<li><a href="/admin/posts/all"><i class="fa fa-comments"></i> All Posts</a></li>

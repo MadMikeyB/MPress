@@ -68,16 +68,16 @@ class PostController extends BaseController
 			$image = '';
 		}
 
-		$cat = Input::get('category');
-
-		if ( empty( $cat ) )
+		$category = Input::get('category');
+		
+		if ( empty( $category ) )
 		{
 			$category = Input::get('existing_category');
 		}
-		else
+		else if ( empty( $category ) )
 		{				
 			$category = 'uncategorized';	
-		}
+		}		
 
 		$body = Input::get('body');
 
@@ -119,8 +119,9 @@ class PostController extends BaseController
 							'image'		=> $image,
 							'slider'	=> 0,
 							'featured'	=> 0,
-							'category'	=> 'uncategorized',
-					);
+							'category'	=> $category,
+		);
+		
 
 		if ( empty( $new_post['slider'] ) )
 		{

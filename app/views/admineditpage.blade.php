@@ -50,6 +50,7 @@
 	<ul class="sidebar-menu">
 		<li><a href="/"><i class="fa fa-home"></i> Home</a></li>
 		<li><a href="/admin"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+		<li><a href="../admin/settings"><i class="fa fa-cogs"></i> Settings</a></li>
 		<li><a href="/admin/register"><i class="fa fa-users"></i> New User</a></li>
 		<li><a href="/admin/menu"><i class="fa fa-th"></i> New Menu Item</a></li>
 		<li><a href="/admin/posts/all"><i class="fa fa-comments"></i> All Posts</a></li>
