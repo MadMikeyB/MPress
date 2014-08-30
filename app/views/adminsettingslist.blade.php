@@ -8,6 +8,15 @@
 	</div>
 	
 	<div class="box-body">
+	
+	
+<div class="alert alert-danger alert-dismissable">
+	<i class="fa fa-info"></i>
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	<b>Whoops!</b> This page doesn't quite work yet! I'm working on it. :)
+</div>
+
+{{ Form::open() }}
 		<div class="form-group">
 			@foreach ( $settings as $s )
 				
@@ -34,6 +43,7 @@
 		<p>{{ Form::submit('Update Settings', array('class' => 'btn btn-primary pull-right')) }}</p>
 		<div class="clearfix clear"></div>
 	</div>
+{{ Form::close() }}
 </div>
 
 @stop
