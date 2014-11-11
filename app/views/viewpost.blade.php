@@ -33,9 +33,9 @@
 <div class="moderation">
 	<nav>
 		<ul>
-			<li>{{ HTML::link('admin/edit/' . $post->title_seo, 'Edit') }}</li>
-			<li>{{ HTML::link('admin/delete/' . $post->title_seo, 'Delete') }}</li> 
-			<li>{{ HTML::link('lock/' . $post->title_seo, 'Lock') }}</li>
+			<li>{{ HTML::link('admin/edit/' . $post->title_seo, 'Edit', array('class' => 'btn btn-xs btn-primary') ) }}</li>
+			<li>{{ HTML::link('admin/delete/' . $post->title_seo, 'Delete', array('class' => 'btn btn-xs btn-danger') ) }}</li> 
+			<li>{{ HTML::link('lock/' . $post->title_seo, 'Lock', array('class' => 'btn btn-xs btn-danger') ) }}</li>
 		</ul>
 	</nav>
 </div>

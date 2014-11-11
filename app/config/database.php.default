@@ -49,9 +49,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'CHANGE_ME',
-			'username'  => 'CHANGE_ME',
-			'password'  => 'CHANGE_ME',
+			'database'  => 'CHANGE_ME_DB',
+			'username'  => 'CHANGE_ME_U',
+			'password'  => 'CHANGE_ME_P',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

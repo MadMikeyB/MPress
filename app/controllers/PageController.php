@@ -88,7 +88,20 @@ class PageController extends BaseController
 		{
 			return Redirect::to('admin/pages')->with('user', Auth::user())->with_errors($v)->with_input();
 		}
-
+		
+		$newmenuitem = Input::get('menu');
+		
+		if ( $newmenuitem !== NULL )
+		{
+			$new_menu = array(
+								'title'	=> Input::get('title'),
+								'url'	=> Input::get('slug'),
+						);
+			$menu = new Menu($new_menu);
+			$menu->save();
+		}
+		
+		
 		$page = new Page($new_page);
 		$page->save();
 

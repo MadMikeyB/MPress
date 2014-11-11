@@ -4,6 +4,32 @@
  * GET's
  */
 
+/**
+ * Installer Routes - Go at top of file so they're initialized first.
+ */
+// installer unlocked - need to install site.
+if ( @!file_get_contents( __DIR__ . '/storage/installer_lock.txt' ) )
+{
+	Route::get( '/', function () {
+		return Redirect::to('install');
+	} );
+}
+else
+{
+	// we're installed. Enable homepage.
+	Route::get('/', 'PostController@index');
+}
+
+// installer locked - no access for security reasons
+
+if ( @!file_get_contents( __DIR__ . '/storage/installer_lock.txt' ) )
+{
+	Route::controller('install', 'InstallController');
+}
+/**
+ * End Installer
+ */
+
 // show login form
 Route::get('login', 'UserController@showLogin');
 
@@ -13,9 +39,6 @@ Route::get('password/remind', function() {
 	View::share('menu', $menu);
 	return View::make('lostpass');
 });
-
-// view all posts
-Route::get('/', 'PostController@index');
 
 // archive
 Route::get('archives/{category?}', 'PostController@showArchives');

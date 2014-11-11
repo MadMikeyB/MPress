@@ -14,8 +14,10 @@
 
     <title>@yield('title')</title>
 
+    {{-- $settings->uselocalbootstrap // use local or remote bootstrap file? --}}
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    {{-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> --}}
+    <link rel="stylesheet" href="http://{{ $_SERVER['HTTP_HOST'] }}/packages/css/bootstrap.min.css">
     <!-- Custom styles for this template -->
     <link href="http://{{ $_SERVER['HTTP_HOST'] }}/packages/css/bootstrap-blog.css" rel="stylesheet">
     <link href="http://{{ $_SERVER['HTTP_HOST'] }}/packages/css/mpress-core.css" rel="stylesheet">

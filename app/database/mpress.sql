@@ -62,8 +62,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO `users` (`id`, `username`, `nickname`, `email`, `password`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin', 'admin@domain.com', '$2y$08$Oe/CbtyKNeKB3zlqJs1Xguh8aY9fBNkK1jWSbzYpa88ihiuI9.llG', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+/*INSERT INTO `users` (`id`, `username`, `nickname`, `email`, `password`, `created_at`, `updated_at`) VALUES
+(1, 'admin', 'admin', 'admin@domain.com', '$2y$08$Oe/CbtyKNeKB3zlqJs1Xguh8aY9fBNkK1jWSbzYpa88ihiuI9.llG', '0000-00-00 00:00:00', '0000-00-00 00:00:00');*/;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

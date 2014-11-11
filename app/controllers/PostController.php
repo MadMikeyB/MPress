@@ -3,7 +3,7 @@
 class PostController extends BaseController
 {
 	public function index()
-	{
+	{	
 		$data = array();
 		// for sidebar
 		$posts = DB::table('posts')->orderBy('created_at', 'desc')->paginate(5);

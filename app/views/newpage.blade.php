@@ -27,6 +27,14 @@
  {{ $errors->first('body', '<p class="error">:message</p>') }}
  <p>{{ Form::textarea('body', Input::old('body'), array('class' => 'ckeditor')) }}</p>
  </div>
+
+		 <div class="input-group">
+		 	<span class="input-group-addon">
+		 		<input name="menu"  id="menu" type="checkbox">
+		 	</span>
+		 	<input type="text" disabled="" value="Add new menu item for this page?" class="form-control" style="cursor:default;">
+		 </div>
+ 
  </div>
  <div class="box-footer">
  <!-- submit button -->
