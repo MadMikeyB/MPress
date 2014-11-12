@@ -62,6 +62,21 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+CREATE TABLE `tags` (
+`id` int(11) NOT NULL,
+  `content_id` int(11) NOT NULL,
+  `title` varchar(32) NOT NULL COMMENT 'Tags have a max length of 32 chars',
+  `author_id` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `tags`
+ ADD PRIMARY KEY (`id`);
+ 
+ALTER TABLE `tags`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
 /*INSERT INTO `users` (`id`, `username`, `nickname`, `email`, `password`, `created_at`, `updated_at`) VALUES
 (1, 'admin', 'admin', 'admin@domain.com', '$2y$08$Oe/CbtyKNeKB3zlqJs1Xguh8aY9fBNkK1jWSbzYpa88ihiuI9.llG', '0000-00-00 00:00:00', '0000-00-00 00:00:00');*/;
 
