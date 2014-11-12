@@ -1,0 +1,64 @@
+<?php $__env->startSection('title', $post->title); ?>
+<?php $__env->startSection('content'); ?>
+<div class="post">
+<?php if ( $post->created_at != '0000-00-00 00:00:00' ): ?>
+<time datetime="<?php echo $post->created_at; ?>"><?php echo DateController::showTimeAgo($post->created_at); ?></time>
+<?php endif; ?>
+
+ <h1><?php echo HTML::link('article/'.$post->title_seo, $post->title); ?></h1>
+ <p><?php echo nl2br( $post->body ); ?></p>
+</div>
+ <div class="clear clearfix"></div>
+ <p style="float:right"><b>Share:</b> <?php echo HTML::link('s/' . $post->share_id); ?></p>
+ <p><?php echo HTML::link('/', '&larr; Back to index.'); ?></p>
+ 
+ <div class="shareStrip">
+ 	<a class="dp-att" href="https://tools.digitalpoint.com/social-buttons">Social Buttons</a>
+	<script>(function(d,u){var a=d.createElement("script");a.async=1;a.src="//x.dpstatic.com/social.js?u="+encodeURIComponent(u)+"&r=MadMikeyB";d.querySelector("head").appendChild(a)})
+(document,window.location.href);</script>
+ </div>
+ 
+
+<?php if ( !Auth::guest() ): ?>
+<div class="clear clearfix"></div><hr />
+<div class="moderation">
+	<nav>
+		<ul>
+			<li><?php echo HTML::link('edit/' . $post->title_seo, 'Edit'); ?></li> 
+			<li>&bull;</li> 
+			<li><?php echo HTML::link('delete/' . $post->title_seo, 'Delete'); ?></li> 
+			<li>&bull;</li> 
+			<li><?php echo HTML::link('lock/' . $post->title_seo, 'Lock'); ?></li>
+		</ul>
+	</nav>
+</div>
+<div class="clear clearfix"></div>
+<?php endif; ?>
+<hr />
+<?php if ( $post->comments == 1 ): ?>
+<div class="comments">
+<div class="fb-comments" data-href="http://mikeylicio.us/article/<?php echo $post->title_seo; ?>" data-width="580" data-num-posts="10"></div>
+</div>
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('sidebar'); ?>
+<nav>
+	<ul class="sitefriends">
+		<li class="header"><h3>Site Friends</h3></li>
+		<!--  TODO MAKE FOREACH -->
+		<li><a href="http://30daychallenges.net" rel="me" target="_blank">30 Day Challenges</a></li>
+		<li><a href="http://chroder.com" rel="friend" target="_blank">Chroder</a></li>
+		<li><a href="http://mrfloris.com" rel="friend" target="_blank">MrFloris.com</a></li>
+		<li><a href="http://offtopichut.com" rel="me" target="_blank">Off Topic Hut</a></li>
+		<li><a href="http://thegeekdistrict.com" rel="me" target="_blank">The Geek District</a></li>
+	</ul>
+	
+	<ul>
+		<li><div class="fb-activity" data-app-id="128735053915709" data-width="300" data-height="300" data-header="false" data-font="verdana" data-recommendations="true"></div></li>
+	</ul>
+</nav>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

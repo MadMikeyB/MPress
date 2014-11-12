@@ -28,7 +28,8 @@ Navigate to yoursite.com and run the web-based Installer. :)
 
 ### Attribution
 
-MPress is grateful to use [Laravel](https://github.com/laravel/laravel) as a PHP Framework base, [Bootstrap](https://github.com/twbs/bootstrap) as the default template, as well as [AdminLTE](https://github.com/almasaeed2010/AdminLTE) for the Admin Area Template.
+MPress is grateful to use [Laravel](https://github.com/laravel/laravel) as a PHP Framework base, [Bootstrap](https://github.com/twbs/bootstrap) as the default template, as well as [AdminLTE](https://github.com/almasaeed2010/AdminLTE) for the Admin Area Template. Tagging jquery functionality provided by [jQuery-tagEditor](https://github.com/Pixabay/jQuery-tagEditor)
+
 
 ### Examples
 

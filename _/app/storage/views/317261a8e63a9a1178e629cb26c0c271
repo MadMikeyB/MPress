@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta property="og:title" content="<?php echo $__env->yieldContent('title'); ?> <?php /*  $settings->sitetitle  */ ?>" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo $_SERVER['REQUEST_URI']; ?>" />
+	<meta property="fb:admins" content="<?php /*  $settings->fbadmins  */ ?>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../packages/favicon.ico">
+
+    <title><?php echo $__env->yieldContent('title'); ?></title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/packages/css/bootstrap-blog.css" rel="stylesheet">
+    <link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/packages/css/mpress-core.css" rel="stylesheet">
+        
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+      	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            	<span class="sr-only">Toggle navigation</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            </button>
+            <?php /*  <?php if ( $settings->showbranding == '1' ): ?>  */ ?>
+            <?php /*  <a class="navbar-brand" href="#"><?php echo $__env->yieldContent('title'); ?></a>  */ ?>
+            <?php /*  <?php endif; ?>  */ ?>
+        </div>
+        
+      	<div class="navbar-collapse collapse">
+	        <ul class="nav navbar-nav">
+	        <?php if ( @$menu ): ?>
+	        	<?php foreach ( $menu as $m ): ?>
+	        		<li><?php echo HTML::link($m->url, $m->title, array('class' => 'blog-nav-item') ); ?></li>
+	        	<?php endforeach; ?>
+	        <?php endif; ?>
+	        </ul>
+	        <ul class="nav navbar-nav navbar-right">
+	        	<?php /*  Guest Login / Admin Links  */ ?>
+	        	
+	            <?php if ( Auth::guest() ): ?>
+	            	<?php /*  <?php if ($settings->login_alt == '0'): ?>  */ ?>
+	              	<li><?php echo HTML::link('login', 'Login', array('class' => 'blog-nav-item')); ?></li>
+	              	<?php /*  <?php endif; ?>  */ ?>
+				<?php else: ?>
+					<li><?php echo HTML::link('logout', 'Logout', array('class' => 'blog-nav-item')); ?></li>
+				<?php endif; ?>
+				
+				<?php if ( !Auth::guest() ): ?>
+					<li><?php echo HTML::link('admin', 'Site Admin', array('class' => 'blog-nav-item')); ?></li>
+				<?php endif; ?>
+			</ul>
+		</div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title"><?php /*  $settings->title  */ ?></h1>
+        <p class="lead blog-description"><?php /*  $settings->desc  */ ?></p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+			<?php echo $__env->yieldContent('content'); ?>
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        	<?php /*  <?php if ($settings->login_alt == '1'): ?>  */ ?>
+        	<div class="sidebar-module sidebar-module-inset">
+        	    <?php if ( Auth::guest() ): ?>
+        		<a class="btn btn-lg btn-success" href="/login">Log in to begin creating</a>
+        		<?php else: ?>
+        		<a class="btn btn-lg btn-success" href="/admin/posts">Write an epic article :)</a>
+        		<?php endif; ?>
+        	</div>
+        	<?php /*  <?php endif; ?>  */ ?>
+        	
+          <?php /*  <?php if ($settings->about_toggle == '1'): ?>  */ ?>
+          <!-- <div class="sidebar-module sidebar-module-inset"> -->
+            <h4><?php /*  $settings->about  */ ?></h4>
+            <p><?php /*  $settings->about_desc  */ ?></p>
+          <!-- </div> -->
+          <?php /*  <?php endif; ?>  */ ?>
+          
+          <div class="sidebar-module sidebar-module-inset">
+          	<?php echo $__env->yieldContent('sidebar'); ?>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="blog-footer">
+      <p>Powered by <a href="http://mpresscms.com" title="MPress - Open Source, Free, Lightweight, Simple Content Management System" role="copyright" target="_blank" rel="dofollow">MPress</a> &copy; 2012 &mdash; <?php echo date('Y'); ?></p>
+      <p>
+       	<small>Built with <a href="http://laravel.com" target="_blank">Laravel</a>, <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> &amp; &hearts;</small>
+      </p>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <?php /*  @todo $settings->appId  */ ?>
+    <div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=128735053915709";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<script>
+			$("img.lazy").show().lazyload({ 
+			    effect : "fadeIn"
+			});
+		</script>
+  </body>
+</html>

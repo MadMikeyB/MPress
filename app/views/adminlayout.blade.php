@@ -12,6 +12,9 @@
         <link href="http://{{ $_SERVER['HTTP_HOST'] }}/packages/admin/css/ionicons.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="http://{{ $_SERVER['HTTP_HOST'] }}/packages/admin/css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <!--  Tags -->
+        <link href="http://{{ $_SERVER['HTTP_HOST'] }}/packages/css/jquery.tag-editor.css" rel="stylesheet" type="text/css" />
+        
         <base href="http://{{ $_SERVER['HTTP_HOST'] }}{{ str_replace('/index.php', '', $_SERVER['PHP_SELF']) }}/admin">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -116,6 +119,8 @@
         <script src="http://{{ $_SERVER['HTTP_HOST'] }}/packages/admin/js/bootstrap.min.js" type="text/javascript"></script>
         <!-- AdminLTE App -->
         <script src="http://{{ $_SERVER['HTTP_HOST'] }}/packages/admin/js/AdminLTE/app.js" type="text/javascript"></script>
-
+        <!--  Tags -->
+        <script src="http://{{ $_SERVER['HTTP_HOST'] }}/packages/js/jquery.tag-editor.min.js" type="text/javascript"></script>
+        
     </body>
 </html>

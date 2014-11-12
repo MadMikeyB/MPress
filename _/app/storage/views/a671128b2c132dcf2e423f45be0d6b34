@@ -1,0 +1,22 @@
+<?php $__env->startSection('title', 'Reset Password'); ?>
+<?php $__env->startSection('content'); ?>
+
+<?php echo Form::open(); ?>
+
+<?php if (Session::has('error')): ?>
+	<span class="error"><?php echo trans(Session::get('reason')); ?></span>
+<?php endif; ?>
+
+<p><?php echo Form::hidden('token', $token); ?></p>
+<p><?php echo Form::label('email', 'Email'); ?></p>
+<p><?php echo Form::text('email'); ?></p>
+<p><?php echo Form::label('password', 'Password'); ?></p>
+<p><?php echo Form::password('password'); ?></p>
+<p><?php echo Form::label('password', 'Confirm Password'); ?></p>
+<p><?php echo Form::password('password_confirmation'); ?></p>
+<p><?php echo Form::submit('Change Password'); ?></p>
+
+<?php echo Form::close(); ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

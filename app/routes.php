@@ -191,6 +191,9 @@ Route::get('/menu', function() {
 	return View::make('menu')->with('menu', $menu);
 });
 
+// tags
+Route::get('/tag/{tag}', 'TagController@search');
+
 /*
  * POST's
  */

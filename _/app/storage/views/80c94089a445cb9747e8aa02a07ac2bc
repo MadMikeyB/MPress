@@ -1,0 +1,55 @@
+<?php $__env->startSection('title', 'Welcome'); ?>
+<?php $__env->startSection('content'); ?>
+
+<div class="post">
+<?php if ( $post->created_at != '0000-00-00 00:00:00' ): ?>
+<time datetime="<?php echo $post->created_at; ?>"><?php echo DateController::showTimeAgo($post->created_at); ?></time>
+<?php endif; ?>
+<h1><?php echo HTML::link('article/' . $post->title_seo, $post->title); ?></h1>
+<p><?php echo $post->body; ?></p>
+</div>
+<?php if ( $post->comments == 1 ): ?>
+<p class="right"><?php echo HTML::link('article/' . $post->title_seo, 'Add a Comment &rarr;'); ?></p>
+<?php endif; ?>
+
+	
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('sidebar'); ?>
+<nav>
+	<ul class="blogroll">
+		<li class="header"><h3>Recent Posts</h3></li>
+	<?php foreach ($posts as $post): ?>
+		<li>
+			<?php echo HTML::link('article/'.$post->title_seo, $post->title, array( 'title' => $post->title, 'datetime' => $post->created_at ) ); ?> <!--   &mdash; <small><?php echo $post->created_at; ?></small> -->
+		</li>
+	<?php endforeach; ?>
+		<li class="header"><h3><?php echo HTML::link('archives', 'Archives &rarr;'); ?></h3></li>
+	</ul>
+	
+	<ul class="blogroll">
+		<li class="header"><h3>Popular Posts</h3></li>
+	<?php foreach ($popular as $post): ?>
+		<li>
+			<?php echo HTML::link('article/'.$post->title_seo, $post->title, array( 'title' => $post->title, 'datetime' => $post->created_at ) ); ?> &middot; <small><?php echo $post->views; ?> hits</small>  <!--   &mdash; <small><?php echo $post->created_at; ?></small> -->
+		</li>
+	<?php endforeach; ?>
+	</ul>
+	
+	<ul class="sitefriends">
+		<li class="header"><h3>Site Friends</h3></li>
+		<!--  TODO MAKE FOREACH -->
+		<li><a href="http://30daychallenges.net" rel="me" target="_blank">30 Day Challenges</a></li>
+		<li><a href="http://chroder.com" rel="friend" target="_blank">Chroder</a></li>
+		<li><a href="http://mrfloris.com" rel="friend" target="_blank">MrFloris.com</a></li>
+		<li><a href="http://offtopichut.com" rel="me" target="_blank">Off Topic Hut</a></li>
+		<li><a href="http://thegeekdistrict.com" rel="me" target="_blank">The Geek District</a></li>
+	</ul>
+	
+	<ul>
+		<li><div class="fb-activity" data-app-id="128735053915709" data-width="300" data-height="300" data-header="false" data-font="verdana" data-recommendations="true"></div></li>
+	</ul>
+</nav>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

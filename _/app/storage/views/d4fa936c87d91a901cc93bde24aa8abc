@@ -1,0 +1,70 @@
+<?php $__env->startSection('title', $post->title); ?>
+<?php $__env->startSection('content'); ?>
+<div class="blog-post">
+	<h1 class="blog-post-title"><?php echo $post->title; ?></h1>
+ 		<?php if ( $post->created_at != '0000-00-00 00:00:00' ): ?>
+		<p class="blog-post-meta"><time datetime="<?php echo $post->created_at; ?>"><?php echo DateController::showTimeAgo($post->created_at); ?></time> by <a href="/author/<?php echo $post->author; ?>"><?php echo $post->author; ?></a> <?php /* <?php if ( $settings->show_category_on_post ): ?> */ ?> in <a href="/archives/<?php echo $post->category; ?>"><?php echo $post->category; ?></a> <?php /* <?php endif; ?> */ ?>
+		<a class="pull-right" href="/article/<?php echo $post->title_seo; ?>">
+			<img class="media-object" data-src="holder.js/300x200" alt="300x200" src="<?php echo $post->image; ?>" style="width: 300px; height: 200px;">
+		</a>
+		<?php endif; ?>
+		<?php echo nl2br( $post->body ); ?>
+		</p>
+</div>
+
+<div class="clear clearfix"></div>
+<?php /*  <?php if ( $settings->display_shorturl == '1' ): ?>  */ ?>
+<p style="float:right"><b>Share:</b> <?php echo HTML::link('s/' . $post->share_id); ?></p>
+<?php /*  <?php endif; ?>  */ ?>
+<p><?php echo HTML::link('/', '&larr; Back to index.'); ?></p>
+
+<?php /*  <?php if ( $settings->display_sharelinks == '1' ): ?>  */ ?>
+<div class="shareStrip">
+ 	<a class="dp-att" href="https://tools.digitalpoint.com/social-buttons">Social Buttons</a>
+	<script>(function(d,u){var a=d.createElement("script");a.async=1;a.src="//x.dpstatic.com/social.js?u="+encodeURIComponent(u)+"&r=MadMikeyB";d.querySelector("head").appendChild(a)})
+(document,window.location.href);</script>
+ </div>
+<?php /*  <?php endif; ?>  */ ?>
+ 
+
+<?php if ( !Auth::guest() ): ?>
+<div class="clear clearfix"></div><hr />
+<div class="moderation">
+	<nav>
+		<ul>
+			<li><?php echo HTML::link('admin/edit/' . $post->title_seo, 'Edit'); ?></li>
+			<li><?php echo HTML::link('admin/delete/' . $post->title_seo, 'Delete'); ?></li> 
+			<li><?php echo HTML::link('lock/' . $post->title_seo, 'Lock'); ?></li>
+		</ul>
+	</nav>
+</div>
+<div class="clear clearfix"></div>
+<?php endif; ?>
+<hr />
+<?php if ( $post->comments == 1 ): ?>
+<div class="comments">
+<div class="fb-comments" data-href="http://<?php /*  $settings->site_url  */ ?><?php echo $_SERVER['HTTP_HOST']; ?>/article/<?php echo $post->title_seo; ?>" data-width="580" data-num-posts="10"></div>
+</div>
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('sidebar'); ?>
+<nav>
+	<?php /* <ul class="sitefriends">
+		<li class="header"><h3>Site Friends</h3></li>
+		<!--  TODO MAKE FOREACH -->
+		<li><a href="http://30daychallenges.net" rel="me" target="_blank">30 Day Challenges</a></li>
+		<li><a href="http://chroder.com" rel="friend" target="_blank">Chroder</a></li>
+		<li><a href="http://mrfloris.com" rel="friend" target="_blank">MrFloris.com</a></li>
+		<li><a href="http://offtopichut.com" rel="me" target="_blank">Off Topic Hut</a></li>
+		<li><a href="http://thegeekdistrict.com" rel="me" target="_blank">The Geek District</a></li>
+	</ul> */ ?>
+	
+	<ul style="list-style:none;" >
+		<li><div class="fb-activity" data-app-id="128735053915709" data-width="300" data-height="300" data-header="false" data-font="verdana" data-recommendations="true"></div></li>
+	</ul>
+</nav>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

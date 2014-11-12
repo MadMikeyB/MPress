@@ -1,0 +1,1783 @@
+[2014-01-17 00:11:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 00:17:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 00:38:49] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 00:42:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 00:44:24] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 00:51:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 00:51:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4931
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 00:51:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 00:52:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 00:53:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:05:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:05:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:06:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:11:01] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:12:01] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:13:01] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:14:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:16:31] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:17:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:27:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:27:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:32:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:42:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 01:45:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 02:03:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 02:17:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 02:42:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 02:58:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 03:06:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 03:08:56] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 03:11:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 03:17:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 03:42:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:08:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:541
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(3319): Illuminate\Foundation\Application->abort(404)
+#1 /var/www/sites/mikeylicio.us/app/routes.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /var/www/sites/mikeylicio.us/app/routes.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: {closure}('index.php')
+#4 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(7820): call_user_func_array(Object(Closure), Array)
+#5 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(7807): Illuminate\Routing\Route->callCallable()
+#6 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4762): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#7 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#8 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#9 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#10 {main} [] []
+[2014-01-17 04:12:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:14:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:14:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:15:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:16:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:17:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:17:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:36:31] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:42:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:43:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:49:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:50:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:51:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 04:53:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:08:24] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:12:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:17:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:17:17] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:21:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:22:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:23:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:24:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:36:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:42:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:44:33] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:49:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:50:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:51:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:51:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:56:07] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 05:58:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:15:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:17:31] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:17:48] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:24:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:24:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:25:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:38:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:42:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:43:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:44:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:45:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 06:59:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:00:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:00:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:01:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:02:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:04:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:17:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:18:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:41:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:42:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 07:58:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 08:17:19] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 08:42:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 08:52:03] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 09:17:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 09:19:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 09:19:19] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 09:19:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 09:19:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 09:26:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 09:42:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 09:58:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:00:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:17:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:41:33] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:42:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:42:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:42:33] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:43:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:44:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:45:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:47:25] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:52:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:54:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:56:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:56:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:56:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 10:58:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:541
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(3319): Illuminate\Foundation\Application->abort(404)
+#1 /var/www/sites/mikeylicio.us/app/routes.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /var/www/sites/mikeylicio.us/app/routes.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: {closure}('integrate-kwn-m...')
+#4 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(7820): call_user_func_array(Object(Closure), Array)
+#5 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(7807): Illuminate\Routing\Route->callCallable()
+#6 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4762): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#7 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#8 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#9 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#10 {main} [] []
+[2014-01-17 11:00:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:01:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:02:03] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:02:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:03:03] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:07:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:07:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:08:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:08:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:09:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:09:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:10:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:17:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:30:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:42:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 11:58:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 12:17:21] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 12:42:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 12:53:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 12:54:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 12:55:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 12:56:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:17:24] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:36:49] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:38:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:39:24] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:39:24] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:42:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:48:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:48:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:49:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:50:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:51:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:59:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 13:59:25] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:08:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:17:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:21:17] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:21:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:23:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:23:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:23:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:34:31] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:42:31] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:46:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 14:57:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 15:08:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 15:14:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 15:17:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 15:30:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 15:31:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 15:31:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 15:35:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 15:43:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 16:08:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 16:17:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 16:28:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4931
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 16:42:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 16:53:17] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 17:07:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 17:17:45] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 17:23:48] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 17:42:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 17:42:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 18:17:48] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 18:23:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 18:28:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 18:28:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 18:42:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 18:45:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 18:58:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 18:59:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:06:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:07:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:08:07] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:08:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:09:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:17:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:17:48] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:18:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:42:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 19:42:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 20:09:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 20:17:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 20:17:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 20:40:17] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 20:42:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 20:58:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 20:58:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 21:17:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 21:38:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:541
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(3319): Illuminate\Foundation\Application->abort(404)
+#1 /var/www/sites/mikeylicio.us/app/routes.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /var/www/sites/mikeylicio.us/app/routes.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: {closure}('integrate-kwn-m...')
+#4 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(7820): call_user_func_array(Object(Closure), Array)
+#5 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(7807): Illuminate\Routing\Route->callCallable()
+#6 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4762): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#7 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#8 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#9 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#10 {main} [] []
+[2014-01-17 21:38:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 21:39:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 21:40:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 21:41:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 21:42:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 21:49:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 22:14:03] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 22:17:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 22:22:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 22:31:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 22:42:24] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 22:55:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 23:02:59] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 23:17:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 23:23:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-01-17 23:42:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/sites/mikeylicio.us/bootstrap/compiled.php:4928
+Stack trace:
+#0 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /var/www/sites/mikeylicio.us/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /var/www/sites/mikeylicio.us/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

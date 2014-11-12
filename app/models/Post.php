@@ -9,6 +9,11 @@ class Post extends Eloquent
 		return $this->belongs_to('User', 'author_id');
 	}
 	
+	public function tags()
+	{
+		return $this->hasMany('Tag', 'content_id');
+	}
+	
 	public static function findBySlug( $slug )
 	{
 		$post	= DB::table('posts')->where('title_seo', $slug)->first();

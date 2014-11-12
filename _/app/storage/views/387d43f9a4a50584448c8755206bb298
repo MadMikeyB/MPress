@@ -1,0 +1,17 @@
+<?php $__env->startSection('title', 'Archives'); ?>
+<?php $__env->startSection('content'); ?>
+	<h1>Recent Posts</h1>
+	<ul class="archives">
+	<?php foreach ($posts as $post): ?>
+		<li>
+			<small class="timeago"><?php echo DateController::showTimeAgo($post->created_at); ?></small> &mdash; <?php echo HTML::link('article/'.$post->title_seo, $post->title, array( 'title' => $post->title, 'datetime' => $post->created_at ) ); ?> 
+		</li>
+	<?php endforeach; ?>
+	</ul>
+	<script>
+	jQuery(document).ready(function() {
+		  jQuery("small.timeago").timeago();
+	});
+	</script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

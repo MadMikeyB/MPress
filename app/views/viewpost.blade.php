@@ -4,10 +4,12 @@
 <div class="blog-post">
 	<h1 class="blog-post-title">{{ $post->title }}</h1>
  		@if ( $post->created_at != '0000-00-00 00:00:00' )
-		<p class="blog-post-meta"><time datetime="{{ $post->created_at }}">{{ DateController::showTimeAgo($post->created_at) }}</time> by <a href="/author/{{ $post->author }}">{{ $post->author }}</a> {{--@if ( $settings->show_category_on_post )--}} in <a href="/archives/{{ $post->category }}">{{ $post->category }}</a> {{--@endif--}}
-		<a class="pull-right" href="/article/{{ $post->title_seo }}">
+		<p class="blog-post-meta"><time datetime="{{ $post->created_at }}">{{ DateController::showTimeAgo($post->created_at) }}</time> by <a href="/author/{{ $post->author }}">{{ $post->author }}</a> {{--@if ( $settings->show_category_on_post )--}} in <a href="/archives/{{ $post->category }}">{{ $post->category }}</a> {{--@endif--}} 
+		@if ( $post->image ) 
+		<a class="pull-right" href="/article/{{ $post->title_seo }}" data-image="{{ $post->image }}">
 			<img class="media-object" data-src="holder.js/300x200" alt="300x200" src="{{ $post->image }}" style="width: 300px; height: 200px;">
 		</a>
+		@endif
 		@endif
 		{{ nl2br( $post->body ) }}
 		</p>
@@ -17,6 +19,11 @@
 {{-- @if ( $settings->display_shorturl == '1' ) --}}
 <p style="float:right"><b>Share:</b> {{ HTML::link('s/' . $post->share_id) }}</p>
 {{-- @endif --}}
+{{--@if ( $settings->enable_tags ) --}}
+@if ( $tags )
+Tags: @foreach ( $tags as $tag ) <a href="/tag/{{ strtolower($tag->title) }}">{{ $tag->title }}</a> @endforeach
+@endif
+{{--@endif--}}
 <p>{{ HTML::link('/', '&larr; Back to index.') }}</p>
 
 {{-- @if ( $settings->display_sharelinks == '1' ) --}}

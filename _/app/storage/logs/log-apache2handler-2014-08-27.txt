@@ -1,0 +1,254 @@
+[2014-08-27 02:23:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 02:23:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 02:23:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 02:23:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 02:23:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:07:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:07:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:07:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:07:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:08:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:08:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:13:42] log.ERROR: exception 'ErrorException' with message 'Undefined variable: settings' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271(5): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/Applications/M...', 5, Array)
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9024): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8917): Illuminate\View\Engines\CompilerEngine->get('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8908): Illuminate\View\View->getContents()
+#5 /Applications/MAMP/htdocs/MikeyPress/app/storage/views/547890febac608321218b19973099858(69): Illuminate\View\View->render()
+#6 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9024): include('/Applications/M...')
+#7 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Applications/M...', Array)
+#8 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8917): Illuminate\View\Engines\CompilerEngine->get('/Applications/M...', Array)
+#9 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8908): Illuminate\View\View->getContents()
+#10 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9502): Illuminate\View\View->render()
+#11 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9050): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#12 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4921): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#13 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#14 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#15 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4751): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7820): call_user_func_array(Object(Closure), Array)
+#18 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7807): Illuminate\Routing\Route->callCallable()
+#19 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4762): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2014-08-27 03:14:17] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271(5): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', '/Applications/M...', 5, Array)
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9024): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8917): Illuminate\View\Engines\CompilerEngine->get('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8908): Illuminate\View\View->getContents()
+#5 /Applications/MAMP/htdocs/MikeyPress/app/storage/views/547890febac608321218b19973099858(69): Illuminate\View\View->render()
+#6 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9024): include('/Applications/M...')
+#7 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Applications/M...', Array)
+#8 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8917): Illuminate\View\Engines\CompilerEngine->get('/Applications/M...', Array)
+#9 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8908): Illuminate\View\View->getContents()
+#10 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9502): Illuminate\View\View->render()
+#11 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9050): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#12 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4921): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#13 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#14 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#15 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4751): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7820): call_user_func_array(Object(Closure), Array)
+#18 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7807): Illuminate\Routing\Route->callCallable()
+#19 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4762): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2014-08-27 03:15:04] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271(5): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', '/Applications/M...', 5, Array)
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9024): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8917): Illuminate\View\Engines\CompilerEngine->get('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8908): Illuminate\View\View->getContents()
+#5 /Applications/MAMP/htdocs/MikeyPress/app/storage/views/547890febac608321218b19973099858(69): Illuminate\View\View->render()
+#6 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9024): include('/Applications/M...')
+#7 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/Applications/M...', Array)
+#8 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8917): Illuminate\View\Engines\CompilerEngine->get('/Applications/M...', Array)
+#9 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(8908): Illuminate\View\View->getContents()
+#10 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9502): Illuminate\View\View->render()
+#11 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(9050): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#12 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4921): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#13 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#14 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#15 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4751): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7820): call_user_func_array(Object(Closure), Array)
+#18 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7807): Illuminate\Routing\Route->callCallable()
+#19 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4762): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2014-08-27 03:16:51] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:17:05] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:17:09] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:17:54] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:18:15] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:18:26] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:18:39] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:20:17] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:20:18] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:20:18] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:20:18] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:20:36] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '?'' in /Applications/MAMP/htdocs/MikeyPress/app/storage/views/317261a8e63a9a1178e629cb26c0c271:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-27 03:21:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:21:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:21:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:21:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-08-27 03:21:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

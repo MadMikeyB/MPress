@@ -42,7 +42,9 @@ class PostController extends BaseController
 		$post = Post::findBySlug( $post );
 		$featured = Post::findFeatured(5);
 		$categories = Post::findCategories();
-
+		// @todo - Refactor above to see if we can use eloquents relational models rather than custom model methods. EG: Tags:
+		$tags = Post::find($post->id)->tags;
+		
 		if ( !$post )
 		{
 			return View::make('errorpage')->with('page', $post);
@@ -52,7 +54,7 @@ class PostController extends BaseController
 		$post->views++;
 		Post::updatePost( $post );
 		
-		return View::make('viewpost')->with('post', $post)->with('featured', $featured)->with('categories', $categories);
+		return View::make('viewpost')->with('post', $post)->with('featured', $featured)->with('categories', $categories)->with('tags', $tags);
 	}
 	
 	public function processPost()
@@ -77,7 +79,7 @@ class PostController extends BaseController
 		else if ( empty( $category ) )
 		{				
 			$category = 'uncategorized';	
-		}		
+		}
 
 		$body = Input::get('body');
 
@@ -167,7 +169,19 @@ class PostController extends BaseController
 				
 		$post = new Post($new_post);
 		$post->save();
-
+		
+		// tags after post save so we can get the content_id
+		$tags = explode( ',', Input::get('tags') );
+		
+		foreach ( $tags as $tag )
+		{
+			$_tag = new Tag();
+			$_tag->title = trim($tag);
+			$_tag->content_id = $post->id;
+			$_tag->author_id = Auth::user()->id;
+			$_tag->save();
+		}
+		
 		return Redirect::to( 'article/' . $post->title_seo );
 	}
 	

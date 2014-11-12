@@ -1,0 +1,79 @@
+<?php $__env->startSection('title', 'Edit &mdash; ' . $post->title ); ?>
+<?php $__env->startSection('content'); ?>
+<script src="../packages/js/ckeditor/ckeditor.js"></script>
+<div class="box box-primary">
+	<div class="box-header">
+		<h3 class="box-title">Edit Post &mdash; <?php echo $post->title; ?></h3>
+	</div>
+<div class="box-body">
+ 
+<div class="alert alert-info alert-dismissable">
+	<i class="fa fa-info"></i>
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	<b>Warning!</b> If you change the slug of this post, the URL of the post will change, causing potential search engine ranking loss.
+</div>
+ <?php echo Form::open(array('files'=> true)); ?>
+ <!--  author -->
+ <?php echo Form::hidden('author_id', $user->id); ?>
+ <!-- title field -->
+ <div class="form-group">
+ <p><?php echo Form::label('title', 'Title'); ?></p>
+ <?php echo $errors->first('title', '<p class="error">:message</p>'); ?>
+ <p><?php echo Form::text('title', $post->title, array('class' => 'form-control')); ?></p>
+ </div>
+ <div class="form-group">
+	<!-- category field -->
+	<p><?php echo Form::label('category', 'Category'); ?></p>
+	<?php echo $errors->first('category', '<p class="error">:message</p>'); ?>
+	<p><?php echo Form::text('category', Input::old('title'), array('class' => 'form-control')); ?></p>
+ </div>
+ <!--  slug -->
+ <div class="form-group">
+ <p><?php echo Form::label('title_seo', 'Slug'); ?></p>
+ <?php echo $errors->first('title_seo', '<p class="error">:message</p>'); ?>
+ <p><?php echo Form::text('title_seo', $post->title_seo, array('class' => 'form-control')); ?></p>
+ </div>
+ <!-- body field -->
+ <div class="form-group">
+ <p><?php echo Form::label('body', 'Body'); ?></p>
+ <?php echo $errors->first('body', '<p class="error">:message</p>'); ?>
+ <p><?php echo Form::textarea('body',$post->body, array('class' => 'ckeditor form-control')); ?></p>
+ </div>
+ <!--  checkbox -->
+ <div class="input-group">
+ 	<span class="input-group-addon">
+ 		<?php echo Form::checkbox('comments', $post->comments, true); ?>
+ 	</span>
+ 	 <?php echo $errors->first('comments', '<p class="error">:message</p>'); ?>
+ 	<input type="text" disabled value="Allow Comments?" class="form-control">
+</div>
+ <div class="form-group">
+	 <!-- image -->
+	 <p><?php echo Form::label('image', 'Article Image (Optional)'); ?></p>
+	 <p><?php echo Form::file('image'); ?></p>
+</div>
+</div>
+<div class="box-footer">
+ <!-- submit button -->
+ <p><?php echo Form::submit('Edit Post', array('class'=>'btn btn-primary pull-right')); ?></p>
+ <?php echo Form::close(); ?>
+ <br />
+ </div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('sidebar'); ?>
+	<ul class="sidebar-menu">
+		<li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+		<li><a href="/admin"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+		<li><a href="/admin/register"><i class="fa fa-users"></i> New User</a></li>
+		<li><a href="/admin/menu"><i class="fa fa-th"></i> New Menu Item</a></li>
+		<li><a href="/admin/posts/all"><i class="fa fa-comments"></i> All Posts</a></li>
+		<li class="active"><a href="/admin/posts"><i class="fa fa-pencil"></i> New Post</a></li>
+		<li><a href="/admin/pages/all"><i class="fa fa-file"></i> All Pages</a></li>
+		<li><a href="/admin/pages"><i class="fa fa-pencil-square-o"></i> New Page</a></li>
+		<li><a href="/admin/convert/wp"><i class="fa fa-quote-left"></i> Convert From WordPress</a></li>
+		<li><a href="/admin/session/lock"><i class="fa fa-key"></i> <span>Lock Session</span></a></li>
+		<li><a href="../logout"><i class="fa fa-power-off"></i> Log Out</a></li>
+	</ul>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('adminlayout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

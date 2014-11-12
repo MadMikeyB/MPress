@@ -1,0 +1,1 @@
+Hello! MPress is now installed. You can ignore this file, but please don't remove it. :)

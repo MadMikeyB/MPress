@@ -1,0 +1,65 @@
+[2014-03-24 01:21:28] log.ERROR: exception 'InvalidArgumentException' with message 'Database [] not configured.' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:6304
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(6278): Illuminate\Database\DatabaseManager->getConfig(NULL)
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(6266): Illuminate\Database\DatabaseManager->makeConnection(NULL)
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(6322): Illuminate\Database\DatabaseManager->connection()
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(3319): Illuminate\Database\DatabaseManager->__call('table', Array)
+#4 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(3319): Illuminate\Database\DatabaseManager->table('menus')
+#5 /Applications/MAMP/htdocs/MikeyPress/app/models/Menu.php(10): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#6 /Applications/MAMP/htdocs/MikeyPress/app/models/Menu.php(10): Illuminate\Support\Facades\DB::table('menus')
+#7 /Applications/MAMP/htdocs/MikeyPress/app/controllers/BaseController.php(7): Menu::generateMenu()
+#8 [internal function]: BaseController->__construct()
+#9 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(176): ReflectionClass->newInstanceArgs(Array)
+#10 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(142): Illuminate\Container\Container->build('PostController', Array)
+#11 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(442): Illuminate\Container\Container->make('PostController', Array)
+#12 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4750): Illuminate\Foundation\Application->make('PostController')
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7820): call_user_func_array(Object(Closure), Array)
+#15 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7807): Illuminate\Routing\Route->callCallable()
+#16 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4762): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-03-24 01:23:13] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000] [1049] Unknown database 'mikeypress'' in /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:47
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(47): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 /Applications/MAMP/htdocs/MikeyPress/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(6351): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(6282): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(6266): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(6322): Illuminate\Database\DatabaseManager->connection()
+#6 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(3319): Illuminate\Database\DatabaseManager->__call('table', Array)
+#7 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(3319): Illuminate\Database\DatabaseManager->table('menus')
+#8 /Applications/MAMP/htdocs/MikeyPress/app/models/Menu.php(10): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#9 /Applications/MAMP/htdocs/MikeyPress/app/models/Menu.php(10): Illuminate\Support\Facades\DB::table('menus')
+#10 /Applications/MAMP/htdocs/MikeyPress/app/controllers/BaseController.php(7): Menu::generateMenu()
+#11 [internal function]: BaseController->__construct()
+#12 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(176): ReflectionClass->newInstanceArgs(Array)
+#13 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(142): Illuminate\Container\Container->build('PostController', Array)
+#14 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(442): Illuminate\Container\Container->make('PostController', Array)
+#15 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4750): Illuminate\Foundation\Application->make('PostController')
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7820): call_user_func_array(Object(Closure), Array)
+#18 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(7807): Illuminate\Routing\Route->callCallable()
+#19 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4762): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2014-03-24 01:23:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-24 01:23:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
+Stack trace:
+#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

@@ -1,0 +1,119 @@
+<?php $__env->startSection('title', 'Home'); ?>
+
+<?php $__env->startSection('slider'); ?>
+<!-- SLIDER -->
+<?php if ( $slider ): ?>
+          <div id="da-slider" class="da-slider">
+            <?php /*  @todo add foreach for featured articles here  */ ?>
+            <?php foreach ($slider as $fpost): ?>
+            <div class="da-slide">
+              <h2><a href="article/<?php echo $fpost->title_seo; ?>" class="da-link"><?php echo $fpost->title; ?></a></h2>
+              <p><?php echo Str::limit($fpost->body, 100); ?>
+              </p>
+              <div class="da-img"><img alt="alt_example" src="<?php echo $fpost->image; ?>"  /></div>
+            </div>
+            <div class="da-arrows">
+              <span class="da-arrows-prev"></span> 
+              <span class="da-arrows-next"></span> 
+            </div>
+            <?php endforeach; ?>
+          </div>
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+          <?php if ( $popular ): ?>
+          <!-- MORE FEATURED (HUH?) -->
+          <div id="hot_news">
+            <div class="header">
+              <h1><span>ESIO //</span> HOT NEWS</h1>
+            </div>
+
+            <a id="prev" class="prev" href="#"><img alt="alt_example" src="/packages/img/blank.gif" width="21" height="33" border="0" /></a> <a id="next" class="next" href="#"><img alt="alt_example" src="/packages/img/blank.gif" width="21" height="33" border="0" /></a>
+
+            <ul id="hot_news_box">
+              <?php /*   @todo add foreach for most viewed posts within a time period, limit 6  */ ?>
+              <?php foreach($popular as $pop): ?>
+              <li>
+                <h2><a href="article/<?php echo $pop->title_seo; ?>" title="<?php echo $pop->title; ?>" datetime="<?php echo $pop->created_at; ?>"><?php echo $pop->title; ?></a></h2>
+                <div class="image">
+                  <a href="article/<?php echo $pop->title_seo; ?>">
+                    <img alt="alt_example" src="<?php echo $pop->image; ?>"/>
+                  </a>
+                </div>
+                <div class="content">
+                  <p><?php echo Str::limit($pop->body, 80); ?></p>
+                  <div class="info"><a href="article/<?php echo $pop->title_seo; ?>#comments" title="<?php echo $pop->title; ?>" datetime="<?php echo $pop->created_at; ?>" class="comments">Comments</a> <a href="article/<?php echo $pop->title_seo; ?>" title="<?php echo $pop->title; ?>" datetime="<?php echo $pop->created_at; ?>" class="read_more">read more</a></div>
+                </div>
+              </li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+          <?php endif; ?>
+
+          <!-- MAIN NEWS -->
+          <div id="main_news_wrapper">
+            <div id="row">
+              <div id="left_wrapper">
+                <div class="header">
+                  <h2><span>ESIO //</span> QUICK NEWS</h2>
+                </div>
+                <?php echo $posts->links(); ?>
+                <div class="clear"></div>
+                <ul id="general_news">
+                  <?php /*  @todo foreach of latest news, limit 3  */ ?>
+                  <?php foreach ($posts as $post): ?>
+                  <li>
+                    <div class="image">
+                      <a href="article/<?php echo $post->title_seo; ?>" title="<?php echo $post->title; ?>" datetime="<?php echo $post->created_at; ?>">
+                        <img alt="alt_example" src="<?php echo $post->image; ?>" />
+                      </a>
+                    </div>
+                    <ul class="social_share">
+                      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://esioentertainment.com/s/<?php echo $post->share_id; ?>"><img alt="alt_example" src="/packages/img/fbk.png" border="0" /></a></li>
+                      <li><a href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo $post->title; ?>++http://esioentertainment.com/s/<?php echo $post->share_id; ?>"><img alt="alt_example" src="/packages/img/twitter.png" border="0" /></a></li>
+                      <li><a href="/s/<?php echo $post->share_id; ?>" onClick="confirm('http://esioentertainment.com/s/<?php echo $post->share_id; ?>')"><img alt="alt_example" src="/packages/img/more.png" border="0" /></a></li>
+                    </ul>
+                    <div class="info">
+                      <h2><?php echo HTML::link('article/'.$post->title_seo, $post->title, array( 'title' => $post->title, 'datetime' => $post->created_at ) ); ?></h2>
+                      <div class="date_n_author"><?php echo DateController::showTimeAgo($post->created_at); ?> by <?php echo $post->author; ?></div>
+                      <p><?php echo Str::limit($post->body, 180); ?></p>
+                    </div>
+                    <div class="clear">
+                    </div>
+                  </li>
+                  <?php endforeach; ?>
+                </ul>
+                <?php echo $posts->links(); ?>
+                <div class="clear"></div>
+
+              </div>
+
+              <!-- FEATURED (AGAIN) -->
+              <div id="right_wrapper">
+                <div class="review">
+                  <div class="header">Games of the Month</div>
+                  <ul>
+                    <?php /*  @todo foreach of featured content 'games' cat  */ ?>
+                    <?php foreach ( $featured as $fgame ): ?>
+                    <li>
+                      <div class="img">
+                        <a href="/article/<?php echo $fgame->title_seo; ?>">
+                          <img alt="alt_example" src="<?php echo $fgame->image; ?>" />
+                        </a>
+                      </div>
+                      <div class="info"><?php echo $fgame->title; ?><br/>
+                        <small><?php echo Str::limit($fgame->body, 25); ?></small><br/>
+                        <?php /*  <img alt="alt_example" src="/packages/img/stars.png" />  */ ?>
+                      </div>
+                    </li>
+                    <?php endforeach; ?>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

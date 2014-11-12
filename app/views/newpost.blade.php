@@ -1,8 +1,16 @@
 @extends('adminlayout')
 @section('title', 'New Post')
 @section('content')
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="http://{{ $_SERVER['HTTP_HOST'] }}/packages/js/jquery.tag-editor.min.js" type="text/javascript"></script>
 <script src="../packages/js/ckeditor/ckeditor.js"></script>
 
+<script>
+$('.tags').tagEditor({
+    initialTags: ['Hello', 'World'],
+    placeholder: 'Enter tags ...'
+});
+</script>
 <div class="box box-primary">
 	<div class="box-header">
 		<h3 class="box-title">New Post</h3>
@@ -17,9 +25,14 @@
 		 	<p>{{ Form::label('title', 'Title') }}</p>
 		 	{{ $errors->first('title', '<p class="error">:message</p>') }}
 		 	<p>{{ Form::text('title', Input::old('title'), array('class' => 'form-control')) }}</p>
+		 </div> 
+		 
+		 <div class="form-group">
+		 	<!-- tagging field -->
+		 	<p>{{ Form::label('tags', 'Tags') }}</p>
+		 	{{ $errors->first('tags', '<p class="error">:message</p>') }}
+		 	<p>{{ Form::text('tags', Input::old('tags'), array('class' => 'form-control tags', 'id' => 'tags')) }}</p>
 		 </div>
-		 
-		 
 		 
 		 <div class="form-group">
 			 <!-- category field -->
