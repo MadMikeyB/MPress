@@ -317,7 +317,7 @@ class PostController extends BaseController
 				if ( $post )
 				{
 					$post->delete();
-					return Redirect::to( '/' );
+					return Redirect::to( '/admin/posts/all' );
 				}
 				else
 				{

@@ -70,7 +70,7 @@
 		<li><a href="/admin/register"><i class="fa fa-users"></i> New User</a></li>
 		<li><a href="/admin/menu"><i class="fa fa-th"></i> New Menu Item</a></li>
 		<li><a href="/admin/posts/all"><i class="fa fa-comments"></i> All Posts</a></li>
-		<li class="active"><a href="/admin/posts"><i class="fa fa-pencil"></i> New Post</a></li>
+		<li class="active"><a href="/admin/posts"><i class="fa fa-pencil"></i> Edit Post</a></li>
 		<li><a href="/admin/pages/all"><i class="fa fa-file"></i> All Pages</a></li>
 		<li><a href="/admin/pages"><i class="fa fa-pencil-square-o"></i> New Page</a></li>
 		<li><a href="/admin/convert/wp"><i class="fa fa-quote-left"></i> Convert From WordPress</a></li>

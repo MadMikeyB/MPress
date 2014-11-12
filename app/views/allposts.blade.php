@@ -62,7 +62,7 @@
 	</ul> --}}
 	
 	<ul class="fb list-unstyled">
-		<li><div class="fb-activity" data-app-id="{{-- $settings->fbappid --}}" data-width="{{-- $settings->fbappwidth --}}" data-height="{{-- $settings->fbappheight --}}" data-header="{{-- $settings->fbappheader --}}" data-font="{{-- $settings->fbappfont --}}" data-recommendations="{{-- $settings->fbappreccommendations --}}"></div></li>
+		<li><div class="fb-activity" data-app-id="{{-- $settings->fbappid --}}" data-width="{{-- $settings->fbappwidth --}}215" data-height="{{-- $settings->fbappheight --}}" data-header="{{-- $settings->fbappheader --}}" data-font="{{-- $settings->fbappfont --}}" data-recommendations="{{-- $settings->fbappreccommendations --}}"></div></li>
 	</ul>
 </nav>
 
