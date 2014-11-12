@@ -1,8 +1,0 @@
-[2014-05-21 18:47:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php:4928
-Stack trace:
-#0 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4773): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
-#1 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(4761): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
-#2 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
-#3 /Applications/MAMP/htdocs/MikeyPress/bootstrap/compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
-#4 /Applications/MAMP/htdocs/MikeyPress/public_html/index.php(49): Illuminate\Foundation\Application->run()
-#5 {main} [] []
