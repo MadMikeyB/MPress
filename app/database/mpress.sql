@@ -69,12 +69,28 @@ CREATE TABLE `tags` (
   `author_id` int(11) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 ALTER TABLE `tags`
  ADD PRIMARY KEY (`id`);
  
 ALTER TABLE `tags`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+CREATE TABLE `categories` (
+`id` int(11) NOT NULL,
+  `content_id` int(11) NOT NULL,
+  `title` varchar(64) NOT NULL,
+  `author_id` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ALTER TABLE `categories`
+ ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `categories`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 /*INSERT INTO `users` (`id`, `username`, `nickname`, `email`, `password`, `created_at`, `updated_at`) VALUES
