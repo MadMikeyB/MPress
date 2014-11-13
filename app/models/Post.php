@@ -14,6 +14,11 @@ class Post extends Eloquent
 		return $this->hasMany('Tag', 'content_id');
 	}
 	
+	public function category()
+	{
+		return $this->hasOne('Category', 'content_id');
+	}
+	
 	public static function findBySlug( $slug )
 	{
 		$post	= DB::table('posts')->where('title_seo', $slug)->first();
@@ -59,7 +64,10 @@ class Post extends Eloquent
 			return $post;
 		}
 	}
-
+	/**
+	 * @deprecated 
+	 * @see Post::find($id)->category
+	 */
 	public static function findCategories()
 	{
 		$categories = DB::table('posts')->where( 'category', '!=', '' )->groupBy('category')->get();

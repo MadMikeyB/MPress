@@ -77,11 +77,13 @@ Route::get('lock/{id}', 'PostController@lockPost');
 Route::get('admin', 'AdminController@index');
 
 // new post form
+// @todo move to controller
 Route::get('admin/posts', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
-	$cats = DB::table('posts')->groupBy( 'category' )->get();
-	$posts = DB::table('posts')->get();
+	$cats = Category::all();
+	$posts = Post::all(); //DB::table('posts')->get();
+	
 	foreach ( $cats as $c )
 	{
 		$categories[] = array($c->category => $c->category);
@@ -96,6 +98,8 @@ Route::get('admin/posts', array('before' => 'auth', 'do' => function()
 }));
 
 // all posts
+# @todo move to controller
+
 Route::get('admin/posts/all', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
@@ -104,6 +108,7 @@ Route::get('admin/posts/all', array('before' => 'auth', 'do' => function()
 }));
 
 // all pages
+# @todo move to controller
 Route::get('admin/pages/all', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
@@ -112,6 +117,7 @@ Route::get('admin/pages/all', array('before' => 'auth', 'do' => function()
 }));
 
 // new page form
+# @todo move to controller
 Route::get('admin/pages', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
@@ -119,6 +125,7 @@ Route::get('admin/pages', array('before' => 'auth', 'do' => function()
 }));
 
 // new user form
+# @todo move to controller
 Route::get('admin/register', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
@@ -127,6 +134,7 @@ Route::get('admin/register', array('before' => 'auth', 'do' => function()
 }));
 
 // edit user
+# @todo move to controller
 Route::get('admin/user/edit/{id}', array('before' => 'auth', 'do' => function($id)
 {
 	$member = User::find($id);
@@ -137,6 +145,7 @@ Route::get('admin/user/edit/{id}', array('before' => 'auth', 'do' => function($i
 Route::get('admin/user/delete/{id}', 'UserController@processDelete');
 
 // new menu item
+# @todo move to controller
 Route::get('admin/menu', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
@@ -145,6 +154,7 @@ Route::get('admin/menu', array('before' => 'auth', 'do' => function()
 }));
 
 // edit user
+# @todo move to controller
 Route::get('admin/menu/edit/{id}', array('before' => 'auth', 'do' => function($id)
 {
 	$menu = Menu::find($id);
@@ -172,6 +182,7 @@ Route::get('logout', 'UserController@processLogout');
 Route::get('s/{rand}', 'PostController@shareLink');
 
 // password reset
+# @todo move to controller
 Route::get('password/reset/{token}', function($token)
 {
 	$menu = Menu::generateMenu();
@@ -180,12 +191,14 @@ Route::get('password/reset/{token}', function($token)
 });
 
 // menu preview
+# @todo move to controller
 Route::get('/preview_menu', function() {
 	$menu = Menu::generateMenu();
 	return View::make('previewmenu')->with('menu', $menu);
 });
 
 // menu
+	# @todo move to controller
 Route::get('/menu', function() {
 	$menu = Menu::generateMenu();
 	return View::make('menu')->with('menu', $menu);

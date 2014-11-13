@@ -19,11 +19,12 @@ class PostController extends BaseController
 	{
 		if ( $cat )
 		{
-			$posts = DB::table('posts')->where('category', $cat)->orderBy('created_at', 'desc')->get();
+			#@todo may need a join onto posts table to get info, or use relationship.
+			$posts = Category::where('title', $cat)->orderBy('created_at', 'desc')->get();
 		}
 		else
 		{
-			$posts = DB::table('posts')->orderBy('created_at', 'desc')->get();
+			$posts = Post::where('views', '>', '0')->orderBy('created_at', 'desc')->get();
 		}
 		return View::make('archives', array('posts' => $posts));
 	}
@@ -32,7 +33,7 @@ class PostController extends BaseController
 	{
 		if ( $author )
 		{
-			$posts = DB::table('posts')->where('author', $author)->orderBy('created_at', 'desc')->get();
+			$posts = Post::where('author', '=', $author)->orderBy('created_at', 'desc')->get();
 			return View::make('archives', array('posts' => $posts));
 		}
 	}
@@ -41,8 +42,9 @@ class PostController extends BaseController
 	{
 		$post = Post::findBySlug( $post );
 		$featured = Post::findFeatured(5);
-		$categories = Post::findCategories();
-		// @todo - Refactor above to see if we can use eloquents relational models rather than custom model methods. EG: Tags:
+		# @todo - Refactor above to see if we can use eloquents relational models rather than custom model methods. EG: Tags:
+		$category = Post::find($post->id)->category;
+		//dd($category);
 		$tags = Post::find($post->id)->tags;
 		
 		if ( !$post )
@@ -54,7 +56,7 @@ class PostController extends BaseController
 		$post->views++;
 		Post::updatePost( $post );
 		
-		return View::make('viewpost')->with('post', $post)->with('featured', $featured)->with('categories', $categories)->with('tags', $tags);
+		return View::make('viewpost')->with('post', $post)->with('featured', $featured)->with('category', $category)->with('tags', $tags);
 	}
 	
 	public function processPost()
@@ -68,17 +70,6 @@ class PostController extends BaseController
 		else
 		{
 			$image = '';
-		}
-
-		$category = Input::get('category');
-		
-		if ( empty( $category ) )
-		{
-			$category = Input::get('existing_category');
-		}
-		else if ( empty( $category ) )
-		{				
-			$category = 'uncategorized';	
 		}
 
 		$body = Input::get('body');
@@ -121,7 +112,7 @@ class PostController extends BaseController
 							'image'		=> $image,
 							'slider'	=> 0,
 							'featured'	=> 0,
-							'category'	=> $category,
+							//'category'	=> $category,
 		);
 		
 
@@ -134,24 +125,6 @@ class PostController extends BaseController
 		{
 			$new_post['featured'] = '0';
 		}
-
-		/**if ( $new_post['slider'] == '0' )
-		{
-			$new_post['slider'] = '1';
-		}
-		else
-		{
-			$new_post['slider'] = '0';
-		}
-
-		if ( $new_post['featured'] == '0' )
-		{
-			$new_post['featured'] = '1';
-		}
-		else
-		{
-			$new_post['featured'] = '0';
-		}**/
 
 		$rules = array(
 						'title' 	=> 'required|min:3|max:128',
@@ -181,6 +154,24 @@ class PostController extends BaseController
 			$_tag->author_id = Auth::user()->id;
 			$_tag->save();
 		}
+		
+		// category after post save so we can get the content_id
+		$category = Input::get('category');
+		
+		if ( empty( $category ) )
+		{
+			$category = Input::get('existing_category');
+		}
+		else if ( empty( $category ) )
+		{
+			$category = 'uncategorized';
+		}
+		
+		$_category = new Category();
+		$_category->title = $category;
+		$_category->content_id = $post->id;
+		$_category->author_id = Auth::user()->id;
+		$_category->save();
 		
 		return Redirect::to( 'article/' . $post->title_seo );
 	}

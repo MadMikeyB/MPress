@@ -4,7 +4,7 @@
 <div class="blog-post">
 	<h1 class="blog-post-title">{{ $post->title }}</h1>
  		@if ( $post->created_at != '0000-00-00 00:00:00' )
-		<p class="blog-post-meta"><time datetime="{{ $post->created_at }}">{{ DateController::showTimeAgo($post->created_at) }}</time> by <a href="/author/{{ $post->author }}">{{ $post->author }}</a> {{--@if ( $settings->show_category_on_post )--}} in <a href="/archives/{{ $post->category }}">{{ $post->category }}</a> {{--@endif--}} 
+		<p class="blog-post-meta"><time datetime="{{ $post->created_at }}">{{ DateController::showTimeAgo($post->created_at) }}</time> by <a href="/author/{{ $post->author }}">{{ $post->author }}</a> {{--@if ( $settings->show_category_on_post )--}} in <a href="/archives/{{ strtolower($category->title) }}">{{ $category->title }}</a> {{--@endif--}} 
 		@if ( $post->image ) 
 		<a class="pull-right" href="/article/{{ $post->title_seo }}" data-image="{{ $post->image }}">
 			<img class="media-object" data-src="holder.js/300x200" alt="300x200" src="{{ $post->image }}" style="width: 300px; height: 200px;">
