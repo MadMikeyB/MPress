@@ -123,7 +123,7 @@ class PageController extends BaseController
 			return App::abort(500);
 		}
 		
-		return View::make('admineditpage')->with('page', $page)->with('user', $user);
+		return View::make('admin.editpage')->with('page', $page)->with('user', $user);
 	}
 	
 	public function processPageEdit( $slug )
