@@ -10,7 +10,7 @@ class Setting extends Eloquent
 		return $settings;
 	}
 	
-	public static function findSettingByKey( $key )
+	public static function findByKey( $key )
 	{
 		$setting	= DB::table('settings')->where('key', $key)->first();
 		if ( $setting )

@@ -93,6 +93,43 @@ ALTER TABLE `categories`
 ALTER TABLE `categories`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
+
+
+CREATE TABLE `settings` (
+`id` int(11) NOT NULL,
+  `name` varchar(300) NOT NULL,
+  `key` varchar(160) NOT NULL,
+  `value` text NOT NULL,
+  `type` enum('radio','text','checkbox') NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+
+INSERT INTO `settings` (`id`, `name`, `key`, `value`, `type`) VALUES
+(1, 'Website Name (Displayed in browser title bar)', 'sitename', 'MPress', 'text'),
+(2, 'Site Title', 'title', 'MPress', 'text'),
+(3, 'Site Description', 'desc', 'This is a site powered by the MPress CMS!', 'text'),
+(4, 'Use Alternate Login Style?', 'altlogin', '1', 'checkbox'),
+(5, 'Show About Block?', 'about_toggle', '1', 'checkbox'),
+(6, 'About Block Title', 'about', 'About', 'text'),
+(7, 'About Block Description', 'about_desc', 'This is a site powered by MPress. Learn more at mpresscms.com', 'text'),
+(8, 'Show Branding?', 'showbranding', '1', 'checkbox'),
+(13, 'Use Local Bootstrap CSS? (May be faster than remote on some servers)', 'uselocalbootstrap', '0', 'checkbox'),
+(16, 'Show Category Name on Post?', 'show_category_on_post', '0', 'checkbox'),
+(17, 'Show Share Link on Posts?', 'display_shorturl', '1', 'checkbox'),
+(18, 'Show Share Links on Post?', 'display_sharelinks', '1', 'checkbox'),
+(19, 'Enable Tags?', 'enable_tags', '1', 'checkbox'),
+(20, 'Facebook Admin ID''s', 'fbadmins', '', 'text'),
+(21, 'Facebook App ID', 'fbappid', '', 'text'),
+(22, 'Facebook Widget Width', 'fbappwidth', '', 'text'),
+(23, 'Facebook Widget Height', 'fbappheight', '', 'text'),
+(24, 'Facebook Widget Header', 'fbappheader', 'MPress', 'text'),
+(25, 'Facebook Widget Font', 'fbappfont', 'Tahoma', 'text');
+
+ALTER TABLE `settings`
+ ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `settings`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
+
 /*INSERT INTO `users` (`id`, `username`, `nickname`, `email`, `password`, `created_at`, `updated_at`) VALUES
 (1, 'admin', 'admin', 'admin@domain.com', '$2y$08$Oe/CbtyKNeKB3zlqJs1Xguh8aY9fBNkK1jWSbzYpa88ihiuI9.llG', '0000-00-00 00:00:00', '0000-00-00 00:00:00');*/;
 
