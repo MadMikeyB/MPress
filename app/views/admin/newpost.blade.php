@@ -1,4 +1,4 @@
-@extends('adminlayout')
+@extends('admin.layout')
 @section('title', 'New Post')
 @section('content')
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>

@@ -1,4 +1,4 @@
-@extends('adminlayout')
+@extends('admin.layout')
 @section('title', 'Convert from WordPress')
 @section('content')
 <div class="box box-primary">

@@ -92,7 +92,7 @@ Route::get('admin/posts', array('before' => 'auth', 'do' => function()
 		$categories[] = array('uncategorized' => 'uncategorized');
 	}
 	
-	return View::make('newpost')->with('user', $user)->with('categories', $categories)->with('posts', $posts);
+	return View::make('admin.newpost')->with('user', $user)->with('categories', $categories)->with('posts', $posts);
 }));
 
 // all posts
@@ -100,7 +100,7 @@ Route::get('admin/posts/all', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
 	$posts = DB::table('posts')->orderBy('id', 'desc')->paginate(5);
-	return View::make('adminallposts')->with('user', $user)->with('posts', $posts);
+	return View::make('admin.allposts')->with('user', $user)->with('posts', $posts);
 }));
 
 // all pages
@@ -108,14 +108,14 @@ Route::get('admin/pages/all', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
 	$pages = DB::table('pages')->orderBy('id', 'desc')->paginate(5);
-	return View::make('adminallpages')->with('user', $user)->with('pages', $pages);
+	return View::make('admin.allpages')->with('user', $user)->with('pages', $pages);
 }));
 
 // new page form
 Route::get('admin/pages', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
-	return View::make('newpage')->with('user', $user);
+	return View::make('admin.newpage')->with('user', $user);
 }));
 
 // new user form
@@ -123,7 +123,7 @@ Route::get('admin/register', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
 	$members = DB::table('users')->get();
-	return View::make('adminregister')->with('user', $user)->with('members', $members);
+	return View::make('admin.register')->with('user', $user)->with('members', $members);
 }));
 
 // edit user
@@ -131,7 +131,7 @@ Route::get('admin/user/edit/{id}', array('before' => 'auth', 'do' => function($i
 {
 	$member = User::find($id);
 	$user = Auth::user();
-	return View::make('adminuseredit')->with('user', $user)->with('member', $member);
+	return View::make('admin.useredit')->with('user', $user)->with('member', $member);
 }));
 // delete user
 Route::get('admin/user/delete/{id}', 'UserController@processDelete');
@@ -141,7 +141,7 @@ Route::get('admin/menu', array('before' => 'auth', 'do' => function()
 {
 	$user = Auth::user();
 	$menu = Menu::generateMenu();
-	return View::make('adminmenu')->with('user', $user)->with('menu', $menu);
+	return View::make('admin.menu')->with('user', $user)->with('menu', $menu);
 }));
 
 // edit user
@@ -149,7 +149,7 @@ Route::get('admin/menu/edit/{id}', array('before' => 'auth', 'do' => function($i
 {
 	$menu = Menu::find($id);
 	$user = Auth::user();
-	return View::make('adminmenuedit')->with('user', $user)->with('menu', $menu);
+	return View::make('admin.menuedit')->with('user', $user)->with('menu', $menu);
 }));
 
 // delete menu item

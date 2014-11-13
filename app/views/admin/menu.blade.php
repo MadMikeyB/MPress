@@ -1,9 +1,11 @@
-@extends('adminlayout')
-@section('title', 'Edit Menu Item')
+@extends('admin.layout')
+@section('title', 'Add New Menu Item')
 @section('content')
+<iframe id="menu_preview" src="http://{{ $_SERVER['HTTP_HOST'] }}/preview_menu" style="width: 100%; height:175px; border: 1px solid #000;"></iframe>
+<br /><br />
 <div class="box box-primary">
 	<div class="box-header">
-		<h3 class="box-title">Edit Menu Item</h3>
+		<h3 class="box-title">New Menu Item</h3>
 	</div>
 {{ Form::open(array('role' => 'form' )) }}
 <div class="box-body">
@@ -14,30 +16,61 @@
 		<!-- title field -->
 		<div class="form-group">
 			<p>{{ Form::label('title', 'Title') }}</p>
-			<p>{{ Form::text('title', $menu->title, array('class' => 'form-control')) }}</p>
+			<p>{{ Form::text('title', '', array('class' => 'form-control')) }}</p>
 		</div>
 		<!--  URL field -->
 		<div class="form-group">
 			<p>{{ Form::label('url', 'URL') }}</p>
-			<p>{{ Form::text('url', $menu->url, array('class' => 'form-control')) }}</p>
+			<p>{{ Form::text('url', '', array('class' => 'form-control')) }}</p>
 		</div>
 		<!--  position field -->
 		<div class="form-group">
 			<p>{{ Form::label('position', 'Menu Position') }}</p>
-			<p>{{ Form::text('position', $menu->position, array('class' => 'form-control')) }}</p>
+			<p>{{ Form::text('position', '', array('class' => 'form-control')) }}</p>
 		</div>
 		 <!-- title field -->
 		 {{-- <p>{{ Form::label('group', 'Permissions') }}</p>
 		 {{ $errors->first('group', '<p class="error">:message</p>') }}
-		 <p>{{ Form::select('group', array('guest' => 'Everyone can see this menu item', 'admin' => 'Only registered users (admins) can see this menu item'), 'guest'); }} --}}</p>
+		 <p>{{ Form::select('group', array('guest' => 'Everyone can see this menu item', 'admin' => 'Only registered users (admins) can see this menu item'), 'guest'); }} --}}
 		<!-- submit button -->
-		</div>
-		<div class="box-footer">
-			<p>{{ Form::submit('Add Menu Item', array('class' => 'btn btn-primary pull-right')) }}</p>
-			<div class="clearfix clear"></div>
-		</div>
-		{{ Form::close() }}
 	</div>
+ 	
+ 	<div class="box-footer">
+		<p>{{ Form::submit('Add Menu Item', array('class' => 'btn btn-primary pull-right')) }}</p>
+		<div class="clearfix clear"></div>
+	</div>
+		{{ Form::close() }}
+</div>
+
+<div class="box box-info">
+	<div class="box-header">
+		<h3 class="box-title">Menu Items</h3>
+	</div>
+	<div class="box-body">
+		<table class="table">
+			<tr>
+				<td>Position</td>
+				<td>Title</td>
+				<td>URL</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			@if ( $menu )
+			@foreach ( $menu as $m )
+			<tr>
+				<td>{{ $m->position }}</td>
+				<td>{{ $m->title }}</td>
+				<td>{{ $m->url }}</td>
+				<td></td>
+				<td><a href="/admin/menu/edit/{{ $m->id }}">Edit</a></td>
+				<td><a href="/admin/menu/delete/{{ $m->id }}">Delete</a></td>
+			</tr>
+			@endforeach
+			@endif
+		</table>
+	</div>	
+</div>
 @stop
 
 @section('sidebar')

@@ -22,7 +22,7 @@ class UserController extends BaseController
 			return View::make('login');
 		}**/
 		
-		return View::make('adminlogin');
+		return View::make('admin.login');
 	}
 	
 	/*
@@ -61,7 +61,7 @@ class UserController extends BaseController
 	
 	public function showRegister()
 	{
-		return View::make('adminregister');
+		return View::make('admin.register');
 	}
 	
 	/*

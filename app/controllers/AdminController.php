@@ -21,7 +21,7 @@ class AdminController extends BaseController
 		$stats['mostactiveauthor'] = DB::table('posts')->groupBy('author')->first();
 		$stats['mostpopularpost'] = DB::table('posts')->orderBy('views', 'desc')->first();
 			
-		return View::make('admin')->with('posts', $posts)->with('pages', $pages)->with('stats', $stats)->with('users', $users);	
+		return View::make('admin.dashboard')->with('posts', $posts)->with('pages', $pages)->with('stats', $stats)->with('users', $users);	
 	}
 	
 	/*
@@ -34,7 +34,7 @@ class AdminController extends BaseController
 			return Redirect::to('adminlogin');
 		}
 		
-		return View::make('convertwpform');
+		return View::make('admin.convertwpform');
 	}
 	
 	/*
@@ -122,7 +122,7 @@ class AdminController extends BaseController
 					}
 				}
 				
-				return Redirect::to('admin')->with('flash', $count . ' articles converted.');
+				return Redirect::to('dashboard')->with('flash', $count . ' articles converted.');
 			}
 			else
 			{
@@ -149,7 +149,7 @@ class AdminController extends BaseController
 	{
 		$username = Session::get('oldusername');
 		$nickname = Session::get('oldnickname');
-		return View::make('adminlockscreen')->with('username', $username)->with('nickname', $nickname);
+		return View::make('admin.lockscreen')->with('username', $username)->with('nickname', $nickname);
 	}
 	
 	/*
@@ -187,7 +187,7 @@ class AdminController extends BaseController
 		
 		$settings = Setting::findSettings();
 		
-		return View::make('adminsettingslist')->with('settings', $settings);
+		return View::make('admin.settingslist')->with('settings', $settings);
 	}
 	
 	/*

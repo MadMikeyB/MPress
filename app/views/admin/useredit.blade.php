@@ -1,77 +1,41 @@
-@extends('adminlayout')
-@section('title', 'Register new User')
+@extends('admin.layout')
+@section('title', 'Edit User')
 @section('content')
 <div class="box box-primary">
 	<div class="box-header">
-		<h3 class="box-title">New User</h3>
+		<h3 class="box-title">Edit User</h3>
 	</div>
-	@if (Session::has('login_errors'))
-		<span class="error">Username or password incorrect.</span>
-	@endif
-	@if (Session::has('success'))
-		<span class="error">User added!</span>
-	@endif
 	{{ Form::open( array('role' => 'form') ) }}
 	<div class="box-body">
 		<div class="form-group">
 			<!-- username field -->
 			<p>{{ Form::label('username', 'Username') }}</p>
-			<p>{{ Form::text('username', '', array('class' => 'form-control')) }}</p>
+			<p>{{ Form::text('username', $member->username, array('class' => 'form-control')) }}</p>
 		</div>
  		
  		<div class="form-group">
 			<!--  nickname field -->
 			<p>{{ Form::label('nickname', 'Nickname') }}</p>
-			<p>{{ Form::text('nickname', '', array('class' => 'form-control')) }}</p>
+			<p>{{ Form::text('nickname', $member->nickname, array('class' => 'form-control')) }}</p>
 		</div>
 		
  		<div class="form-group">
 			<!--  email field -->
 			<p>{{ Form::label('email', 'Email') }}</p>
-			<p>{{ Form::text('email', '', array('class' => 'form-control')) }}</p>
+			<p>{{ Form::text('email', $member->email, array('class' => 'form-control')) }}</p>
 		</div>
 		
  		<div class="form-group">
 			<!-- password field -->
 			<p>{{ Form::label('password', 'Password') }}</p>
-			<p>{{ Form::text('password', '', array('class' => 'form-control')) }}</p>
+			<p>{{ Form::password('password', array('class' => 'form-control')) }}</p>
 		</div>
 	</div>
  <div class="box-footer">
 		<!-- submit button -->
-		<p>{{ Form::submit('Register User', array('class' => 'btn btn-primary pull-right')) }}</p>
-		<div class="clearfix clear"></div>
+		<p>{{ Form::submit('Edit User', array('class' => 'btn btn-primary')) }}</p>
 </div>
 {{ Form::close() }}
-</div>
-
-<!--  ALL USERS -->
-<div class="box box-info">
-	<div class="box-header">
-		<h3 class="box-title">All Users</h3>
-	</div>
-	<div class="box-body">
-		<table class="table">
-			<tr>
-				<td>Username</td>
-				<td>Nickname</td>
-				<td>Email</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			@foreach ( $members as $m )
-			<tr>
-				<td>{{ $m->username }}</td>
-				<td>{{ $m->nickname }}</td>
-				<td>{{ $m->email }}</td>
-				<td></td>
-				<td><a href="/admin/user/edit/{{ $m->id }}">Edit</a></td>
-				<td><a href="/admin/user/delete/{{ $m->id }}">Delete</a></td>
-			</tr>
-			@endforeach
-		</table>
-	</div>
 </div>
 @stop
 

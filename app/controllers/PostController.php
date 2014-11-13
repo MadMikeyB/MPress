@@ -303,7 +303,7 @@ class PostController extends BaseController
 			return App::abort(500);
 		}
 		
-		return View::make('admineditpost')->with('post', $post)->with('user', $user);
+		return View::make('admin.editpost')->with('post', $post)->with('user', $user);
 	}
 	
 	public function deletePost($id)

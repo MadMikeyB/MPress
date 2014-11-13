@@ -1,4 +1,5 @@
 app/config/database.php
+app/storage/installer_lock.txt
 public_html/uploads/
 .composer
 .settings
