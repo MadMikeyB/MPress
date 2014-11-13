@@ -7,8 +7,8 @@ class BaseController extends Controller {
 		$menu = Menu::generateMenu();
 		View::share('menu', $menu);
 		
-		//$settings = Setting::findSettings();
-		//View::share('settings', $settings);
+		$settings = Setting::findSettings();
+		View::share('settings', $settings);
 	}
 	
 	/**

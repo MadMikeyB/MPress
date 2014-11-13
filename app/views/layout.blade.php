@@ -2,22 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-	<meta property="og:title" content="@yield('title') {{-- $settings->sitetitle --}}" />
+	<meta property="og:title" content="@yield('title')" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="http://{{ $_SERVER['HTTP_HOST'] }}{{ $_SERVER['REQUEST_URI'] }}" />
-	<meta property="fb:admins" content="{{-- $settings->fbadmins --}}" />
+	<meta property="fb:admins" content="{{ Setting::findByKey('fbadmins') }}" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../packages/favicon.ico">
 
-    <title>@yield('title')</title>
+    <title>@yield('title', Setting::findByKey('sitetitle'))</title>
 
-    {{-- $settings->uselocalbootstrap // use local or remote bootstrap file? --}}
     <!-- Bootstrap core CSS -->
-    {{-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> --}}
+    @if ( Setting::findByKey('uselocalbootstrap') )
     <link rel="stylesheet" href="http://{{ $_SERVER['HTTP_HOST'] }}/packages/css/bootstrap.min.css">
+    @else
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    @endif
     <!-- Custom styles for this template -->
     <link href="http://{{ $_SERVER['HTTP_HOST'] }}/packages/css/bootstrap-blog.css" rel="stylesheet">
     <link href="http://{{ $_SERVER['HTTP_HOST'] }}/packages/css/mpress-core.css" rel="stylesheet">
@@ -40,9 +42,9 @@
             	<span class="icon-bar"></span>
             	<span class="icon-bar"></span>
             </button>
-            {{-- @if ( $settings->showbranding == '1' ) --}}
-            {{-- <a class="navbar-brand" href="#">@yield('title')</a> --}}
-            {{-- @endif --}}
+            @if ( Setting::findByKey('showbranding') == '1' )
+            	<a class="navbar-brand" href="http://{{ Setting::findByKey('site_url') }}">{{ Setting::findByKey('title') }}</a>
+            @endif
         </div>
         
       	<div class="navbar-collapse collapse">
@@ -57,9 +59,9 @@
 	        	{{-- Guest Login / Admin Links --}}
 	        	
 	            @if ( Auth::guest() )
-	            	{{-- @if ($settings->login_alt == '0') --}}
+	            	@if ( Setting::findByKey('login_alt') == '0' )
 	              	<li>{{ HTML::link('login', 'Login', array('class' => 'blog-nav-item')) }}</li>
-	              	{{-- @endif --}}
+	              	@endif
 				@else
 					<li>{{ HTML::link('logout', 'Logout', array('class' => 'blog-nav-item')) }}</li>
 				@endif
@@ -73,10 +75,12 @@
     </div>
 
     <div class="container">
-
       <div class="blog-header">
-        <h1 class="blog-title">{{-- $settings->title --}}</h1>
-        <p class="lead blog-description">{{-- $settings->desc --}}</p>
+        @if ( Setting::findByKey('showhero') == '1' )
+        <h1 class="blog-title">{{ Setting::findByKey('title') }}</h1>
+        <p class="lead blog-description">{{ Setting::findByKey('desc') }}</p>
+        @endif
+        <br />
       </div>
 
       <div class="row">
@@ -86,22 +90,23 @@
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-        	{{-- @if ($settings->login_alt == '1') --}}
-        	<div class="sidebar-module sidebar-module-inset">
+        	
+                <div class="sidebar-module sidebar-module-inset">
+                @if ( Setting::findByKey('login_alt') == '1' )
         	    @if ( Auth::guest() )
         		<a class="btn btn-lg btn-success" href="/login">Log in to begin creating</a>
+        		@endif
         		@else
         		<a class="btn btn-lg btn-success" href="/admin/posts">Write an epic article :)</a>
         		@endif
         	</div>
-        	{{-- @endif --}}
-        	
-          {{-- @if ($settings->about_toggle == '1') --}}
-          <!-- <div class="sidebar-module sidebar-module-inset"> -->
-            <h4>{{-- $settings->about --}}</h4>
-            <p>{{-- $settings->about_desc --}}</p>
-          <!-- </div> -->
-          {{-- @endif --}}
+        
+        	@if ( Setting::findByKey('about_toggle') == '1' )
+        	<div class="sidebar-module sidebar-module-inset">
+            <h4>{{ Setting::findByKey('about') }}</h4>
+            <p>{{ Setting::findByKey('about_desc') }}</p>
+            </div>
+            @endif
           
           <div class="sidebar-module sidebar-module-inset">
           	@yield('sidebar')

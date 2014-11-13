@@ -4,7 +4,7 @@
 <div class="blog-post">
 	<h1 class="blog-post-title">{{ $post->title }}</h1>
  		@if ( $post->created_at != '0000-00-00 00:00:00' )
-		<p class="blog-post-meta"><time datetime="{{ $post->created_at }}">{{ DateController::showTimeAgo($post->created_at) }}</time> by <a href="/author/{{ $post->author }}">{{ $post->author }}</a> {{--@if ( $settings->show_category_on_post )--}} in <a href="/archives/{{ strtolower($category->title) }}">{{ $category->title }}</a> {{--@endif--}} 
+		<p class="blog-post-meta"><time datetime="{{ $post->created_at }}">{{ DateController::showTimeAgo($post->created_at) }}</time> by <a href="/author/{{ $post->author }}">{{ $post->author }}</a> @if ( Setting::findByKey('show_category_on_post') == '1') in <a href="/archives/{{ strtolower($category->title) }}">{{ $category->title }}</a>@endif 
 		@if ( $post->image ) 
 		<a class="pull-right" href="/article/{{ $post->title_seo }}" data-image="{{ $post->image }}">
 			<img class="media-object" data-src="holder.js/300x200" alt="300x200" src="{{ $post->image }}" style="width: 300px; height: 200px;">
@@ -16,23 +16,24 @@
 </div>
 
 <div class="clear clearfix"></div>
-{{-- @if ( $settings->display_shorturl == '1' ) --}}
+@if ( Setting::findByKey('display_shorturl') == '1' )
 <p style="float:right"><b>Share:</b> {{ HTML::link('s/' . $post->share_id) }}</p>
-{{-- @endif --}}
-{{--@if ( $settings->enable_tags ) --}}
+ @endif
+ 
+@if ( Setting::findByKey('enable_tags') == '1' )
 @if ( $tags )
 Tags: @foreach ( $tags as $tag ) <a href="/tag/{{ strtolower($tag->title) }}">{{ $tag->title }}</a> @endforeach
 @endif
-{{--@endif--}}
+@endif
 <p>{{ HTML::link('/', '&larr; Back to index.') }}</p>
 
-{{-- @if ( $settings->display_sharelinks == '1' ) --}}
+@if ( Setting::findByKey('display_sharelinks') == '1' )
 <div class="shareStrip">
  	<a class="dp-att" href="https://tools.digitalpoint.com/social-buttons">Social Buttons</a>
 	<script>(function(d,u){var a=d.createElement("script");a.async=1;a.src="//x.dpstatic.com/social.js?u="+encodeURIComponent(u)+"&r=MadMikeyB";d.querySelector("head").appendChild(a)})
 (document,window.location.href);</script>
  </div>
-{{-- @endif --}}
+@endif
  
 
 @if ( !Auth::guest() )
@@ -51,7 +52,7 @@ Tags: @foreach ( $tags as $tag ) <a href="/tag/{{ strtolower($tag->title) }}">{{
 <hr />
 @if ( $post->comments == 1 )
 <div class="comments">
-<div class="fb-comments" data-href="http://{{-- $settings->site_url --}}{{ $_SERVER['HTTP_HOST'] }}/article/{{ $post->title_seo }}" data-width="580" data-num-posts="10"></div>
+<div class="fb-comments" data-href="http://{{ Setting::findByKey('site_url') }}{{-- {{ $_SERVER['HTTP_HOST'] }} --}}/article/{{ $post->title_seo }}" data-width="580" data-num-posts="10"></div>
 </div>
 @endif
 

@@ -15,7 +15,15 @@ class Setting extends Eloquent
 		$setting	= DB::table('settings')->where('key', $key)->first();
 		if ( $setting )
 		{
-			return $setting;
+			/*if ( $setting->type == 'text' )
+			{
+				return $setting->value;
+			}
+			else
+			{
+				return $setting;
+			}*/
+			return $setting->value;
 		}
 	}
 }
