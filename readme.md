@@ -6,23 +6,20 @@ Please note that this is the **DEVELOPMENTAL** BRANCH. May contain BREAKING CHAN
 
 ## Installation
 
-Navigate to yoursite.com and run the web-based Installer. :)
+~Navigate to yoursite.com and run the web-based Installer. :)~ Coming Soon
 
 ### Attribution
 
-MPress is grateful to use [Laravel](https://github.com/laravel/laravel) as a PHP Framework base, [Bootstrap](https://github.com/twbs/bootstrap) as the default template, as well as [AdminLTE](https://github.com/almasaeed2010/AdminLTE) for the Admin Area Template. Tagging jquery functionality provided by [jQuery-tagEditor](https://github.com/Pixabay/jQuery-tagEditor)
+MPress is grateful to use [Laravel](https://github.com/laravel/laravel) as a PHP Framework base.
 
 
 ### Examples
 
-For an example of what MPress can do please see; 
-
-* [Mikeylicious](http://mikeylicio.us) - for a Blog format
-* [Esio Entertainment](http://esioentertainment.com) - for a News site format
+No MPress 2.0 Sites are live. Yet.
 
 ### License
 
-Copyright (c) 2012 - 2014, Michael Burton All rights reserved.
+Copyright (c) 2012 - 2016, Michael Burton All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
