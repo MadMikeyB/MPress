@@ -6,7 +6,10 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "graham-campbell/markdown": "^6.0",
+        "anlutro/l4-settings": "^0.4.8",
+        "lavary/laravel-menu": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

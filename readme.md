@@ -12,6 +12,10 @@ Please note that this is the **DEVELOPMENTAL** BRANCH. May contain BREAKING CHAN
 
 MPress is grateful to use [Laravel](https://github.com/laravel/laravel) as a PHP Framework base.
 
+[MarkDown](https://github.com/GrahamCampbell/Laravel-Markdown)
+[Settings Manager](https://github.com/anlutro/laravel-settings)
+[Menu Manager](https://github.com/lavary/laravel-menu)
+
 
 ### Examples
 

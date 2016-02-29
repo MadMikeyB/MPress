@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://mpresscms.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -156,6 +156,14 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Custom Service Providers...
+         */
+
+        GrahamCampbell\Markdown\MarkdownServiceProvider::class, // Markdown
+        anlutro\LaravelSettings\ServiceProvider::class, // Settings
+        Lavary\Menu\ServiceProvider::class,
+
     ],
 
     /*
@@ -201,6 +209,14 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        
+        /*
+         * Custom Facades...
+         */
+                
+        'Markdown'  => GrahamCampbell\Markdown\Facades\Markdown::class, // MarkDown
+        'Setting'   => anlutro\LaravelSettings\Facade::class, // Settings
+        'Menu'      => Lavary\Menu\Facade::class,
 
     ],
 
