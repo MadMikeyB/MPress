@@ -10,12 +10,13 @@ Please note that this is the **DEVELOPMENTAL** BRANCH. May contain BREAKING CHAN
 
 ### Attribution
 
-MPress is grateful to use [Laravel](https://github.com/laravel/laravel) as a PHP Framework base.
+MPress is grateful to use 
 
-[MarkDown](https://github.com/GrahamCampbell/Laravel-Markdown)
-[Settings Manager](https://github.com/anlutro/laravel-settings)
-[Menu Manager](https://github.com/lavary/laravel-menu)
-
+* [Laravel](https://github.com/laravel/laravel)
+* [MarkDown](https://github.com/GrahamCampbell/Laravel-Markdown)
+* [Settings Manager](https://github.com/anlutro/laravel-settings)
+* [Menu Manager](https://github.com/lavary/laravel-menu)
+* [Sluggable](https://github.com/cviebrock/eloquent-sluggable)
 
 ### Examples
 

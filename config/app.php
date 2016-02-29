@@ -162,7 +162,8 @@ return [
 
         GrahamCampbell\Markdown\MarkdownServiceProvider::class, // Markdown
         anlutro\LaravelSettings\ServiceProvider::class, // Settings
-        'Lavary\Menu\ServiceProvider',
+        Lavary\Menu\ServiceProvider::class, // Menu
+        Cviebrock\EloquentSluggable\SluggableServiceProvider::class, // Sluggable
 
     ],
 
@@ -216,7 +217,7 @@ return [
                 
         'Markdown'  => GrahamCampbell\Markdown\Facades\Markdown::class, // MarkDown
         'Setting'   => anlutro\LaravelSettings\Facade::class, // Settings
-        'Menu'      => 'Lavary\Menu\Facade',
+        'Menu'      => Lavary\Menu\Facade::class, // Menu
 
     ],
 
