@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use GrahamCampbell\Markdown\Facades\Markdown;
 
 use App\Post;
 
@@ -13,25 +13,28 @@ class PostsController extends Controller
 
     public function index()
     {
-    	return view('posts.index', compact(Post::all()));
+    	$posts = Post::all();
+    	return view('posts.index', compact('posts'));
     }
 
-    public function show(Post $post)
+    public function show($post) // @todo typecast Post $post using Slug rather than ID.
+    {
+    	$post = Post::findBySlug($post);
+    	$post->content = Markdown::convertToHtml($post->content); 
+    	return view('posts.show', compact('post'));
+    }
+
+    public function store(Request $request)
     {
 
     }
 
-    public function store(Request $request, Post $post)
+    public function update(Request $request)
     {
 
     }
 
-    public function update(Request $request, Post $post)
-    {
-
-    }
-
-    public function destroy(Request $request, Post $post)
+    public function destroy(Post $post)
     {
 
     }

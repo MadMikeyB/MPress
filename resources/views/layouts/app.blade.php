@@ -26,9 +26,6 @@
     </style>
 </head>
 <body id="app-layout">
-
-
-
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
