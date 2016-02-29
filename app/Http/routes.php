@@ -2,11 +2,14 @@
 
 
 // Auth
-Route::group(['middleware' => 'web'], function () {
-	// DashboardController has Auth middleware in __construct.
+Route::group(['middleware' => ['web', 'menu']], function () {
 	Route::get('/', 'HomeController@index');
 
     Route::auth();
+});
 
-    Route::get('/dashboard', 'DashboardController@index');
+Route::group(['middleware' => ['web', 'auth', 'menu']], function() {
+	Route::get('/dashboard', 'DashboardController@index');
+	Route::get('/admin', 'AdminController@index');
+
 });

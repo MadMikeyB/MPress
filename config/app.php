@@ -162,7 +162,7 @@ return [
 
         GrahamCampbell\Markdown\MarkdownServiceProvider::class, // Markdown
         anlutro\LaravelSettings\ServiceProvider::class, // Settings
-        Lavary\Menu\ServiceProvider::class,
+        'Lavary\Menu\ServiceProvider',
 
     ],
 
@@ -216,7 +216,7 @@ return [
                 
         'Markdown'  => GrahamCampbell\Markdown\Facades\Markdown::class, // MarkDown
         'Setting'   => anlutro\LaravelSettings\Facade::class, // Settings
-        'Menu'      => Lavary\Menu\Facade::class,
+        'Menu'      => 'Lavary\Menu\Facade',
 
     ],
 
