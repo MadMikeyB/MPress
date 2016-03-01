@@ -8,7 +8,7 @@
 			<div class="col-md-6">
 				<div class="thumbnail">
 					@if ( $post->image )
-					<img src="..." alt="...">
+					<img src="{{ $post->image }}" alt="{{ $post->title }} &mdash; {{ Setting::get('site_title', 'MPress') }}">
 					@endif
 					<div class="caption">
 						<h3>{{ $post->title }} <small><span>@</span>{{ $post->user->name }}</small></h3>

@@ -13,9 +13,21 @@
 
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
-        'email' => $faker->email,
-        'password' => bcrypt(str_random(10)),
-        'remember_token' => str_random(10),
+        'name' 				=> $faker->name,
+        'nickname' 			=> $faker->name,
+        'email' 			=> $faker->email,
+        'password' 			=> bcrypt('password'),
+        'remember_token' 	=> str_random(10),
+    ];
+});
+
+
+$factory->define(App\Post::class, function (Faker\Generator $faker) {
+    return [
+        'title' 		=> $faker->sentence,
+        'content' 		=> $faker->paragraph(rand(20,300)),
+        'author_id' 	=> rand(1,50),
+        'category_id' 	=> 1,
+        'image'			=> $faker->imageUrl,
     ];
 });
