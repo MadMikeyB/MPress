@@ -31,8 +31,10 @@
 				<div class="panel-footer clearfix">
 					<div class="pull-right btn-group">
 						<a href="#reply" class="btn btn-xs btn-primary">Reply</a>
+						@if ( $comment->user->id === Auth::user()->id )
 						<a href="" class="btn btn-xs btn-default">Edit</a>
 						<a href="" class="btn btn-xs btn-danger">Delete</a>
+						@endif
 					</div>
 				</div>
 				{{-- / Comment --}}
