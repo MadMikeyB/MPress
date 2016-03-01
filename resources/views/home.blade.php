@@ -9,6 +9,15 @@
 
                 <div class="panel-body">
                     You are logged in!
+                    <h3>Your Posts</h3>
+                    <div class="list-group">
+                    @foreach ( $posts as $post )
+                        <a href="/read/{{ $post->slug }}" class="list-group-item">{{ $post->title }}</a>
+                    @endforeach
+                    </div>
+
+                    <h3>You Commented on:</h3>
+
                 </div>
             </div>
         </div>

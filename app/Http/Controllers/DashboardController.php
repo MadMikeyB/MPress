@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Post;
+use Auth;
 
 class DashboardController extends Controller
 {
@@ -14,6 +16,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('home');
+    	$posts = Post::where('author_id', '=', Auth::user()->id)->get();
+        return view('home', compact('posts'));
     }
 }
