@@ -24,10 +24,19 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Post::class, function (Faker\Generator $faker) {
     return [
-        'title' 		=> $faker->sentence,
-        'content' 		=> $faker->paragraph(rand(20,300)),
-        'author_id' 	=> rand(1,50),
-        'category_id' 	=> 1,
-        'image'			=> $faker->imageUrl,
+        'title'         => $faker->sentence,
+        'content'       => $faker->paragraph(rand(20,300)),
+        'author_id'     => rand(1,50),
+        'category_id'   => 1,
+        'image'         => $faker->imageUrl,
+    ];
+});
+
+
+$factory->define(App\Comment::class, function (Faker\Generator $faker) {
+    return [
+        'body'          => $faker->sentence(rand(20,300)),
+        'author_id'     => rand(1,50),
+        'post_id'       => rand(1,50),
     ];
 });
