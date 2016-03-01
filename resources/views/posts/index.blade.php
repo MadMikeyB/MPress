@@ -22,6 +22,14 @@
 	</div>
 </div>
 
+<div class="container">
+	<div class="row center-block">
+		<div class="col-md-12">
+			{!! $posts->links() !!}
+		</div>
+	</div>
+</div>
+
 
 
 @stop
