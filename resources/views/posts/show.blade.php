@@ -19,11 +19,13 @@
 				<div class="panel-heading">
 					<h3 class="panel-title">Comments</h3>
 				</div>
+				@unless ( $post->comments->isEmpty() )
+				@foreach ( $post->comments as $comment )
 				{{-- Comment  --}}
 				<div class="panel-body">
-					<cite><span>@</span>{{ Auth::user()->name }}</cite>
+					<cite><span>@</span>{{ $comment->user->nickname }}</cite>
 					<blockquote>
-						&ldquo;I am a comment&rdquo;
+						&ldquo;{{ $comment->body }}&rdquo;
 					</blockquote>
 				</div>
 				<div class="panel-footer clearfix">
@@ -34,51 +36,12 @@
 					</div>
 				</div>
 				{{-- / Comment --}}
-				{{-- Comment  --}}
-				<div class="panel-body">
-					<cite><span>@</span>{{ Auth::user()->name }}</cite>
-					<blockquote>
-						&ldquo;I am a comment&rdquo;
-					</blockquote>
-				</div>
-				<div class="panel-footer clearfix">
-					<div class="pull-right btn-group">
-						<a href="#reply" class="btn btn-xs btn-primary">Reply</a>
-						<a href="" class="btn btn-xs btn-default">Edit</a>
-						<a href="" class="btn btn-xs btn-danger">Delete</a>
+				@endforeach
+				@else 
+					<div class="panel-body">
+						There are no comments! :(
 					</div>
-				</div>
-				{{-- / Comment --}}
-				{{-- Comment  --}}
-				<div class="panel-body">
-					<cite><span>@</span>{{ Auth::user()->name }}</cite>
-					<blockquote>
-						&ldquo;I am a comment&rdquo;
-					</blockquote>
-				</div>
-				<div class="panel-footer clearfix">
-					<div class="pull-right btn-group">
-						<a href="#reply" class="btn btn-xs btn-primary">Reply</a>
-						<a href="" class="btn btn-xs btn-default">Edit</a>
-						<a href="" class="btn btn-xs btn-danger">Delete</a>
-					</div>
-				</div>
-				{{-- / Comment --}}
-				{{-- Comment  --}}
-				<div class="panel-body">
-					<cite><span>@</span>{{ Auth::user()->name }}</cite>
-					<blockquote>
-						&ldquo;I am a comment&rdquo;
-					</blockquote>
-				</div>
-				<div class="panel-footer clearfix">
-					<div class="pull-right btn-group">
-						<a href="#reply" class="btn btn-xs btn-primary">Reply</a>
-						<a href="" class="btn btn-xs btn-default">Edit</a>
-						<a href="" class="btn btn-xs btn-danger">Delete</a>
-					</div>
-				</div>
-				{{-- / Comment --}}
+				@endunless
 			</div>
 			
 			{{-- ------------- REPLY ------------- --}}
