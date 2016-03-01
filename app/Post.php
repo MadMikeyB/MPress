@@ -26,4 +26,10 @@ class Post extends Model implements SluggableInterface
     {
     	return $this->belongsTo(Category::class, 'category_id', 'content_id');
     }
+
+    // Comments
+    public function comments()
+    {
+        return $this->hasMany(Comment::class, 'id', 'post_id');
+    }
 }

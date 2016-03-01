@@ -5,6 +5,9 @@
 Route::group(['middleware' => ['web', 'menu']], function () {
 	// Home
 	Route::get('', 'HomeController@index');
+	Route::get('home', function(){
+		return redirect()->action('HomeController@index');
+	});
 	// Auth
     Route::auth();
 
