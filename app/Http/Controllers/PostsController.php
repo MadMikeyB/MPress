@@ -11,29 +11,58 @@ use App\Post;
 class PostsController extends Controller
 {
 
+    /**
+     * Show the Single Post
+     *
+     * @return Response
+     */
     public function index()
     {
     	$posts = Post::all();
     	return view('posts.index', compact('posts'));
     }
 
-    public function show($post) // @todo typecast Post $post using Slug rather than ID.
+    /**
+     * Show the Single Post
+     *
+     * @param \App\Post    $post
+     * @return Response
+     */
+    public function show(Post $post)
     {
-    	$post = Post::findBySlug($post);
+    	// $post = Post::findBySlug($post);
     	$post->content = Markdown::convertToHtml($post->content); 
     	return view('posts.show', compact('post'));
     }
 
+    /**
+     * Store the Post
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */
     public function store(Request $request)
     {
 
     }
 
+    /**
+     * Update the Post
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */
     public function update(Request $request)
     {
 
     }
 
+    /**
+     * Delete the Post
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */
     public function destroy(Post $post)
     {
 

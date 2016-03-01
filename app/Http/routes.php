@@ -12,7 +12,7 @@ Route::group(['middleware' => ['web', 'menu']], function () {
     Route::get('posts', 'PostsController@index');
 
     // Get Post or Page
-    Route::get('read/{post}', 'PostsController@show');
+    Route::get('read/{slug}', 'PostsController@show');
 });
 
 Route::group(['middleware' => ['web', 'auth', 'menu']], function() {
