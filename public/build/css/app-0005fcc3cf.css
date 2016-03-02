@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic|Raleway:400,400italic);
+body {
+  font-family: 'Raleway'; }
+  body p {
+    font-size: 18px; }
+  body .fa-btn {
+    margin-right: 6px; }
+  body .mpress-form-input {
+    height: auto; }
+    body .mpress-form-input input.form-control {
+      border: 0;
+      background-color: transparent;
+      font-size: 2em;
+      padding: 0;
+      height: auto;
+      box-shadow: none; }
+
+/*# sourceMappingURL=app.css.map */

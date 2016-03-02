@@ -1,2 +1,28 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic|Raleway:400,400italic);
+
+body {
+	font-family: 'Raleway';
+
+	p {
+		font-size:18px; // 1em = 18px
+	}
+
+	.fa-btn {
+		margin-right: 6px;
+	}
+
+	.mpress-form-input {
+		height:auto;
+
+			input.form-control {
+				border:0;
+				background-color:transparent;
+				font-size:2em;
+				padding:0;
+				height:auto;
+				box-shadow:none;
+			}
+	}
+}
 

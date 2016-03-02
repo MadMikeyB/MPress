@@ -9,6 +9,8 @@ use Cviebrock\EloquentSluggable\SluggableTrait;
 class Post extends Model implements SluggableInterface
 {
     use SluggableTrait;
+    protected $fillable = ['title', 'content'];
+
 
     protected $sluggable = [
         'build_from' => 'title',

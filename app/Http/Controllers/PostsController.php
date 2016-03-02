@@ -40,9 +40,31 @@ class PostsController extends Controller
      * @param \Illuminate\Http\Request    $request
      * @return Response
      */
+    public function create()
+    {
+        return view('posts.create');
+    }
+
+    /**
+     * Store the Post
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */
     public function store(Request $request)
     {
+        $this->validate($request, [
+               'title'      => 'required|min:4|max:140',
+               'content'    => 'required',
+         ]);
 
+        $post = new Post($request->all());
+        $post->author_id = $request->user()->id;
+        $post->save();
+
+        session()->flash('flash_message', 'Yay! Something to read!');
+
+        return redirect('/read/' . $post->slug );
     }
 
     /**

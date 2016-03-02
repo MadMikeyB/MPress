@@ -13,6 +13,18 @@ Route::group(['middleware' => ['web', 'menu']], function () {
 
     // Posts 
     Route::get('posts', 'PostsController@index');
+    // Create Post
+    Route::get('posts/create', 'PostsController@create');     // @TODO store CRUD within 'Admin' Middleware
+
+    // Update Post
+    Route::patch('posts/{slug}', 'PostsController@update');     // @TODO store CRUD within 'Admin' Middleware
+
+    // Store Post
+    Route::post('posts', 'PostsController@store');     // @TODO store CRUD within 'Admin' Middleware
+
+    // Delete Post
+    Route::delete('posts/{slug}/delete', 'PostsController@destroy');     // @TODO store CRUD within 'Admin' Middleware
+
 
     // Get Post or Page
     Route::get('read/{slug}', 'PostsController@show');
