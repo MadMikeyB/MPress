@@ -8,6 +8,8 @@ use Cviebrock\EloquentSluggable\SluggableTrait;
 
 class Page extends Model implements SluggableInterface
 {
+    protected $fillable = ['title', 'content'];
+
     use SluggableTrait;
 
     protected $sluggable = [
