@@ -12,15 +12,18 @@ Please note that this is the **DEVELOPMENTAL** BRANCH. May contain BREAKING CHAN
 
 **Warning** This assumes you have composer and git installed!
 
-* git clone -b dev https://github.com/MadMikeyB/MPress.git
-* composer install
-* mv .env.example .env
+* ```git clone -b dev https://github.com/MadMikeyB/MPress.git```
+* ```composer install```
+* ```mv .env.example .env```
 * make a database (mysql, sqlite, etc) and set those details in the .env file.
 * if you choose sqlite, you have to edit config/database.php and change the driver here, and create the sqlite file inside storage/
-* php artisan migrate
-* php artisan key:generate
+* ```php artisan migrate```
+* ```php artisan key:generate```
 * visit localhost/mpress/public_html (or wherever you cloned the repo to)
 * Register a user and play
+
+**Bonus Points**
+```php artisan db:seed``` (adds example content)
 
 ### Attribution
 
