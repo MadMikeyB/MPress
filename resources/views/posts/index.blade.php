@@ -4,6 +4,7 @@
 
 <div class="container">
 	<div class="row">
+		@unless ( $posts->isEmpty() )
 		@foreach ($posts as $post)
 			<div class="col-md-6">
 				<div class="thumbnail">
@@ -19,6 +20,19 @@
 				</div>
 			</div>
 		@endforeach
+		@else
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h2 class="panel-title">Uh Oh..</h2>
+			</div>
+			<div class="panel-body">
+				There are no posts!
+			</div>
+			<div class="panel-footer">
+				<a class="btn btn-primary btn-block" href="/posts/create">Start Writing</a>
+			</div>
+		</div>
+		@endunless
 	</div>
 </div>
 

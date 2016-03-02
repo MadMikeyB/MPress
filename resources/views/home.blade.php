@@ -7,10 +7,11 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                 <div class="panel-body">
+                <h2>Welcome back, {{ Auth::user()->name }}!</h2>
+                @unless ( $posts->isEmpty() )
                     <h3>Your Posts</h3>
                     <div class="list-group">
                     {{-- This users Posts --}}
-                    @unless ( $posts->isEmpty() )
                         @foreach ( $posts as $post )
                             <a href="/read/{{ $post->slug }}" class="list-group-item">
                                 {{ $post->title }}
@@ -21,8 +22,8 @@
                                 @endunless
                             </a>
                         @endforeach
-                    @endunless
                     </div>
+                    @endunless
                 </div>
             </div>
         </div>

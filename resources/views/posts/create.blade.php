@@ -22,6 +22,4 @@
 		</form>
 	</div>
 </div>
-
-
 @stop

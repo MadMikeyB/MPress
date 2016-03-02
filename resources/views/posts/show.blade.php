@@ -23,7 +23,7 @@
 				@foreach ( $post->comments as $comment )
 				{{-- Comment  --}}
 				<div class="panel-body">
-					<cite><span>@</span>{{ $comment->user->nickname }}</cite>
+					<cite><span>@</span>{{ $comment->user->name }}</cite>
 					<blockquote>
 						&ldquo;{{ $comment->body }}&rdquo;
 					</blockquote>
@@ -52,11 +52,11 @@
 					<h3 class="panel-title">Add Comment</h3>
 				</div>
 
-				<form action="/read/{{ $post->slug }}" method="POST" role="form">
+				<form action="/posts/{{ $post->slug }}/comments" method="POST" role="form">
 					{{ csrf_field() }}
 					<div class="panel-body">
 							<div class="form-group">
-								<textarea name="comment" id="comment" class="form-control" rows="6" required="required" placeholder="
+								<textarea name="body" id="body" class="form-control" rows="6" required="required" placeholder="
         Waiting for your comment,
         Anxious to hear what you say.
         Hope to read it soon!

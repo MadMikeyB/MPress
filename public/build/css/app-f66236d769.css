@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic|Raleway:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Raleway:400,400italic,700);
 body {
   font-family: 'Raleway'; }
   body p {
@@ -14,5 +14,11 @@ body {
       padding: 0;
       height: auto;
       box-shadow: none; }
+  body cite {
+    color: #2F4858;
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 2em;
+    font-family: 'Roboto'; }
 
 /*# sourceMappingURL=app.css.map */
