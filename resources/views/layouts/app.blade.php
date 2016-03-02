@@ -47,7 +47,9 @@
             </div>
         </div>
     </nav>
-
+    @include('partials.layout.flashmessage')
+    @include('partials.layout.errors')
+    
     @yield('content')
 
     <!-- JavaScripts -->

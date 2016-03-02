@@ -1,21 +1,34 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<a type="button" class="btn btn-primary btn-block btn-xl" href="/posts/create">Write Something Beautiful</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="container with-padding">
 	<div class="row">
 		@unless ( $posts->isEmpty() )
 		@foreach ($posts as $post)
 			<div class="col-md-6">
-				<div class="thumbnail">
-					@if ( $post->image )
-					<img src="{{ $post->image }}" alt="{{ $post->title }} &mdash; {{ Setting::get('site_title', 'MPress') }}">
-					@endif
-					<div class="caption">
-						<h3>{{ $post->title }} <small><span>@</span>{{ $post->user->name }}</small></h3>
-						<p>{!! Markdown::convertToHtml(str_limit($post->content, 140)) !!}</p>
-						<p><a href="/read/{{ $post->slug }}" class="btn btn-primary" role="button">Read More</a></p>
-
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3>{{ $post->title }} <small class="pull-right badge"><span>@</span>{{ $post->user->name }}</small></h3>
+					</div>
+					<div class="panel-body">
+							@if ( $post->image )
+							<img src="{{ $post->image }}" alt="{{ $post->title }} &mdash; {{ Setting::get('site_title', 'MPress') }}">
+							@endif
+							<div class="caption">
+								<p>{!! Markdown::convertToHtml(str_limit($post->content, 140)) !!}</p>
+							</div>
+					</div>
+					<div class="panel-footer">
+						<p><a href="/read/{{ $post->slug }}" class="btn btn-primary btn-block" role="button">Read More</a></p>
 					</div>
 				</div>
 			</div>
@@ -43,6 +56,8 @@
 		</div>
 	</div>
 </div>
+
+
 
 
 

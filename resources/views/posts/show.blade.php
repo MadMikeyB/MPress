@@ -1,23 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
+			<h1>{{ $post->title }} <small class="pull-right h5"><span>@</span>{{ $post->user->name }} on @datetime($post->created_at)</small> </h1>
+
 			<div class="thumbnail">
 				@if ( $post->image )
 				<img src="{{ $post->image }}" alt="{{ $post->title }} &mdash; {{ Setting::get('site_title', 'MPress') }}">
 				@endif
 				<div class="caption">
-					<h3>{{ $post->title }} <small><span>@</span>{{ $post->user->name }}</small></h3>
 					<p>{!! $post->content !!}</p>
 				</div>
 			</div>
 
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h3 class="panel-title">Comments</h3>
+					<h3 class="panel-title">Comments on &ldquo;{{ $post->title }}&rdquo;</h3>
 				</div>
 				@unless ( $post->comments->isEmpty() )
 				@foreach ( $post->comments as $comment )
@@ -25,7 +25,7 @@
 				<div class="panel-body">
 					<cite><span>@</span>{{ $comment->user->name }}</cite>
 					<blockquote>
-						&ldquo;{{ $comment->body }}&rdquo;
+						{!! Markdown::convertToHtml($comment->body) !!}
 					</blockquote>
 				</div>
 				<div class="panel-footer clearfix">

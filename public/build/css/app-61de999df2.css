@@ -3,8 +3,17 @@ body {
   font-family: 'Raleway'; }
   body p {
     font-size: 18px; }
+  body .with-padding > .row {
+    padding: 1em; }
+  body .no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0; }
   body .fa-btn {
     margin-right: 6px; }
+  body .btn-xl {
+    padding: 0.3em;
+    font-size: 2em;
+    border-radius: 8px; }
   body .mpress-form-input {
     height: auto; }
     body .mpress-form-input input.form-control {
@@ -20,5 +29,8 @@ body {
     font-size: 1.3em;
     line-height: 2em;
     font-family: 'Roboto'; }
+  body img {
+    margin: auto;
+    width: 100%; }
 
 /*# sourceMappingURL=app.css.map */

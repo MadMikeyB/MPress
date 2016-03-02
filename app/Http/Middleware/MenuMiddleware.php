@@ -25,9 +25,7 @@ class MenuMiddleware
             //     $menu->add($item->name, $item->url);
             // }
             $menu->add('Home');
-            $menu->add('About', 'about');
-            $menu->add('Archives', 'posts');
-            $menu->add('Contact',  'contact');
+            $menu->add('Posts', 'posts');
         });
 
         Menu::make('UserNavigation', function($menu) 

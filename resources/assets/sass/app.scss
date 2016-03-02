@@ -8,8 +8,21 @@ body {
 		font-size:18px; // 1em = 18px
 	}
 
+	.with-padding > .row {
+		padding:1em;
+	}
+	.no-gutter > [class*='col-'] {
+    	padding-right:0;
+    	padding-left:0;
+	}
 	.fa-btn {
 		margin-right: 6px;
+	}
+
+	.btn-xl {
+		padding: 0.3em;
+		font-size: 2em;
+		border-radius: 8px;
 	}
 
 	.mpress-form-input {
@@ -32,5 +45,10 @@ body {
 		line-height: 2em;
 		font-family: 'Roboto';
 	}
+	img {
+    	margin: auto;
+    	width: 100%;
+    }
 }
+
 
