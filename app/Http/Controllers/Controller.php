@@ -16,7 +16,7 @@ class Controller extends BaseController
     public function __construct()
     {
     	// Get the Theme from Settings, else set it to default
-    	$theme = Setting::get('theme_name', 'mpress');
+    	$theme = Setting::get('theme_name', 'alpha');
     	// Set the theme.
     	Theme::init($theme);
     }

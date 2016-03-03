@@ -37,7 +37,7 @@ class MenuMiddleware
             }
             else
             {
-                $menu->add(Auth::user()->name, 'author/' . Auth::user()->id)->add('Dashboard', 'dashboard');
+                $menu->add(Auth::user()->name, 'profile/' . Auth::user()->slug)->add('Dashboard', 'dashboard');
                 $menu->add('Log Out', 'logout');
             }
         });
