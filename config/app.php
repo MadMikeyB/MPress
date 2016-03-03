@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -164,6 +164,8 @@ return [
         anlutro\LaravelSettings\ServiceProvider::class, // Settings
         Lavary\Menu\ServiceProvider::class, // Menu
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class, // Sluggable
+        YAAP\Theme\ThemeServiceProvider::class,
+
 
     ],
 
@@ -218,6 +220,7 @@ return [
         'Markdown'  => GrahamCampbell\Markdown\Facades\Markdown::class, // MarkDown
         'Setting'   => anlutro\LaravelSettings\Facade::class, // Settings
         'Menu'      => Lavary\Menu\Facade::class, // Menu
+        'Theme'     => YAAP\Theme\Facades\Theme::class,
 
     ],
 

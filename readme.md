@@ -34,6 +34,7 @@ MPress is grateful to use
 * [Settings Manager](https://github.com/anlutro/laravel-settings)
 * [Menu Manager](https://github.com/lavary/laravel-menu)
 * [Sluggable](https://github.com/cviebrock/eloquent-sluggable)
+* [Theme](https://github.com/yaapis/Theme)
 
 ### Examples
 

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed7e0e96e9a0f8edbfc310f388df2015",
-    "content-hash": "69f1a6cb2dfca587517559d5310036ce",
+    "hash": "c7ba4b0ff35d379b8d088299ad1ac875",
+    "content-hash": "6671f358cf69e69431543cd9bc4a0c6b",
     "packages": [
         {
             "name": "anlutro/l4-settings",
@@ -2107,6 +2107,42 @@
                 "environment"
             ],
             "time": "2015-12-29 15:10:30"
+        },
+        {
+            "name": "yaap/theme",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yaapis/Theme.git",
+                "reference": "36109d77b3096e75d3026b119eb0bed80cd9902d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yaapis/Theme/zipball/36109d77b3096e75d3026b119eb0bed80cd9902d",
+                "reference": "36109d77b3096e75d3026b119eb0bed80cd9902d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "YAAP\\Theme": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Biluk Andrey",
+                    "email": "biluk.a@newway.com.ua"
+                }
+            ],
+            "time": "2016-01-06 20:08:00"
         }
     ],
     "packages-dev": [
