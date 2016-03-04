@@ -8,22 +8,21 @@ class AdminMiddleware {
 
     public function handle($request, Closure $next)
     {
-        if( Auth::check() && Auth::user()->is_admin)
+        if ( Auth::check() && Auth::user()->isAdmin )
         {
             return $next($request);
-            
-        } else {
-
-            if ($request->ajax())
+        }
+        else
+        {
+            if ( Auth::check() )
             {
-                return response('Unauthorized.', 401);
+                return redirect()->back()->with('flash_message', 'You are not authorised to view this page!');
             }
             else
             {
-                return redirect()->guest('auth/login');
+                return redirect()->guest('login');
             }
         }
-
     }
 
 }

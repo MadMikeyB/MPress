@@ -13,9 +13,10 @@ Route::group(['middleware' => ['web', 'menu']], function () {
 
     // Posts 
     Route::get('posts', 'PostsController@index');
-    // Create Post
-    Route::get('posts/create', 'PostsController@create');     // @TODO store post CRUD within 'Admin' Middleware
-
+    // Route::group(['middleware' => ['admin']], function() {
+        // Create Post
+        Route::get('posts/create', 'PostsController@create');     // @TODO store post CRUD within 'Admin' Middleware
+    // });
     // Update Post
     Route::patch('posts/{slug}', 'PostsController@update');     // @TODO store post CRUD within 'Admin' Middleware
 

@@ -26,9 +26,11 @@
 			<blockquote>
 				<ul class="pull-right actions small">
 					<li><a href="#reply" class="button fit small">Reply</a></li>
+					@if ( Auth::check() )
 					@if ( $comment->user->id === Auth::user()->id )
 					<li><a href="#" class="button fit small">Edit</a></li>
 					<li><a href="#" class="button special fit small">Delete</a></li>
+					@endif
 					@endif
 				</ul>
 				{!! Markdown::convertToHtml($comment->body) !!}
