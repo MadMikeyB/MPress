@@ -93,6 +93,5 @@ class CommentsController extends Controller
         session()->flash('flash_message', 'Comment Deleted');
 
         return back();
-
     }
 }

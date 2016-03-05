@@ -81,6 +81,11 @@ class PostsController extends Controller
      */   
     public function edit(Post $post)
     {
+        if ( Gate::denies('edit-post', $post) ) {
+            session()->flash('flash_message', 'You are not authorized to do that!');
+            return redirect('/read/' . $post->slug );
+        }
+
         return view('posts.edit', compact('post'));
     }
 
@@ -115,6 +120,15 @@ class PostsController extends Controller
      */
     public function destroy(Post $post)
     {
+        if ( Gate::denies('delete-post', $post) ) {
+            session()->flash('flash_message', 'You are not authorized to do that!');
+            return back();
+        }
+        
+        $post->delete();
 
+        session()->flash('flash_message', 'Post Deleted.');
+
+        return redirect('/posts');
     }
 }
