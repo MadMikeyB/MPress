@@ -26,6 +26,53 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies($gate);
 
-        //
+        // Is Admin?
+        $gate->before(function ($user, $ability) {
+            if ($user->isAdmin()) {
+                // Allow everything. Update, creation, deletion of everything.
+                return true;
+            }
+            // if ( $user->isEditor() )
+            // {
+            //     // allow update-post
+            //     // allow edit-post
+            //     // allow-edit-comment
+            //     return ['update-post', 'edit-post', 'edit-comment'];
+            // }
+        });
+// [20:14]  <lagbox> foreach ([... ability name ...] as $name) { $gate->define($name, function ($user, $resource) { ... }); } perhaps
+
+        // Can Comment
+        $gate->define('create-comment', function ($user, $comment) {
+            return \Auth::check();
+        });
+        // Can Edit Comment
+        $gate->define('edit-comment', function ($user, $comment) {
+            return $user->id === $comment->author_id;
+        });
+        // Can Update Comment
+        $gate->define('update-comment', function ($user, $comment) {
+            return $user->id === $comment->author_id;
+        });
+        // Can Delete Comment
+        $gate->define('delete-comment', function ($user, $comment) {
+            return $user->id === $comment->author_id;
+        });
+        // Can Create Post
+        $gate->define('create-post', function ($user, $post) {
+            return \Auth::check();
+        });
+        // Can Edit Post
+        $gate->define('edit-post', function ($user, $post) {
+            return $user->id === $post->author_id;
+        });
+        // Can Update Post?
+        $gate->define('update-post', function ($user, $post) {
+            return $user->id === $post->author_id;
+        });
+        // Can Delete Post
+        $gate->define('delete-post', function ($user, $post) {
+            return $user->id === $post->author_id;
+        });
     }
 }

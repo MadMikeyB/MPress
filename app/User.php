@@ -27,7 +27,7 @@ class User extends Authenticatable
     
     public function isAdmin()
     {
-        //// @todo some logic to check against Roles table
+        return false;
     }
 }
 

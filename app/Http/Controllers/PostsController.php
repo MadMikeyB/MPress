@@ -7,9 +7,18 @@ use Illuminate\Http\Request;
 use GrahamCampbell\Markdown\Facades\Markdown;
 
 use App\Post;
+use Gate;
+
 
 class PostsController extends Controller
 {
+    public function validator(Request $request)
+    {
+        $this->validate($request, [
+               'title'      => 'required|min:4|max:140',
+               'content'    => 'required',
+         ]);
+    }
 
     /**
      * Show the Single Post
@@ -53,10 +62,7 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-               'title'      => 'required|min:4|max:140',
-               'content'    => 'required',
-         ]);
+        $this->validator($request);
 
         $post = new Post($request->all());
         $post->author_id = $request->user()->id;
@@ -68,13 +74,36 @@ class PostsController extends Controller
     }
 
     /**
+     * Show the Edit View
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */   
+    public function edit(Post $post)
+    {
+        return view('posts.edit', compact('post'));
+    }
+
+    /**
      * Update the Post
      *
      * @param \Illuminate\Http\Request    $request
      * @return Response
      */
-    public function update(Request $request)
+    public function update(Request $request, Post $post)
     {
+
+        $this->validator($request);
+
+        if ( Gate::denies('update-post', $post) ) {
+            session()->flash('flash_message', 'You are not authorized to do that!');
+            return redirect('/read/' . $post->slug );
+        }
+
+        $post->update($request->all());
+        session()->flash('flash_message', 'Did you just fix a typo?');
+
+        return redirect('/read/' . $post->slug );
 
     }
 

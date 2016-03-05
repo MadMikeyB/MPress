@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRolesTable extends Migration
+class AddDeletedAtToPagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,8 @@ class CreateRolesTable extends Migration
      */
     public function up()
     {
-        Schema::create('roles', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+        Schema::table('pages', function (Blueprint $table) {
+            $table->softDeletes();
         });
     }
 
@@ -25,6 +24,8 @@ class CreateRolesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('roles');
+        Schema::table('pages', function (Blueprint $table) {
+            $table->dropColumn('deleted_at');
+        });
     }
 }

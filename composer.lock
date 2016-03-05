@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c7ba4b0ff35d379b8d088299ad1ac875",
-    "content-hash": "6671f358cf69e69431543cd9bc4a0c6b",
+    "hash": "3605ad9052688758956ff7abbe2488cf",
+    "content-hash": "b9d36e87a8ef977b11a163f305a82823",
     "packages": [
         {
             "name": "anlutro/l4-settings",
@@ -468,6 +468,63 @@
                 }
             ],
             "time": "2015-04-20 18:58:01"
+        },
+        {
+            "name": "jdavidbakr/mail-tracker",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jdavidbakr/mail-tracker.git",
+                "reference": "3a021d3b3af34ca3e8fe3fb3d8bb9b06fb559650"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jdavidbakr/mail-tracker/zipball/3a021d3b3af34ca3e8fe3fb3d8bb9b06fb559650",
+                "reference": "3a021d3b3af34ca3e8fe3fb3d8bb9b06fb559650",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": "~5.5|~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "suggest": {
+                "fedeisas/laravel-mail-css-inliner": "Automatically inlines CSS into all outgoing mail."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "jdavidbakr\\MailTracker\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "J David Baker",
+                    "email": "me@jdavidbaker.com",
+                    "homepage": "http://www.jdavidbaker.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Logs and tracks all outgoing emails from Laravel",
+            "homepage": "https://github.com/jdavidbakr/MailTracker",
+            "keywords": [
+                "MailTracker",
+                "jdavidbakr"
+            ],
+            "time": "2016-03-03 15:15:11"
         },
         {
             "name": "jeremeamia/SuperClosure",

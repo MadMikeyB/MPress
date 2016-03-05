@@ -10,8 +10,20 @@
 			<h2>{{ $post->title }}</h2>
 			<p><span>@</span>{{ $post->user->name }} on @datetime($post->created_at)</small></p>
 		</header>
-
 		{!! $post->content !!}
+				<ul class="pull-right actions small">
+					@can( 'edit-post', $post)
+					<li><a href="/posts/{{ $post->slug }}/edit" class="button fit small">Edit</a></li>
+					@endcan
+
+					@can('delete-post', $post)
+					<form action="/posts/{{ $post->slug }}/delete" method="POST">
+						{{ csrf_field() }}
+						{{ method_field('DELETE') }}
+						<li><input type="submit" class="button special fit small" value="Delete"></li>
+					</form>
+					@endcan
+				</ul>
 	</div>
 </div>
 
@@ -25,13 +37,21 @@
 			<cite><a href=""><span>@</span>{{ $comment->user->name }}</a></cite>
 			<blockquote>
 				<ul class="pull-right actions small">
+					@can( 'create-comment', $comment)
 					<li><a href="#reply" class="button fit small">Reply</a></li>
-					@if ( Auth::check() )
-					@if ( $comment->user->id === Auth::user()->id )
-					<li><a href="#" class="button fit small">Edit</a></li>
-					<li><a href="#" class="button special fit small">Delete</a></li>
-					@endif
-					@endif
+					@endcan
+
+					@can( 'edit-comment', $comment)
+					<li><a href="/comments/{{ $comment->id }}/edit" class="button fit small">Edit</a></li>
+					@endcan
+
+					@can('delete-comment', $comment)
+					<form action="/comments/{{ $comment->id }}/delete" method="POST">
+						{{ csrf_field() }}
+						{{ method_field('DELETE') }}
+						<li><input type="submit" class="button special fit small" value="Delete"></li>
+					</form>
+					@endcan
 				</ul>
 				{!! Markdown::convertToHtml($comment->body) !!}
 			</blockquote>
@@ -44,6 +64,7 @@
 	</div>
 </div>
 
+@can('create-comment', $post)
 {{-- ------------- REPLY ------------- --}}
 <div class="box">
 	<div class="row uniform">
@@ -72,4 +93,6 @@
 		</div>
 	</div>
 </div>
+@endcan
+
 @stop

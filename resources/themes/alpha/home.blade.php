@@ -22,7 +22,9 @@
                                     @endif
                                 @endunless
                             </header>
+                            <div class="4u">
                             <a href="/read/{{ $post->slug }}" class="button small fit">Read Post</a>
+                            </div>
                             <hr>
                         </div>
                         @endforeach

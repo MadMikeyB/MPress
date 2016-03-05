@@ -5,12 +5,16 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Page extends Model implements SluggableInterface
 {
-    protected $fillable = ['title', 'content'];
-
+    use SoftDeletes;
     use SluggableTrait;
+
+    protected $fillable = ['title', 'content'];
+    protected $dates = ['deleted_at'];
+
 
     protected $sluggable = [
         'build_from' => 'title',

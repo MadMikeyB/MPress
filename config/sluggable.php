@@ -38,7 +38,7 @@ return [
      * want to make sure your slugs aren't too long.
      */
 
-    'max_length' => null,
+    'max_length' => 140,
 
     /**
      * If left to "null", then use the cocur/slugify package to generate the slug
@@ -83,7 +83,7 @@ return [
      * If set to "true", then uniqueness is enforced across trashed and existing models.
      */
 
-    'include_trashed' => false,
+    'include_trashed' => true,
 
     /**
      * Whether to update the slug value when a model is being
@@ -91,7 +91,7 @@ return [
      * means slugs are not updated.
      */
 
-    'on_update' => false,
+    'on_update' => true,
 
     /**
      * An array of slug names that can never be used for this model,
@@ -117,6 +117,6 @@ return [
      * and continue from there.
      */
 
-    'reserved' => null,
+    'reserved' => ['create','posts','read','dashboard'],
 
 ];

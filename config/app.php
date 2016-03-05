@@ -164,8 +164,8 @@ return [
         anlutro\LaravelSettings\ServiceProvider::class, // Settings
         Lavary\Menu\ServiceProvider::class, // Menu
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class, // Sluggable
-        YAAP\Theme\ThemeServiceProvider::class,
-
+        YAAP\Theme\ThemeServiceProvider::class, // Theme
+        jdavidbakr\MailTracker\MailTrackerServiceProvider::class, // MailTracker
 
     ],
 

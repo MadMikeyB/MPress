@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+@can('create-post', Auth::user())
 <div class="box alt">
 	<div class="12u">
 		<a href="/posts/create" class="button fit special">Write Something Beautiful</a>
 	</div>
 </div>
+@endcan
 
 <div class="row">
 	@unless ( $posts->isEmpty() )

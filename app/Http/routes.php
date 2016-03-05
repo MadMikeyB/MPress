@@ -17,6 +17,10 @@ Route::group(['middleware' => ['web', 'menu']], function () {
         // Create Post
         Route::get('posts/create', 'PostsController@create');     // @TODO store post CRUD within 'Admin' Middleware
     // });
+
+    // Edit Post
+    Route::get('posts/{slug}/edit', 'PostsController@edit');     // @TODO store post CRUD within 'Admin' Middleware
+
     // Update Post
     Route::patch('posts/{slug}', 'PostsController@update');     // @TODO store post CRUD within 'Admin' Middleware
 
@@ -34,6 +38,15 @@ Route::group(['middleware' => ['web', 'menu']], function () {
     {
         return redirect()->action('PostsController@show');
     });
+
+    // Edit Comment
+    Route::get('comments/{comment}/edit', 'CommentsController@edit');
+
+    // Update Comment
+    Route::patch('comments/{comment}', 'CommentsController@update');
+
+    // Delete Comment
+    Route::delete('comments/{comment}/delete', 'CommentsController@destroy');
 
     // Get Post or Page
     Route::get('read/{slug}', 'PostsController@show');
