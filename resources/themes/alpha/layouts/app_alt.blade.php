@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="{{ Theme::asset('js/ie/html5shiv.js', null, true) }}"></script><![endif]-->
+		<link rel="stylesheet" href="{{ elixir('css/app.css') }}" type="text/css">
 		<link rel="stylesheet" href="{{ Theme::asset('css/main.css', null, true) }}" />
 	</head>
 	<body class="landing">
