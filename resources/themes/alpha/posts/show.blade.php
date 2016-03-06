@@ -43,7 +43,11 @@
 
 			@else
 				@foreach ( $post->images as $image )
-					<img width="300" src="/{{ $image->image_path }}">
+				<div class="row">
+					<div class="3u">
+						<img  src="/{{ $image->image_path }}">
+					</div>
+				</div>
 				@endforeach
 			@endif
 		</div>
