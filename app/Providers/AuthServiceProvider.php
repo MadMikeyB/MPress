@@ -40,7 +40,8 @@ class AuthServiceProvider extends ServiceProvider
             //     return ['update-post', 'edit-post', 'edit-comment'];
             // }
         });
-// [20:14]  <lagbox> foreach ([... ability name ...] as $name) { $gate->define($name, function ($user, $resource) { ... }); } perhaps
+        
+        // [20:14]  <lagbox> foreach ([... ability name ...] as $name) { $gate->define($name, function ($user, $resource) { ... }); } perhaps
 
         // Can Comment
         $gate->define('create-comment', function ($user, $comment) {

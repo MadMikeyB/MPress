@@ -27,9 +27,21 @@ class RouteServiceProvider extends ServiceProvider
         parent::boot($router);
 
         // Route Model Binding for Slug
-        $router->bind('slug', function($slug)
+        $router->bind('post', function($post)
         {
-            return \App\Post::findBySlug($slug);
+            return \App\Post::findBySlug($post);
+        });
+        
+        // Route Model Binding for Pages
+        $router->bind('page', function($page)
+        {
+            return \App\Page::findBySlug($page);
+        });
+
+        // Route Model Binding for Pages
+        $router->bind('user', function($user)
+        {
+            return \App\User::findBySlug($user);
         });
     }
 
