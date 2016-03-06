@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@can('create-post', Auth::user())
 <div class="container">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
@@ -8,6 +9,7 @@
 		</div>
 	</div>
 </div>
+@endcan
 
 
 <div class="container with-padding">

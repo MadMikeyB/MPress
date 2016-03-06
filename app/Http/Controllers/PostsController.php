@@ -62,6 +62,8 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request->file('image'));
+
         $this->validator($request);
 
         $post = new Post($request->all());

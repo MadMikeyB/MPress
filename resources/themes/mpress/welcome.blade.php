@@ -10,8 +10,30 @@
                 <div class="panel-body">
                     @if (Auth::check())
                         <p>Welcome back, {{ Auth::user()->name }}</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-6">
+                                    <button type="button" href="/posts" class="btn btn-primary btn-block">Posts</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" href="/dashboard" class="btn btn-default btn-block">Dashboard</button>
+                                </div>
+                            </div>
+                        </div>
                     @else 
-                        <strong>MPress 2.0</strong>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-4">
+                                    <button type="button" href="/posts" class="btn btn-primary btn-block">Posts</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" href="/login" class="btn btn-secondary btn-block">Log In</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" href="/register" class="btn btn-default btn-block">Register</button>
+                                </div>
+                            </div>
+                        </div>
                     @endif
                 </div>
             </div>
