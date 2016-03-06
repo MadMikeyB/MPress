@@ -39,7 +39,7 @@ class PostsController extends Controller
      */
     public function show(Post $post)
     {
-        $post->content = Markdown::convertToHtml($post->content); 
+        // $post->content = Markdown::convertToHtml($post->content); 
     	return view('posts.show', compact('post'));
     }
 

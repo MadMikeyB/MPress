@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use GrahamCampbell\Markdown\Facades\Markdown;
 
 class Post extends Model implements SluggableInterface
 {   
@@ -20,6 +21,11 @@ class Post extends Model implements SluggableInterface
         'build_from' => 'title',
         'save_to'    => 'slug',
     ];
+
+    public function getContentAttribute($content)
+    {
+        return Markdown::convertToHtml($content); 
+    }   
 
 	// Author
     public function user()
@@ -38,4 +44,5 @@ class Post extends Model implements SluggableInterface
     {
         return $this->hasMany(Comment::class);
     }
+
 }

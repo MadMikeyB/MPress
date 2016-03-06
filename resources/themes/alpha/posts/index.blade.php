@@ -4,7 +4,7 @@
 @can('create-post', Auth::user())
 <div class="box alt">
 	<div class="12u">
-		<a href="/posts/create" class="button fit special">Write Something Beautiful</a>
+		<a href="/posts/create" class="button fit special" name="create_post">Write Something Beautiful</a>
 	</div>
 </div>
 @endcan

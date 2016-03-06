@@ -53,7 +53,7 @@
 					</form>
 					@endcan
 				</ul>
-				{!! Markdown::convertToHtml($comment->body) !!}
+				{!! $comment->body !!}
 			</blockquote>
 			{{-- / Comment --}}
 		@endforeach
