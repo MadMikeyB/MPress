@@ -30,28 +30,28 @@
 
 
 @can( 'edit-post', $post)
-	<div class="box">
-		<div class="12u">
+
 			@if ( $post->images->isEmpty() )
+				<div class="box">
+					<div class="12u">
 					<h2>Hey! You can add images to this post!</h2>
-					<form class="dropzone" action="/posts/{{$post->slug}}/images">
+						<form class="dropzone" action="/posts/{{$post->slug}}/images">
 						{{ csrf_field() }}
 						  <div class="fallback">
 						    <input name="image" type="file" multiple />
 						  </div>
-					</form>
-
-			@else
-				@foreach ( $post->images as $image )
-				<div class="row">
-					<div class="3u">
-						<img  src="/{{ $image->image_path }}">
+						</form>
 					</div>
 				</div>
+			@else
+				<div class="box row">
+				@foreach ( $post->images as $image )
+					<div class="3u">
+						<img src="/{{ $image->image_path }}">
+					</div>
 				@endforeach
+				</div>
 			@endif
-		</div>
-	</div>
 @endcan
 
 <div class="box">
