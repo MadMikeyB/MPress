@@ -22,6 +22,8 @@ Route::group(['middleware' => ['web', 'menu']], function () {
 
         // Edit Post
         Route::get('posts/{post}/edit', 'PostsController@edit');     // @TODO store post CRUD within 'Admin' Middleware
+        // Add Images to Post
+        Route::post('posts/{post}/images', 'PostsController@storeImage');     // @TODO store post CRUD within 'Admin' Middleware
 
         // Update Post
         Route::patch('posts/{post}', 'PostsController@update');     // @TODO store post CRUD within 'Admin' Middleware

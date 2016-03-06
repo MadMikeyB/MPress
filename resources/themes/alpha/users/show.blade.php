@@ -32,6 +32,11 @@
 				<blockquote>{{ str_limit($comment->body, 80) }}</blockquote>
 			@endforeach
 		</div>
+		<div class="6u 12u(narrower)">
+			@foreach ( $user->images as $image )
+				{{ $image->image_path }}
+			@endforeach
+		</div>
 	</header>
 </section>
 

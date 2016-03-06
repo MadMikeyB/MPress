@@ -55,6 +55,11 @@ class User extends Authenticatable implements SluggableInterface
     {
         return $this->hasMany(Comment::class, 'author_id', 'id');
     }
+
+    public function images()
+    {
+        return $this->hasMany(Image::class, 'user_id', 'id');
+    }
 }
 
 

@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 use GrahamCampbell\Markdown\Facades\Markdown;
 
 use App\Post;
+use App\Image;
 use Gate;
 
 
@@ -17,6 +19,7 @@ class PostsController extends Controller
         $this->validate($request, [
                'title'      => 'required|min:4|max:140',
                'content'    => 'required',
+               // 'image'      => 'mimes:jpg,jpeg,png,bmp'
          ]);
     }
 
@@ -39,7 +42,6 @@ class PostsController extends Controller
      */
     public function show(Post $post)
     {
-        // $post->content = Markdown::convertToHtml($post->content); 
     	return view('posts.show', compact('post'));
     }
 
@@ -61,9 +63,7 @@ class PostsController extends Controller
      * @return Response
      */
     public function store(Request $request)
-    {
-        dd($request->file('image'));
-
+    {        
         $this->validator($request);
 
         $post = new Post($request->all());
@@ -73,6 +73,12 @@ class PostsController extends Controller
         session()->flash('flash_message', 'Yay! Something to read!');
 
         return redirect('/read/' . $post->slug );
+    }
+
+    public function storeImage(Post $post, Request $request)
+    {
+        $image = Image::fromForm( $request->file('file'), $request );
+        $post->addImage($image);
     }
 
     /**

@@ -27,6 +27,29 @@
 	</div>
 </div>
 
+
+
+@can( 'edit-post', $post)
+	<div class="box">
+		<div class="12u">
+			@if ( $post->images->isEmpty() )
+					<h2>Hey! You can add images to this post!</h2>
+					<form class="dropzone" action="/posts/{{$post->slug}}/images">
+						{{ csrf_field() }}
+						  <div class="fallback">
+						    <input name="image" type="file" multiple />
+						  </div>
+					</form>
+
+			@else
+				@foreach ( $post->images as $image )
+					<img width="300" src="/{{ $image->image_path }}">
+				@endforeach
+			@endif
+		</div>
+	</div>
+@endcan
+
 <div class="box">
 	<div class="12u">
 		<h3>Comments on &ldquo;{{ $post->title }}&rdquo;</h3>
@@ -95,4 +118,10 @@
 </div>
 @endcan
 
+@stop
+
+
+@section('scripts')
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.css" property="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
 @stop

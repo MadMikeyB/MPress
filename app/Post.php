@@ -22,10 +22,17 @@ class Post extends Model implements SluggableInterface
         'save_to'    => 'slug',
     ];
 
+    // Handle our Markdown Conversion directly in the Model
     public function getContentAttribute($content)
     {
         return Markdown::convertToHtml($content); 
     }   
+
+    // Add an Image
+    public function addImage(Image $image)
+    {
+        return $this->images()->save($image);
+    }
 
 	// Author
     public function user()
@@ -43,6 +50,12 @@ class Post extends Model implements SluggableInterface
     public function comments()
     {
         return $this->hasMany(Comment::class);
+    }
+
+    // Images
+    public function images()
+    {
+        return $this->hasMany(Image::class, 'post_id', 'id');
     }
 
 }
