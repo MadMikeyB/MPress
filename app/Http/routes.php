@@ -68,6 +68,7 @@ Route::group(['middleware' => ['web', 'menu']], function () {
         Route::delete('@{user}/delete', 'ProfileController@destroy');
 });
 
+// Admin
 Route::group(['middleware' => ['web', 'auth', 'menu']], function() {
 	Route::get('dashboard', 'DashboardController@index');
 	Route::get('admin', 'AdminController@index');
@@ -76,8 +77,6 @@ Route::group(['middleware' => ['web', 'auth', 'menu']], function() {
 
 Route::group(['middleware' => ['web', 'menu']], function()
 {
-    // Add Page
-
     // View Page
     Route::get('{page?}', 'PagesController@show');
 });

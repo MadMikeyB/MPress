@@ -220,7 +220,8 @@ return [
         'Markdown'  => GrahamCampbell\Markdown\Facades\Markdown::class, // MarkDown
         'Setting'   => anlutro\LaravelSettings\Facade::class, // Settings
         'Menu'      => Lavary\Menu\Facade::class, // Menu
-        'Theme'     => YAAP\Theme\Facades\Theme::class,
+        'Theme'     => YAAP\Theme\Facades\Theme::class, // Theme
+
 
     ],
 

@@ -42,6 +42,19 @@ class MenuMiddleware
             }
         });
 
+        Menu::make('AdminNavigation', function($menu)
+        {
+            $menu->add('Home')->prepend('<i class="fa fa-home"></i><span>')->prepend('</span>');
+            $menu->add('Dashboard')->prepend('<i class="fa fa-dashboard"></i><span>')->prepend('</span>');
+            $menu->add('Settings')->prepend('<i class="fa fa-cogs"></i><span>')->prepend('</span>');
+            $menu->add('Users')->prepend('<i class="fa fa-users"></i><span>')->prepend('</span>');
+            $menu->add('Menus')->prepend('<i class="fa fa-th"></i><span>')->prepend('</span>');
+            $menu->add('Posts')->prepend('<i class="fa fa-pencil-square-o"></i><span>')->prepend('</span>');
+            $menu->add('Pages')->prepend('<i class="fa fa-file-o"></i><span>')->prepend('</span>');
+            $menu->add('Tools')->prepend('<i class="fa fa-wrench"></i><span>')->prepend('</span>');
+            $menu->add('Log Out')->prepend('<i class="fa fa-sign-out"></i><span>')->prepend('</span>');
+        });
+
         return $next($request);
     }
 }
