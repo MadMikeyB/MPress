@@ -51,6 +51,7 @@ class MenuMiddleware
             $menu->add('Menus')->prepend('<i class="fa fa-th"></i><span>')->prepend('</span>');
             $menu->add('Posts')->prepend('<i class="fa fa-pencil-square-o"></i><span>')->prepend('</span>');
             $menu->add('Pages')->prepend('<i class="fa fa-file-o"></i><span>')->prepend('</span>');
+            $menu->add('Comments')->prepend('<i class="fa fa-comments"></i><span>')->prepend('</span>');
             $menu->add('Tools')->prepend('<i class="fa fa-wrench"></i><span>')->prepend('</span>');
             $menu->add('Log Out')->prepend('<i class="fa fa-sign-out"></i><span>')->prepend('</span>');
         });
