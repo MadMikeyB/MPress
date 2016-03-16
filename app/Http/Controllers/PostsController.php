@@ -68,6 +68,16 @@ class PostsController extends Controller
 
         $post = new Post($request->all());
         $post->author_id = $request->user()->id;
+        
+        if ( $request->has('draft') )
+        {
+            $post->status = 'draft';
+        }
+        else
+        {
+            $post->status = 'publish';
+        }
+
         $post->save();
 
         session()->flash('flash_message', 'Yay! Something to read!');

@@ -19,10 +19,13 @@
 			</div>
 		</div>
 
-		<div class="row uniform">
-			<div class="12u">
-				<input class="special fit" type="submit" value="Create">
+		<div class="row uniform">	
+			<div class="9u">
+				<input class="special fit" name="publish" type="submit" value="Create">
 			</div>
+			<div class="3u">
+				<input class="alt fit" name="draft" type="submit" value="Save Draft">
+			</div>	
 		</div>
 	</form>
 </div>

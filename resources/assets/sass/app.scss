@@ -49,6 +49,11 @@ body {
     	margin: auto;
     	max-width:100%;
     }
+
+    ::selection {
+    	background-color: #e89980;
+    	color: #FFFFFF;
+    }
 }
 
 

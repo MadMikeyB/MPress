@@ -32,5 +32,11 @@ body {
   body img {
     margin: auto;
     max-width: 100%; }
+  body ::-moz-selection {
+    background-color: #e89980;
+    color: #FFFFFF; }
+  body ::selection {
+    background-color: #e89980;
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=app.css.map */
