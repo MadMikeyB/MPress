@@ -1,3 +1,5 @@
+@inject('stats', 'App\Services\Stats')
+
 @extends('layouts.app')
 
 @section('title')
@@ -11,7 +13,7 @@
 	<div class="col-md-3">
 		<div class="small-box bg-maroon">
 			<div class="inner">
-				<h3>72</h3>
+				<h3>{{ $stats->countFrom('App\Post') }}</h3>
                 <p>Posts</p>
 			</div>
 			<div class="icon">
@@ -25,7 +27,7 @@
 	<div class="col-md-3">
 		<div class="small-box bg-yellow">
 			<div class="inner">
-				<h3>1</h3>
+				<h3>{{ $stats->count('page') }}</h3>
                 <p>Pages</p>
 			</div>
 			<div class="icon">
@@ -39,7 +41,7 @@
 	<div class="col-md-3">
 		<div class="small-box bg-aqua">
 			<div class="inner">
-				<h3>4</h3>
+				<h3>{{ $stats->count('user') }}</h3>
                 <p>Authors</p>
 			</div>
 			<div class="icon">
@@ -53,14 +55,14 @@
 	<div class="col-md-3">
 		<div class="small-box bg-blue">
 			<div class="inner">
-				<h3>4</h3>
+				<h3>{{ $stats->count('comment') }}</h3>
                 <p>Comments</p>
 			</div>
 			<div class="icon">
 				<i class="fa fa-comments"></i>
 			</div>
 			<a href="/admin/register" class="small-box-footer">
-				All Authors <i class="fa fa-arrow-circle-right"></i>
+				All Comments <i class="fa fa-arrow-circle-right"></i>
 			</a>
 		</div>
 	</div>
