@@ -28,7 +28,7 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
         'content'       => $faker->paragraph(rand(20,300)),
         'author_id'     => rand(1,50),
         'category_id'   => 1,
-        'image'         => $faker->imageUrl,
+        'status'        => 'publish',
     ];
 });
 
