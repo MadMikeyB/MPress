@@ -13,7 +13,6 @@ class AddPostStatusToPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->dropColumn('type');
             $table->string('status');
         });
     }

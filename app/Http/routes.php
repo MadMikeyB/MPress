@@ -69,7 +69,7 @@ Route::group(['middleware' => ['web', 'menu']], function () {
 });
 
 // Admin
-Route::group(['middleware' => ['web', 'auth', 'menu']], function() {
+Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
 	Route::get('dashboard', 'DashboardController@index');
 	Route::get('admin', 'AdminController@index');
 });

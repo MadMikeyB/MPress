@@ -43,7 +43,12 @@ class User extends Authenticatable implements SluggableInterface
     
     public function isAdmin()
     {
-        return false;
+        return Auth::user();
+    }
+
+    public function group()
+    {
+        return $this->hasOne(UserGroup::class);
     }
 
     public function posts()
