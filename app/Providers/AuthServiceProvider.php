@@ -49,11 +49,11 @@ class AuthServiceProvider extends ServiceProvider
         });
         // Can Edit Comment
         $gate->define('edit-comment', function ($user, $comment) {
-            return $user->id === $comment->author_id;
+            return $user->id === $comment->author_id; // @todo add group check for editors
         });
         // Can Update Comment
         $gate->define('update-comment', function ($user, $comment) {
-            return $user->id === $comment->author_id;
+            return $user->id === $comment->author_id; // @todo add group check for editors
         });
         // Can Delete Comment
         $gate->define('delete-comment', function ($user, $comment) {
@@ -61,19 +61,23 @@ class AuthServiceProvider extends ServiceProvider
         });
         // Can Create Post
         $gate->define('create-post', function ($user, $post) {
-            return \Auth::check();
+            return $user->group == '1'; // Admin Only
         });
         // Can Edit Post
         $gate->define('edit-post', function ($user, $post) {
-            return $user->id === $post->author_id;
+            return $user->id === $post->author_id; // @todo add group check for editors
         });
         // Can Update Post?
         $gate->define('update-post', function ($user, $post) {
-            return $user->id === $post->author_id;
+            return $user->id === $post->author_id; // @todo add group check for editors
         });
         // Can Delete Post
         $gate->define('delete-post', function ($user, $post) {
             return $user->id === $post->author_id;
+        });
+        // Can Edit User
+        $gate->define('edit-user', function ($user, $loggedInUser) {
+            return $user->id === $loggedInUser->id;
         });
     }
 }

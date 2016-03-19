@@ -5,11 +5,15 @@
 				<section id="banner">
 					<h2>{{$user->name}}</h2>
 					<p>Member since @datetime($user->created_at)</p>
+					@if ( Auth::user() )
 					<ul class="actions">
 						<li><a href="#" class="button small special">Follow</a></li>
 						<li><a href="#" class="button small ">Message</a></li>
+						@can('edit-user', $user)
 						<li><a href="&#64;{{ $user->slug }}/edit" class="button small special">Edit Profile</a></li>
+						@endcan
 					</ul>
+					@endif
 				</section>
 @stop
 

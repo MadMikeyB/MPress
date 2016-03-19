@@ -25,5 +25,23 @@
 			</div>
 		</div>
 	</form>
+
+	<div class="row uniform">
+		<div class="12u">
+			<form class="dropzone" action="/posts/{{$post->slug}}/images">
+				{{ csrf_field() }}
+				<div class="fallback">
+					<input name="image" type="file" multiple />
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
+
+@stop
+
+
+@section('scripts')
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.css" property="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
 @stop

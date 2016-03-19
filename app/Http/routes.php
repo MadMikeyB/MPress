@@ -1,5 +1,22 @@
 <?php
 
+// Admin
+Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
+
+    Route::get('admin', 'AdminController@index');
+    Route::get('admin/posts', 'AdminController@posts');
+    Route::get('admin/pages', 'AdminController@pages');
+    Route::get('admin/comments', 'AdminController@comments');
+    Route::get('admin/users', 'AdminController@users');
+    Route::get('admin/settings', 'AdminController@settings');
+    Route::get('admin/tools', 'AdminController@tools');
+    Route::get('admin/menus', 'AdminController@menus');
+
+    
+    Route::get('posts/create', 'PostsController@create');
+    Route::post('posts', 'PostsController@store');
+
+});
 
 // Auth
 Route::group(['middleware' => ['web', 'menu']], function () {
@@ -9,34 +26,29 @@ Route::group(['middleware' => ['web', 'menu']], function () {
     	Route::get('home', function(){
     		return redirect()->action('HomeController@index');
     	});
+        Route::get('dashboard', 'DashboardController@index');
 	
     // Auth
         Route::auth();
 
     // Posts 
         Route::get('posts', 'PostsController@index');
-        // Route::group(['middleware' => ['admin']], function() {
-            // Create Post
-            Route::get('posts/create', 'PostsController@create');     // @TODO store post CRUD within 'Admin' Middleware
-        // });
-
+        
         // Edit Post
-        Route::get('posts/{post}/edit', 'PostsController@edit');     // @TODO store post CRUD within 'Admin' Middleware
+        Route::get('posts/{post}/edit', 'PostsController@edit');
+        
         // Add Images to Post
-        Route::post('posts/{post}/images', 'PostsController@storeImage');     // @TODO store post CRUD within 'Admin' Middleware
+        Route::post('posts/{post}/images', 'PostsController@storeImage');
 
         // Update Post
-        Route::patch('posts/{post}', 'PostsController@update');     // @TODO store post CRUD within 'Admin' Middleware
-
-        // Store Post
-        Route::post('posts', 'PostsController@store');     // @TODO store post CRUD within 'Admin' Middleware
-
-        // Delete Post
-        Route::delete('posts/{post}/delete', 'PostsController@destroy');     // @TODO store post CRUD within 'Admin' Middleware
+        Route::patch('posts/{post}', 'PostsController@update');
 
         // Get Post
         Route::get('read/{post}', 'PostsController@show');
-    
+
+        // Delete Post
+        Route::delete('posts/{post}/delete', 'PostsController@destroy');
+
     // Comments
         // Store Comment
         Route::post('posts/{post}/comments', 'CommentsController@store');
@@ -68,11 +80,7 @@ Route::group(['middleware' => ['web', 'menu']], function () {
         Route::delete('@{user}/delete', 'ProfileController@destroy');
 });
 
-// Admin
-Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
-	Route::get('dashboard', 'DashboardController@index');
-	Route::get('admin', 'AdminController@index');
-});
+
 
 
 Route::group(['middleware' => ['web', 'menu']], function()

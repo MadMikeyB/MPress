@@ -11,6 +11,15 @@
 			<p><span>@</span>{{ $post->user->name }} on @datetime($post->created_at)</small></p>
 		</header>
 		{!! $post->content !!}
+		
+		@unless ( $post->images->isEmpty() )
+		<span class="image featured">
+			@foreach ( $post->images as $image )
+				<a href="/{{$image->image_path}}" target="_blank"><img src="/{{ $image->image_path }}" alt="Featured Image for {{ $post->title }}" title="{{ $post->title }}"></a>
+			@endforeach
+		</span>
+		@endunless
+
 				<ul class="pull-right actions small">
 					@can( 'edit-post', $post)
 					<li><a href="/posts/{{ $post->slug }}/edit" class="button fit small">Edit</a></li>
@@ -41,14 +50,6 @@
 					</div>
 				</form>
 			</div>
-		</div>
-	@else
-		<div class="box row">
-			@foreach ( $post->images as $image )
-				<div class="3u">
-					<a href="/{{$image->image_path}}" target="_blank"><img src="/{{ $image->image_path }}"></a>
-				</div>
-			@endforeach
 		</div>
 	@endif
 @endcan
