@@ -6,7 +6,6 @@
         <div class="12u">
             <h2>Welcome back, {{ Auth::user()->name }}!</h2>
         </div>
-
                 @unless ( $posts->isEmpty() )
                 <div class="12u">
                     <h3>Your Posts</h3>
