@@ -61,7 +61,7 @@
 		@unless ( $post->comments->isEmpty() )
 		@foreach ( $post->comments as $comment )
 			{{-- Comment  --}}
-			<cite><a href="/&#64;{{$comment->user->slug}}"><span>@</span>{{ $comment->user->name }}</a></cite>
+			<cite id="comment-{{ $comment->id }}"><a href="/&#64;{{$comment->user->slug}}"><span>@</span>{{ $comment->user->name }}</a></cite>
 			<blockquote>
 				<ul class="pull-right actions small">
 					@can( 'create-comment', $comment)
