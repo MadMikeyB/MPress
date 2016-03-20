@@ -7,6 +7,7 @@ use App\Http\Requests;
 
 use Theme;
 use View;
+use Storage;
 
 use App\Post;
 use App\Page;
@@ -15,6 +16,7 @@ use App\User;
 use App\Image;
 use App\Menu;
 use App\UserGroup;
+use App\Setting;
 
 class AdminController extends Controller
 {
@@ -53,6 +55,22 @@ class AdminController extends Controller
     {
         $posts = Post::withTrashed()->paginate(10);
         return view('admin.posts.index', compact('posts'));
+    }
+
+    public function settings()
+    {
+        $settings = Setting::all();
+        $themes = Storage::disk('resources')->directories('themes');
+        return view('admin.settings.index', compact('settings', 'themes'));
+    }
+
+    public function storeSettings(Request $request)
+    {
+        foreach ($request->input() as $key => $value) {
+            Setting::set($key, $value);
+        }
+
+        return back();
     }
 
 }

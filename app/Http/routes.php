@@ -9,6 +9,8 @@ Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
     Route::get('admin/comments', 'AdminController@comments');
     Route::get('admin/users', 'AdminController@users');
     Route::get('admin/settings', 'AdminController@settings');
+    Route::post('admin/settings', 'AdminController@storeSettings');
+
     Route::get('admin/tools', 'AdminController@tools');
     Route::get('admin/menus', 'AdminController@menus');
 
