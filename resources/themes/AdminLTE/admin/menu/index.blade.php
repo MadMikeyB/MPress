@@ -8,10 +8,10 @@
 
 @section('content')
 <div class="row">
-	<div class="col-md-offset-1 col-md-10 col-sm-12">
+	<div class="col-md-12">
 		<div class="box box-solid">
 			<div class="box-header with-border">
-				<i class="fa fa-th"></i>
+				<i class="fa fa-th pull-right"></i>
 				<h3 class="box-title">Menu Manager</h3>
 			</div>
 
@@ -47,7 +47,7 @@
 		</div>
 		<div class="box box-solid">
 			<div class="box-header">
-				<i class="fa fa-th"></i>
+				<i class="fa fa-th pull-right"></i>
 				<h3 class="box-title">Menu Items</h3>
 			</div>
 

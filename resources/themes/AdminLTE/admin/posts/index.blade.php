@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('title')
+	@can('create-post', Auth::user())
+		<div class="pull-right">
+			<a type="button" class="btn btn-primary" href="/posts/create"><i class="fa fa-plus-circle"></i> Create Post</a>
+		</div>
+	@endcan
 	<h1>{{ Setting::get('site_title', 'MPress 2.0')}}
 		<small>Menu Manager</small>
 	</h1>
@@ -13,11 +18,7 @@
 	<div class="box box-solid">
 		<div class="box-header">
 			<h3 class="box-title">All Posts</h3>
-	@can('create-post', Auth::user())
-		<div class="pull-right">
-			<a type="button" class="btn btn-primary" href="/posts/create"><i class="fa fa-plus-circle"></i> Create Post</a>
-		</div>
-	@endcan
+			<i class="fa fa-pencil-square-o pull-right"></i>
 		</div><!-- /.box-header -->
 		<div class="box-body no-padding">
 			<table class="table table-striped">

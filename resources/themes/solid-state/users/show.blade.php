@@ -31,7 +31,7 @@
 			<h3>{{ $user->name }}'s Comments</h3>
 			@foreach ( $user->comments as $comment )
 				<cite><a href="{{ url('read', $comment->post->slug) }}">{{ $comment->post->title }}</a></cite>
-				<blockquote>{{ str_limit($comment->body, 80) }}</blockquote>
+				<blockquote>{!! Markdown::convertToHtml(str_limit($comment->body, 80)) !!}</blockquote>
 			@endforeach
 		</div>
 	</header>

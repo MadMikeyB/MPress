@@ -8,10 +8,10 @@
 
 @section('content')
 <div class="row">
-	<div class="col-md-offset-1 col-md-10 col-sm-12">
+	<div class="col-md-12">
 		<div class="box box-solid">
 			<div class="box-header with-border">
-				<i class="fa fa-cogs"></i>
+				<i class="fa fa-cogs pull-right"></i>
 				<h3 class="box-title">Settings</h3>
 			</div>
 
