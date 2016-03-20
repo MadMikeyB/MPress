@@ -143,6 +143,9 @@ class PostsController extends Controller
             return back();
         }
         
+        $post->status = 'deleted';
+        $post->save();
+        
         $post->delete();
 
         session()->flash('flash_message', 'Post Deleted.');

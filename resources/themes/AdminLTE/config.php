@@ -22,7 +22,7 @@ return array(
     |
     */
 
-    'inherit' => 'alpha',
+    'inherit' => 'mpress',
 
 
 );

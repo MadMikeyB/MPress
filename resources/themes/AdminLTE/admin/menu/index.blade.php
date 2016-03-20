@@ -45,6 +45,46 @@
 				</form>	
 			</div>
 		</div>
+		<div class="box box-solid">
+			<div class="box-header">
+				<i class="fa fa-th"></i>
+				<h3 class="box-title">Menu Items</h3>
+			</div>
+
+			<div class="box-body">
+				<table class="table">
+						<tr>
+							<th>Position</th>
+							<th>Title</th>
+							<th>URL</th>
+							<th>Who can see this?</th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+						@if ( $menu )
+							@foreach ( $menu as $m )
+								<tr>
+									<td>{{ $m->position }}</td>
+									<td>{{ $m->title }}</td>
+									<td>{{ $m->url }}</td>
+									@if ( $m->group == '1')
+									<td>Admin Only</td>
+									@elseif ( $m->group == '2')
+									<td>Admin &amp; Editor</td>
+									@elseif ( $m->group == '3')
+									<td>Everyone</td>
+									@endif
+									<td></td>
+									<td><a href="/admin/menus/edit/{{ $m->id }}" class="btn btn-primary btn-block"><i class="fa fa-pencil"></i></a></td>
+									<td><a href="/admin/menus/delete/{{ $m->id }}" class="btn btn-danger btn-block"><i class="fa fa-trash"></i></a></td>
+								</tr>
+							@endforeach
+						@endif
+
+				</table>
+			</div>
+		</div>
 	</div>
 </div>
 @stop

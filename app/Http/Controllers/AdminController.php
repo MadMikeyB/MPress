@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 
 use Theme;
+use View;
 
 use App\Post;
 use App\Page;
@@ -21,6 +22,10 @@ class AdminController extends Controller
 	{
 		// Admin Theme for Admin Controller
 		Theme::init('AdminLTE');
+
+        // Set the menu
+        $menu = Menu::generateMenu();
+        View::share('menu', $menu);
 	}
 
 	// Dashboard
@@ -42,6 +47,12 @@ class AdminController extends Controller
         session()->flash('flash_message', 'Menu Item Added!');
 
         return back();
+    }
+
+    public function posts()
+    {
+        $posts = Post::withTrashed()->paginate(10);
+        return view('admin.posts.index', compact('posts'));
     }
 
 }

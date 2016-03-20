@@ -19,7 +19,7 @@
 			<div class="icon">
 				<i class="fa fa-pencil-square-o"></i>
 			</div>
-			<a href="/admin/posts/all" class="small-box-footer">
+			<a href="/admin/posts" class="small-box-footer">
 				All Posts <i class="fa fa-arrow-circle-right"></i>
 			</a>
 		</div>
@@ -33,7 +33,7 @@
 			<div class="icon">
 				<i class="fa fa-file"></i>
 			</div>
-			<a href="/admin/pages/all" class="small-box-footer">
+			<a href="/admin/pages" class="small-box-footer">
 				All Pages <i class="fa fa-arrow-circle-right"></i>
 			</a>
 		</div>
@@ -47,7 +47,7 @@
 			<div class="icon">
 				<i class="fa fa-users"></i>
 			</div>
-			<a href="/admin/register" class="small-box-footer">
+			<a href="/admin/users" class="small-box-footer">
 				All Authors <i class="fa fa-arrow-circle-right"></i>
 			</a>
 		</div>
@@ -61,7 +61,7 @@
 			<div class="icon">
 				<i class="fa fa-comments"></i>
 			</div>
-			<a href="/admin/register" class="small-box-footer">
+			<a href="/admin/comments" class="small-box-footer">
 				All Comments <i class="fa fa-arrow-circle-right"></i>
 			</a>
 		</div>
@@ -69,7 +69,7 @@
 </div>
 
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-6">
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<h3>Admin Control Panel Features</h3>
@@ -80,6 +80,8 @@
 				</ul>
 			</div>
 		</div>
+	</div>
+	<div class="col-md-6">
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<h3>Admin Dashboard</h3>
