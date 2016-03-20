@@ -146,10 +146,10 @@
 	<div class="col-md-12">
 		<div class="box box-default color-palette-box">
 			<div class="box-header with-border">
-				<h3 class="box-title"><i class="fa fa-comments"></i> Recent Comments</h3>
+				<h3 class="box-title"><i class="fa fa-comments"></i> Latest 5 Comments</h3>
 			</div>
 			<div class="box-body">
-				@foreach ( $comments->all() as $comment )
+				@foreach ( $comments->paginate(5) as $comment )
 				<blockquote>
 					<div class="btn-group pull-right">
 						<a class="btn btn-sm btn-success" href="/read/{{ $comment->post->slug }}#comment-{{ $comment->id }}" role="button"><i class="fa fa-eye"></i></a>

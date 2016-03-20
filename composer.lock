@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4f62b2843588e47eb8cbdebc0263c00c",
-    "content-hash": "b9d36e87a8ef977b11a163f305a82823",
+    "hash": "9a67da9516e03fe77949943bb06515f2",
+    "content-hash": "f979bf00d25c30bd80e027cfca0712e4",
     "packages": [
         {
             "name": "anlutro/l4-settings",
@@ -722,7 +722,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lavary/laravel-menu/zipball/3db053dbcd8fdc5890c1b8b13b692d1687b6f22b",
+                "url": "https://api.github.com/repos/lavary/laravel-menu/zipball/34d83c492cd2fc8a0022609e208ddd94a83d89d0",
                 "reference": "3db053dbcd8fdc5890c1b8b13b692d1687b6f22b",
                 "shasum": ""
             },
