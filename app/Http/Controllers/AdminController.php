@@ -28,9 +28,9 @@ class AdminController extends Controller
     	return view('admin.index');
     }
 
-    public function posts()
+    public function menus()
     {
-
+    	return view('admin.menu.index');
     }
 
 }

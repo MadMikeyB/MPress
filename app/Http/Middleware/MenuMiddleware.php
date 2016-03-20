@@ -39,7 +39,10 @@ class MenuMiddleware
             {
                 $menu->add(Auth::user()->name, '@' . Auth::user()->slug)->nickname('usermenu');
                 $menu->add('Dashboard', ['url' => 'dashboard', 'parent' => $menu->usermenu->id]);
-                $menu->add('Admin', ['url' => 'admin', 'parent' => $menu->usermenu->id]);
+                if ( Auth::user()->isAdmin() )
+                {
+                    $menu->add('Admin', ['url' => 'admin', 'parent' => $menu->usermenu->id]);
+                }
                 $menu->add('Log Out', 'logout');
             }
         });

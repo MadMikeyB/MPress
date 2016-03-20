@@ -19,6 +19,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ Theme::asset('dist/css/AdminLTE.min.css', null, true) }}">
     <link rel="stylesheet" href="{{ Theme::asset('dist/css/skins/skin-black.min.css', null, true) }}">
+    <!-- wysihtml5 editor -->
+    <link rel="stylesheet" href="{{ Theme::asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css', null, true) }}">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -207,10 +210,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="{{ Theme::asset('bootstrap/js/bootstrap.min.js', null, true) }}"></script>
     <!-- AdminLTE App -->
     <script src="{{ Theme::asset('dist/js/app.min.js', null, true) }}"></script>
-
-    <!-- Optionally, you can add Slimscroll and FastClick plugins.
-         Both of these plugins are recommended to enhance the
-         user experience. Slimscroll is required when using the
-         fixed layout. -->
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="{{ Theme::asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js', null, true) }}"></script>
+    <!-- Page Script -->
+    <script>
+      $(function () {
+        //Add text editor
+        $("textarea#mp-editor").wysihtml5();
+      });
+    </script>
   </body>
 </html>
