@@ -11,7 +11,7 @@
 
 @section('content')
 <div class="row">
-	<div class="col-md-3">
+	<div class="col-md-3 col-sm-6">
 		<div class="small-box bg-maroon">
 			<div class="inner">
 				<h3>{{ $stats->countFrom('App\Post') }}</h3>
@@ -25,7 +25,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="col-md-3">
+	<div class="col-md-3 col-sm-6">
 		<div class="small-box bg-yellow">
 			<div class="inner">
 				<h3>{{ $stats->count('page') }}</h3>
@@ -39,7 +39,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="col-md-3">
+	<div class="col-md-3 col-sm-6">
 		<div class="small-box bg-aqua">
 			<div class="inner">
 				<h3>{{ $stats->count('user') }}</h3>
@@ -53,7 +53,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="col-md-3">
+	<div class="col-md-3 col-sm-6">
 		<div class="small-box bg-blue">
 			<div class="inner">
 				<h3>{{ $stats->count('comment') }}</h3>
@@ -69,7 +69,7 @@
 	</div>
 </div>
 
-<div class="row">
+{{-- <div class="row">
 	<div class="col-md-6">
 		<div class="panel panel-default">
 			<div class="panel-body">
@@ -96,10 +96,10 @@
 			</div>
 		</div>
 	</div>		
-</div>
+</div> --}}
 
 <div class="row">
-	<div class="col-md-3">
+	<div class="col-md-3 col-sm-6">
 		<div class="info-box">
 			<span class="info-box-icon bg-maroon"><i class="fa fa-pencil-square-o"></i></span>
 			<div class="info-box-content">
@@ -109,7 +109,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-3">
+	<div class="col-md-3 col-sm-6">
 		<div class="info-box">
 			<span class="info-box-icon bg-yellow"><i class="fa fa-file"></i></span>
 			<div class="info-box-content">
@@ -119,7 +119,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-3">
+	<div class="col-md-3 col-sm-6">
 		<div class="info-box">
 			<span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span>
 			<div class="info-box-content">
@@ -129,7 +129,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-3">
+	<div class="col-md-3 col-sm-6">
 		<div class="info-box">
 			<span class="info-box-icon bg-blue"><i class="fa fa-comments"></i></span>
 			<div class="info-box-content">
