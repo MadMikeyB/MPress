@@ -5,7 +5,6 @@
 	<div class="12u">
 		<header>
 			<h2>{{ $page->title }}</h2>
-			<p><span>@</span>{{ $page->user->name }} on @datetime($page->created_at)</small></p>
 		</header>
 		{!! $page->content !!}
 		

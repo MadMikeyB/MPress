@@ -17,14 +17,7 @@ class PagesController extends Controller
      */
     public function show(Page $page)
     {
-        if ( ! $page->isEmpty() ) 
-        {  
-            $page->content = Markdown::convertToHtml($page->content);
-            return view('pages.show', compact('page'));
-        }
-        else
-        {
-            return back();
-        }
+        $page->content = Markdown::convertToHtml($page->content);
+        return view('pages.show', compact('page'));
     }
 }

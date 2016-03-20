@@ -57,6 +57,12 @@ class AdminController extends Controller
         return view('admin.posts.index', compact('posts'));
     }
 
+    public function pages()
+    {
+        $pages = Page::withTrashed()->paginate(10);
+        return view('admin.pages.index', compact('pages'));
+    }
+
     public function users()
     {
         $users = User::withTrashed()->paginate(10);

@@ -7,7 +7,7 @@
 		</div>
 	@endcan
 	<h1>{{ Setting::get('site_title', 'MPress 2.0')}}
-		<small>Menu Manager</small>
+		<small>Post Manager</small>
 	</h1>
 @stop
 
