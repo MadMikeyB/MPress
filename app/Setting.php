@@ -27,7 +27,7 @@ class Setting extends Model
     	if ( $key != '_token' )
     	{
     		$setting = self::where('key', $key)->first();
-    		if ( $setting->id )
+    		if ( $setting )
     		{
     			self::find( $setting->id );
     			$setting->key = $key;

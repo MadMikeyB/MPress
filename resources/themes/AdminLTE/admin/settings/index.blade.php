@@ -19,12 +19,23 @@
 				<form action="/admin/settings" method="POST" role="form">
 					{{ csrf_field() }}
 
+
+					<div class="form-group">
+						<label for="">Site Title</label>
+						<input type="text" name="site_title" id="site_title" class="form-control input-lg" placeholder="{{ Setting::get('site_title', 'Site Title') }}" value="{{ Setting::get('site_title') }}">
+					</div>
+
+					<div class="form-group">
+						<label for="">Site Description (May only be used on some themes)</label>
+						<input type="text" name="site_description" id="site_description" class="form-control input-lg" placeholder="{{ Setting::get('site_description', 'Site Description') }}" value="{{ Setting::get('site_description') }}">
+					</div>
+
 					<div class="form-group">
 						<label>Active Theme</label>
 						<select name="theme_name" class="form-control input-lg">
 							@foreach ( $themes as $theme)
 							@if ( $theme != 'themes/AdminLTE')
-								<option value="{{ str_replace('themes/', '', $theme) }}">{{ str_replace('themes/', '', $theme) }}</option>
+								<option value="{{ str_replace('themes/', '', $theme) }}" @if ( Setting::get('theme_name') == str_replace('themes/', '', $theme) ) selected @endif>{{ str_replace('themes/', '', $theme) }}</option>
 							@endif
 							@endforeach
 						</select>
