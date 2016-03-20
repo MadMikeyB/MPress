@@ -23,7 +23,7 @@ Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
 
 // Auth
 Route::group(['middleware' => ['web', 'menu']], function () {
-	
+	// @todo dynamically set home page through settings 
     // Home
     	Route::get('', 'HomeController@index');
     	Route::get('home', function(){

@@ -30,7 +30,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-    	$posts = Post::where('status', 'publish')->paginate('15');
+    	$posts = Post::where('status', 'publish')->paginate('6');
     	return view('posts.index', compact('posts'));
     }
 
