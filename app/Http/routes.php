@@ -12,6 +12,7 @@ Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
     Route::get('admin/tools', 'AdminController@tools');
     Route::get('admin/menus', 'AdminController@menus');
 
+    Route::post('admin/menus', 'AdminController@storeMenu');
     
     Route::get('posts/create', 'PostsController@create');
     Route::post('posts', 'PostsController@store');

@@ -19,13 +19,27 @@ class MenuMiddleware
     {
         Menu::make('MainNavigation', function($menu) 
         {
-            // @todo move to call from a Menus Table and foreach through for results.
-            // Something like.. 
-            // foreach ( $item as Menu::all() ) {
-            //     $menu->add($item->name, $item->url);
-            // }
-            $menu->add('Home');
-            $menu->add('Posts', 'posts');
+            foreach ( \App\Menu::generateMenu() as $item ) 
+            {
+                // If menu item is public, add it
+                if ( $item->group == '3' )
+                {
+                    $menu->add($item->title, $item->url);
+                }
+                else
+                {
+                    // otherwise, check user is authed
+                    if ( Auth::check() )
+                    {
+                        // then check if they have permission to see the item
+                        if ( Auth::user()->group <= $item->group )
+                        {
+                            // then add it to menu
+                            $menu->add($item->title, $item->url);
+                        }
+                    }
+                }
+            }
         });
 
         Menu::make('UserNavigation', function($menu) 

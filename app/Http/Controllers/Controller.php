@@ -8,6 +8,8 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Setting;
 use Theme;
+use View;
+use App\Menu;
 
 class Controller extends BaseController
 {
@@ -19,5 +21,8 @@ class Controller extends BaseController
     	$theme = Setting::get('theme_name', 'alpha');
     	// Set the theme.
     	Theme::init($theme);
+    	// Set the menu
+    	$menu = Menu::generateMenu();
+		View::share('menu', $menu);
     }
 }
