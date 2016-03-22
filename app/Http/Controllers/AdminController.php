@@ -29,7 +29,16 @@ class AdminController extends Controller
         $menu = Menu::generateMenu();
         View::share('menu', $menu);
 	}
-
+    
+    public function validator(Request $request)
+    {
+        $this->validate($request, [
+               'title'      => 'required|min:4|max:140',
+               'content'    => 'required',
+               // 'image'      => 'mimes:jpg,jpeg,png,bmp'
+         ]);
+    }
+    
 	// Dashboard
     public function index() 
     {
