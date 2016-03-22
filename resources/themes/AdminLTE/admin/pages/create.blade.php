@@ -21,7 +21,7 @@
 						<div class="col-md-10">
 							<div class="form-group">
 								<label for="content" class="control-label">Page Content</label>
-								<textarea class="form-control" id="content" name="content" style="height:50vh"></textarea>
+								<textarea class="form-control" id="mp-editor" name="content" style="height:50vh"></textarea>
 							</div>
 						</div>
 						
