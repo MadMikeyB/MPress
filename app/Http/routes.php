@@ -19,6 +19,9 @@ Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
     Route::get('posts/create', 'PostsController@create');
     Route::post('posts', 'PostsController@store');
 
+    Route::get('pages/create', 'AdminController@createPage');
+    Route::post('pages', 'AdminController@storePage');
+
 });
 
 // Auth

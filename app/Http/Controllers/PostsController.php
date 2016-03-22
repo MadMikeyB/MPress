@@ -46,7 +46,7 @@ class PostsController extends Controller
     }
 
     /**
-     * Store the Post
+     * Create the Post
      *
      * @param \Illuminate\Http\Request    $request
      * @return Response

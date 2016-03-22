@@ -85,4 +85,35 @@ class AdminController extends Controller
         return back();
     }
 
+    /**
+     * Create the Page
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */
+    public function createPage()
+    {
+        return view('admin.pages.create');
+    }
+
+    /**
+     * Store the Page
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */
+    public function storePage(Request $request)
+    {        
+        $this->validator($request);
+
+        $page = new Page($request->all());
+        $page->author_id = $request->user()->id;
+
+        $page->save();
+
+        session()->flash('flash_message', 'Congrats! Page created.');
+
+        return redirect('/' . $page->slug );
+    }
+
 }
