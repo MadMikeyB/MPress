@@ -122,8 +122,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         	@yield('content')
 
-          <!-- Your Page Content Here -->
-
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
 
@@ -216,8 +214,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script>
       $(function () {
         //Add text editor
-        $("textarea#mp-editor").wysihtml5();
+        $("textarea.mp-editor").wysihtml5();
       });
     </script>
+    @yield('scripts')
   </body>
 </html>

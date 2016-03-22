@@ -20,8 +20,9 @@
 					<div class="row">
 						<div class="col-md-10">
 							<div class="form-group">
+								<a href="#" id="toggle-editor" class="pull-right btn btn-sm btn-default">Toggle Editor</a>
 								<label for="content" class="control-label">Page Content</label>
-								<textarea class="form-control" id="mp-editor" name="content" style="height:50vh"></textarea>
+								<textarea class="form-control mp-editor" name="content" style="height:50vh"></textarea>
 							</div>
 						</div>
 						
@@ -40,4 +41,15 @@
 		</div>
 	</div>
 </div>
+
+@stop
+
+@section('scripts')
+
+<script>
+	jQuery('#toggle-editor').click( function() {
+		$('.wysihtml5-toolbar').toggle();
+		$('#toggle-editor').css("margin-bottom", "10px");
+	});
+</script>
 @stop
