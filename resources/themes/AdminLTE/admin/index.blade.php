@@ -124,8 +124,8 @@
 			<span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span>
 			<div class="info-box-content">
 				<span class="info-box-text">Most Active Author</span>
-				<span><a href="">@Mikey</a></span>
-				<span class="info-box-number">52 posts</span>
+				<span><a href="&#64;{{ $stats->most( 'App\Post', 'author_id' )->user->slug }}">{{ $stats->most( 'App\Post', 'author_id' )->user->name }}</a></span>
+				<span class="info-box-number">{{ $stats->most( 'App\Post', 'author_id' )->count }} posts</span>
 			</div>
 		</div>
 	</div>
@@ -134,8 +134,8 @@
 			<span class="info-box-icon bg-blue"><i class="fa fa-comments"></i></span>
 			<div class="info-box-content">
 				<span class="info-box-text">Most Commented Post</span>
-				<span><a href="">Download MPress Today</a></span>
-				<span class="info-box-number">190 comments</span>
+				<span><a href="/read/{{ $stats->most( 'App\Comment', 'post_id' )->post->slug }}">{{ $stats->most( 'App\Comment', 'post_id' )->post->title }}</a></span>
+				<span class="info-box-number">{{ $stats->most( 'App\Comment', 'post_id' )->count }} comments</span>
 			</div>
 		</div>
 	</div>

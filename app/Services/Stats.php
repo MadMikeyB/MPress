@@ -7,9 +7,10 @@ use App\Page;
 use App\Comment;
 use App\User;
 use App\Image;
+use DB;
 
 class Stats {
-	
+
 	public function count( $type )
 	{
 		switch ( $type ) 
@@ -37,5 +38,28 @@ class Stats {
 	{
 		return $model::count();
 	}
+	// $stats->most( 'App\Comment', 'post_id' )->post->slug
+	// $stats->most( 'App\Post', 'author_id' )->user->name
+	public function most( $model, $groupBy )
+	{
+		$return = $model::selectRaw('*, COUNT(*) as count')->groupBy($groupBy)->orderBy('count', 'DESC')->first();
+
+		return $return;
+	}
+
+	// @deprecated - above does the same as both of these
+	// public function mostActiveAuthor()
+	// {
+	// 	$post = Post::selectRaw('*, COUNT(*) as count')->groupBy('author_id')->orderBy('count', 'DESC')->first();
+
+	// 	return $post;
+	// }
+
+	// public function mostCommentedPost()
+	// {
+	// 	$comment = Comment::selectRaw('*, COUNT(*) as count')->groupBy('post_id')->orderBy('count', 'desc')->first();
+
+	// 	return $comment;
+	// }
 
 }

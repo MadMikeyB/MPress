@@ -35,7 +35,6 @@ class AdminController extends Controller
         $this->validate($request, [
                'title'      => 'required|min:4|max:140',
                'content'    => 'required',
-               // 'image'      => 'mimes:jpg,jpeg,png,bmp'
          ]);
     }
     
