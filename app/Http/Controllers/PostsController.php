@@ -8,7 +8,9 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 use GrahamCampbell\Markdown\Facades\Markdown;
 
 use App\Post;
+use App\Events\PostWasViewed;
 use App\Image;
+use Event;
 use Gate;
 
 
@@ -42,6 +44,9 @@ class PostsController extends Controller
      */
     public function show(Post $post)
     {
+
+        Event::fire(new PostWasViewed($post));
+
     	return view('posts.show', compact('post'));
     }
 
