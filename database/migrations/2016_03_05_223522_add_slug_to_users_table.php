@@ -13,7 +13,7 @@ class AddSlugToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('slug')->unique();
+            $table->string('slug')->unique()->nullable(); // SQLite needs either a Default Value or Nullable on adding strings
         });
     }
 
