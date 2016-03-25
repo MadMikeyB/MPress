@@ -83,6 +83,15 @@ class PostsController extends Controller
             $post->status = 'publish';
         }
 
+        if ( $request->has('category') )
+        {
+            $post->category_id = $request->category;
+        }
+        else
+        {
+            $post->category_id = '1';
+        }
+
         $post->save();
 
         session()->flash('flash_message', 'Yay! Something to read!');
