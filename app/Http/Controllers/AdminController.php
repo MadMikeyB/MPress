@@ -77,6 +77,13 @@ class AdminController extends Controller
         return view('admin.users.index', compact('users'));
     }
 
+
+    public function comments()
+    {
+        $comments = Comment::withTrashed()->paginate(10);
+        return view('admin.comments.index', compact('comments'));
+    }
+
     public function settings()
     {
         $settings = Setting::all();
