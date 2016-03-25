@@ -31,6 +31,8 @@ class Image extends Model
     	$image->image_path = $image->baseDir .'/'. $name;
     	$image->user_id = $request->user()->id;
 
+        $image->image_alt = $file->getClientOriginalName();
+
     	$file->move($image->baseDir, $name);
 
     	return $image;
