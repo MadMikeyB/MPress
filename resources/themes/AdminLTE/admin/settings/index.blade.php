@@ -39,17 +39,19 @@
 							@endif
 							@endforeach
 						</select>
-						<div class="row">
-						@foreach ( $themes as $theme )
-							@if ( $theme != 'themes/AdminLTE')
-							<div class="col-md-4">
-								<h3 style="text-align:center;">{{ str_replace('themes/', '', $theme) }}</h3>
-								<a href="/images/{{ $theme }}.png" target="_blank">
-									<img src="/images/{{ $theme }}.png" style="width:100%;">
-								</a>
+						<div class="container">
+							<div class="row">
+							@foreach ( $themes as $theme )
+								@if ( $theme != 'themes/AdminLTE')
+								<div class="col-md-3">
+									<h3 style="text-align:center;">{{ str_replace('themes/', '', $theme) }}</h3>
+									<a href="/images/{{ $theme }}.png" target="_blank">
+										<img src="/images/{{ $theme }}.png" style="width:100%;">
+									</a>
+								</div>
+								@endif
+							@endforeach
 							</div>
-							@endif
-						@endforeach
 						</div>
 					</div>
 

@@ -59,7 +59,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>M</b>P</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>MPress</b>2.0</span>
+          <span class="logo-lg">{{ Setting::get('site_title', 'MPress 2.0') }}</span>
         </a>
 
         <!-- Header Navbar -->

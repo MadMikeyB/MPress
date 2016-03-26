@@ -35,7 +35,7 @@
 								<small>For more granular control, you may wish to edit the template files directly</small>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary btn-block">Add Menu Item</button>
+					<button type="submit" class="btn btn-primary btn-block">Create Page</button>
 				</form>	
 			</div>
 		</div>

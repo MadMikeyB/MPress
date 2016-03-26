@@ -91,6 +91,35 @@ class AdminController extends Controller
         return view('admin.settings.index', compact('settings', 'themes'));
     }
 
+    public function editor( $theme = null)
+    {
+        $themes = Storage::disk('resources')->directories('themes');
+        
+        if ( $theme )
+        {
+            $files = Storage::disk('resources')->allFiles( 'themes/' . $theme );
+
+            return view('admin.editor.editor', compact('files', 'theme'));
+        }
+
+        return view('admin.editor.themes', compact('themes'));
+
+    }
+
+    public function editFile( $path )
+    {
+        $path = base_path() . '/resources/' . $path;
+
+        if ( file_exists( $path ) )
+        {
+            return file_get_contents($path);
+        }
+        else
+        {
+            throw new \ErrorException('No file found');
+        }
+    }
+
     public function storeSettings(Request $request)
     {
         foreach ($request->input() as $key => $value) {
