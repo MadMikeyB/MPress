@@ -9,6 +9,7 @@ use App\Http\Requests;
 use App\Comment;
 use App\Post;
 use Gate;
+use Mail;
 
 class CommentsController extends Controller
 {
@@ -30,10 +31,19 @@ class CommentsController extends Controller
     {
         $this->validator($request);
 
+        // Save the Comment
         $comment = new Comment($request->all());
         $comment->author_id = $request->user()->id;
         $comment->post_id = $post->id;
         $comment->save();
+
+        // Email the Post Author
+        // @todo switch to event
+        Mail::send('emails.newcomment', ['post' => $post, 'comment' => $comment], function ($message) use ($post) {
+
+            $message->to( $post->user->email )->subject('New comment on ' . $post->title);
+
+        });
 
         session()->flash('flash_message', 'Thank you for reading!');
 

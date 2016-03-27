@@ -37,6 +37,15 @@ Route::group(['middleware' => ['web', 'menu']], function () {
     		return redirect()->action('HomeController@index');
     	});
         Route::get('dashboard', 'DashboardController@index');
+        Route::get('sendemail', function()
+        {
+            Mail::raw('Laravel with Mailgun is easy!', function($message)
+            {
+                $message->to('me@mikeylicio.us')->subject('Hiya!');
+            });
+
+            return "Mail sent";
+        });
 	
     // Auth
         Route::auth();
