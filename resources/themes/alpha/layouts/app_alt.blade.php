@@ -39,12 +39,11 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="http://twitter.com/{{ Setting::get('social_twitter') }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="http://facebook.com/{{ Setting::get('social_facebook') }}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="http://instagram.com/{{ Setting::get('social_instagram') }}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="http://github.com/{{ Setting::get('social_github') }}" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="http://plus.google.com/{{ Setting::get('social_google') }}" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; {{ Setting::get('site_title', 'MPress 2.0') }}. All rights reserved.</li><li>Powered by <a href="http://mpresscms.com" title="MPress - The CMS for 2016">MPress</a></li><li>Theme by <a href="http://html5up.net">HTML5 UP</a></li>

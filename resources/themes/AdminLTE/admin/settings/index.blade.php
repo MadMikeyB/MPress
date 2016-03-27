@@ -54,7 +54,31 @@
 							</div>
 						</div>
 					</div>
-
+					
+					<div class="form-group">
+						<label for="">Facebook</label>
+						<input type="text" name="social_facebook" id="social_facebook" class="form-control input-lg" placeholder="{{ Setting::get('social_facebook', 'facebook') }}" value="{{ Setting::get('social_facebook') }}">
+					</div>
+					<div class="form-group">
+						<label for="">Twitter</label>
+						<input type="text" name="social_twitter" id="social_twitter" class="form-control input-lg" placeholder="{{ Setting::get('social_twitter', 'twitter') }}" value="{{ Setting::get('social_twitter') }}">
+					</div>
+					<div class="form-group">
+						<label for="">Google+</label>
+						<input type="text" name="social_google" id="social_google" class="form-control input-lg" placeholder="{{ Setting::get('social_google', 'google') }}" value="{{ Setting::get('social_google') }}">
+					</div>
+					<div class="form-group">
+						<label for="">Instagram</label>
+						<input type="text" name="social_instagram" id="social_instagram" class="form-control input-lg" placeholder="{{ Setting::get('social_instagram', 'instagram') }}" value="{{ Setting::get('social_instagram') }}">
+					</div>
+					<div class="form-group">
+						<label for="">GitHub</label>
+						<input type="text" name="social_github" id="social_github" class="form-control input-lg" placeholder="{{ Setting::get('social_github', 'github') }}" value="{{ Setting::get('social_github') }}">
+					</div>
+					<div class="form-group">
+						<label for="">Contact Email Address</label>
+						<input type="text" name="social_email" id="social_email" class="form-control input-lg" placeholder="{{ Setting::get('social_email', 'email@address.com') }}" value="{{ Setting::get('social_email') }}">
+					</div>
 
 					<button type="submit" class="btn btn-primary btn-block">Save Settings</button>
 				</form>	
