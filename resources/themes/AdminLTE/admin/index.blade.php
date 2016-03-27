@@ -1,5 +1,7 @@
 @inject('stats', 'App\Services\Stats')
 @inject('comments', 'App\Comment')
+@inject('posts', 'App\Post')
+@inject('pages', 'App\Page')
 
 @extends('layouts.app')
 
@@ -28,7 +30,7 @@
 	<div class="col-md-3 col-sm-6">
 		<div class="small-box bg-yellow">
 			<div class="inner">
-				<h3>{{ $stats->count('page') }}</h3>
+				<h3>{{ $stats->countFrom('App\Page') }}</h3>
                 <p>Pages</p>
 			</div>
 			<div class="icon">
@@ -42,7 +44,7 @@
 	<div class="col-md-3 col-sm-6">
 		<div class="small-box bg-aqua">
 			<div class="inner">
-				<h3>{{ $stats->count('user') }}</h3>
+				<h3>{{ $stats->countFrom('App\User') }}</h3>
                 <p>Authors</p>
 			</div>
 			<div class="icon">
@@ -56,7 +58,7 @@
 	<div class="col-md-3 col-sm-6">
 		<div class="small-box bg-blue">
 			<div class="inner">
-				<h3>{{ $stats->count('comment') }}</h3>
+				<h3>{{ $stats->countFrom('App\Comment') }}</h3>
                 <p>Comments</p>
 			</div>
 			<div class="icon">
@@ -69,36 +71,8 @@
 	</div>
 </div>
 
-{{-- <div class="row">
-	<div class="col-md-6">
-		<div class="panel panel-default">
-			<div class="panel-body">
-				<h3>Admin Control Panel Features</h3>
-					<ul>
-					<li>Force Delete from Admin Control Panel</li>
-					<li>Restore Content from Admin Control Panel</li>
-					<li>Settings using <code>Setting::set();</code></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="panel panel-default">
-			<div class="panel-body">
-				<h3>Admin Dashboard</h3>
-					<ul>
-						<li>Most Viewed Posts</li>
-						<li>Most Viewed Pages</li>
-						<li>Most Active Author</li>
-						<li>Recent Comments</li>
-						<li>Most Commented Post</li>
-					</ul>
-			</div>
-		</div>
-	</div>		
-</div> --}}
-
 <div class="row">
+	@unless ( $posts->all()->isEmpty() )
 	<div class="col-md-3 col-sm-6">
 		<div class="info-box">
 			<span class="info-box-icon bg-maroon"><i class="fa fa-pencil-square-o"></i></span>
@@ -109,6 +83,9 @@
 			</div>
 		</div>
 	</div>
+	@endunless
+	@unless ( $pages->all()->isEmpty() )
+
 	<div class="col-md-3 col-sm-6">
 		<div class="info-box">
 			<span class="info-box-icon bg-yellow"><i class="fa fa-file"></i></span>
@@ -119,6 +96,9 @@
 			</div>
 		</div>
 	</div>
+	@endunless
+
+	@unless ( $posts->all()->isEmpty() )
 	<div class="col-md-3 col-sm-6">
 		<div class="info-box">
 			<span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span>
@@ -129,6 +109,8 @@
 			</div>
 		</div>
 	</div>
+	@endunless
+	@unless ( $comments->all()->isEmpty() )
 	<div class="col-md-3 col-sm-6">
 		<div class="info-box">
 			<span class="info-box-icon bg-blue"><i class="fa fa-comments"></i></span>
@@ -136,9 +118,11 @@
 				<span class="info-box-text">Most Commented Post</span>
 				<span><a href="/read/{{ $stats->most( 'App\Comment', 'post_id' )->post->slug }}">{{ $stats->most( 'App\Comment', 'post_id' )->post->title }}</a></span>
 				<span class="info-box-number">{{ $stats->most( 'App\Comment', 'post_id' )->count }} comments</span>
+				<span>There are no comments, yet!</span>
 			</div>
 		</div>
 	</div>
+	@endunless
 </div>
 
 @unless ( $comments->all()->isEmpty() )
