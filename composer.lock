@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4d5f9e3fb34a94af50268d4f5af55d4d",
-    "content-hash": "9c0f8fa064f6f0db0d4e4e2bb8f7a567",
+    "hash": "31af6546e46ade6e67c1bcd89736b231",
+    "content-hash": "088377eb18e5c9f530f555c861ae2e8e",
     "packages": [
         {
             "name": "anlutro/l4-settings",
@@ -52,6 +52,57 @@
             ],
             "description": "Persistent settings in Laravel.",
             "time": "2016-02-28 18:37:50"
+        },
+        {
+            "name": "artesaos/seotools",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artesaos/seotools.git",
+                "reference": "858a8378a0c3317341f4cabb2f12173e64535812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artesaos/seotools/zipball/858a8378a0c3317341f4cabb2f12173e64535812",
+                "reference": "858a8378a0c3317341f4cabb2f12173e64535812",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~5",
+                "illuminate/support": "~5",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "2.1.x",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Artesaos\\SEOTools\\": "src/SEOTools/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vinicius",
+                    "email": "luiz.vinicius73@gmail.com"
+                }
+            ],
+            "description": "SEO Tools for Laravel and Lumen",
+            "keywords": [
+                "laravel5",
+                "lumen",
+                "metatags",
+                "opengraph",
+                "seo",
+                "seotools",
+                "webmaster"
+            ],
+            "time": "2016-03-25 16:07:48"
         },
         {
             "name": "classpreloader/classpreloader",

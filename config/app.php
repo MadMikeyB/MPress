@@ -161,12 +161,11 @@ return [
          */
 
         GrahamCampbell\Markdown\MarkdownServiceProvider::class, // Markdown
-        //anlutro\LaravelSettings\ServiceProvider::class, // Settings
         Lavary\Menu\ServiceProvider::class, // Menu
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class, // Sluggable
         YAAP\Theme\ThemeServiceProvider::class, // Theme
         jdavidbakr\MailTracker\MailTrackerServiceProvider::class, // MailTracker
-
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class, // SEO Tools
     ],
 
     /*
@@ -218,10 +217,10 @@ return [
          */
                 
         'Markdown'  => GrahamCampbell\Markdown\Facades\Markdown::class, // MarkDown
-        //'Setting'   => anlutro\LaravelSettings\Facade::class, // Settings
         'Setting'   => App\Setting::class,
         'Menu'      => Lavary\Menu\Facade::class, // Menu
         'Theme'     => YAAP\Theme\Facades\Theme::class, // Theme
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
 
 
     ],

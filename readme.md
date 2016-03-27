@@ -31,10 +31,10 @@ MPress is grateful to use
 
 * [Laravel](https://github.com/laravel/laravel)
 * [MarkDown](https://github.com/GrahamCampbell/Laravel-Markdown)
-* [Settings Manager](https://github.com/anlutro/laravel-settings)
 * [Menu Manager](https://github.com/lavary/laravel-menu)
 * [Sluggable](https://github.com/cviebrock/eloquent-sluggable)
 * [Theme](https://github.com/yaapis/Theme)
+* [SEO Tools](https://github.com/artesaos/seotools/)
 
 ### Examples
 

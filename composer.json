@@ -15,7 +15,8 @@
         "jdavidbakr/mail-tracker": "^1.0",
         "paragonie/random_compat": "1.2.1",
         "doctrine/dbal": "^2.5",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "artesaos/seotools": "^0.9.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
