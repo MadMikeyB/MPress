@@ -66,7 +66,7 @@ class MenuMiddleware
             $menu->add('Home', '')->prepend('<i class="fa fa-home"></i><span>')->prepend('</span>');
             $menu->add('Dashboard', 'admin')->prepend('<i class="fa fa-dashboard"></i><span>')->prepend('</span>');
             $menu->add('Settings', 'admin/settings')->prepend('<i class="fa fa-cogs"></i><span>')->prepend('</span>');
-            $menu->add('Theme Editor', 'admin/editor/themes')->prepend('<i class="fa fa-paint-brush"></i><span>')->prepend('</span>');
+            $menu->add('Theme Editor', 'admin/editor')->prepend('<i class="fa fa-paint-brush"></i><span>')->prepend('</span>');
             $menu->add('Users', 'admin/users')->prepend('<i class="fa fa-users"></i><span>')->prepend('</span>');
             $menu->add('Menus', 'admin/menus')->prepend('<i class="fa fa-th"></i><span>')->prepend('</span>');
             $menu->add('Posts', 'admin/posts')->prepend('<i class="fa fa-pencil-square-o"></i><span>')->prepend('</span>');

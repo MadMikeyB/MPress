@@ -21,9 +21,9 @@
 					</div>
 					<div class="col-md-9">
 						<div class="form-group">
-								<label for="content" class="control-label">Template Content</label>
-								<textarea class="form-control editor" name="content" style="height:100vh"></textarea>
-							</div>
+							<label for="content" class="control-label">Template Content</label>
+							<textarea class="form-control editor" name="content" style="height:50vh;font-family:Courier New;"></textarea>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -42,8 +42,8 @@
 
 	jQuery('a[data-file]').click( function(element) {
 		event.preventDefault();
-		$(this).toggleClass('active');
 		var content = $('.editor').load('edit/themes/{{$theme}}' + element.target.innerHTML);
+		$('.editor').html('');
 		$('.editor').html(content);
 	});
 </script>

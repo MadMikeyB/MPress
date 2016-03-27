@@ -112,7 +112,10 @@ class AdminController extends Controller
 
         if ( file_exists( $path ) )
         {
-            return file_get_contents($path);
+
+            $return = file_get_contents($path);
+            $return = htmlentities($return);
+            return $return;
         }
         else
         {
@@ -122,7 +125,8 @@ class AdminController extends Controller
 
     public function storeSettings(Request $request)
     {
-        foreach ($request->input() as $key => $value) {
+        foreach ($request->input() as $key => $value) 
+        {
             Setting::set($key, $value);
         }
 
