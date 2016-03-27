@@ -38,7 +38,7 @@
 		@yield('content')
 		
 		<div class="footer">
-			<p>This email was sent because you made a post on {{ Setting::get('site_title')}} &mdash; <a href="/dashboard">Unsubscribe</a></p>
+			<p>This email was sent because you made a post on {{ Setting::get('site_title')}} &mdash; <a href="">Unsubscribe</a></p>
 		</div>
 	</div>
 </body>

@@ -29,7 +29,7 @@ return [
      */
     'admin-route' => [
         'prefix' => 'email-manager',
-        'middleware' => 'super',
+        'middleware' => 'admin',
     ],
 
 ];
