@@ -14,9 +14,13 @@
 	@foreach ($posts as $post)
 	<div class="6u 12u(narrower)">
 		<section class="box special">
-			@if ( $post->image )
-			<span class="image featured"><img src="{{ $post->image }}" alt="{{ $post->title }} &mdash; {{ Setting::get('site_title', 'MPress') }}"></span>
-			@endif
+			@unless ( $post->images->isEmpty() )
+				<span class="image featured">
+					@foreach ( $post->images as $image )
+						<a href="/{{$image->image_path}}" target="_blank"><img src="/{{ $image->image_path }}" alt="Featured Image for {{ $post->title }}" title="{{ $post->title }}"></a>
+					@endforeach
+				</span>
+			@endunless
 			<header>
 				<h3><a href="/read/{{$post->slug}}">{{ $post->title }}</a></h2>
 				<p>posted by <span>@</span>{{ $post->user->name }}</small> on @datetime($post->created_at)</p>
