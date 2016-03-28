@@ -16,6 +16,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
+        $this->seo()->setTitle( 'Dashboard &mdash; ' . $this->seo()->getTitle() );
     	$posts = Post::where('author_id', '=', Auth::user()->id)->get();
         return view('home', compact('posts'));
     }

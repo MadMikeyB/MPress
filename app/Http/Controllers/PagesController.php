@@ -26,7 +26,10 @@ class PagesController extends Controller
         // It then needs to be outputted into a template with the header and footer wrapper..
         // Option to not show the header / footer wrapper
         // We can then set a Page to be the Home Page from the settings page
-        // Pages therefore need to be more complex than pages.
+        // Pages therefore need to be more complex than posts.
+
+        $this->seo()->setTitle( $page->title . ' &mdash; ' . $this->seo()->getTitle() );
+
 
         Event::fire(new PageWasViewed($page));
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Artesaos\SEOTools\Traits\SEOTools as SEOToolsTrait;
 
 use Theme;
 use View;
@@ -20,6 +21,9 @@ use App\Setting;
 
 class AdminController extends Controller
 {
+
+    use SEOToolsTrait;
+
 	public function __construct()
 	{
 		// Admin Theme for Admin Controller
@@ -28,6 +32,12 @@ class AdminController extends Controller
         // Set the menu
         $menu = Menu::generateMenu();
         View::share('menu', $menu);
+
+        $this->seo()->setTitle( 'Admin &mdash;' . Setting::get('site_title') );
+        $this->seo()->setDescription(  Setting::get('site_description') );
+        $this->seo()->opengraph()->setUrl( app()->make('url')->to('/') );
+        $this->seo()->opengraph()->addProperty('type', 'articles');
+        $this->seo()->twitter()->setSite( Setting::get('social_twitter') );
 	}
     
     public function validator(Request $request)
@@ -41,11 +51,15 @@ class AdminController extends Controller
 	// Dashboard
     public function index() 
     {
+        $this->seo()->setTitle( 'Dashboard &mdash; ' . $this->seo()->getTitle() );
+
     	return view('admin.index');
     }
 
     public function menus()
     {
+        $this->seo()->setTitle( 'Menu Manager &mdash; ' . $this->seo()->getTitle() );
+
     	return view('admin.menu.index');
     }
 
@@ -61,18 +75,21 @@ class AdminController extends Controller
 
     public function posts()
     {
+        $this->seo()->setTitle( 'Post Manager &mdash; ' . $this->seo()->getTitle() );
         $posts = Post::withTrashed()->paginate(10);
         return view('admin.posts.index', compact('posts'));
     }
 
     public function pages()
     {
+        $this->seo()->setTitle( 'Page Manager &mdash; ' . $this->seo()->getTitle() );
         $pages = Page::withTrashed()->paginate(10);
         return view('admin.pages.index', compact('pages'));
     }
 
     public function users()
     {
+        $this->seo()->setTitle( 'User Manager &mdash; ' . $this->seo()->getTitle() );
         $users = User::withTrashed()->paginate(10);
         return view('admin.users.index', compact('users'));
     }
@@ -80,12 +97,14 @@ class AdminController extends Controller
 
     public function comments()
     {
+        $this->seo()->setTitle( 'Comment Manager &mdash; ' . $this->seo()->getTitle() );
         $comments = Comment::withTrashed()->paginate(10);
         return view('admin.comments.index', compact('comments'));
     }
 
     public function settings()
     {
+        $this->seo()->setTitle( 'Settings Manager &mdash; ' . $this->seo()->getTitle() );
         $settings = Setting::all();
         $themes = Storage::disk('resources')->directories('themes');
         return view('admin.settings.index', compact('settings', 'themes'));
@@ -93,6 +112,8 @@ class AdminController extends Controller
 
     public function editor( $theme = null)
     {
+        $this->seo()->setTitle( 'Theme Editor &mdash; ' . $this->seo()->getTitle() );
+
         $themes = Storage::disk('resources')->directories('themes');
         
         if ( $theme )
@@ -141,6 +162,8 @@ class AdminController extends Controller
      */
     public function createPage()
     {
+        $this->seo()->setTitle( 'New Page &mdash; ' . $this->seo()->getTitle() );
+
         return view('admin.pages.create');
     }
 

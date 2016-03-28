@@ -14,11 +14,15 @@ class ProfileController extends Controller
 {
     public function show(User $user)
     {
+        $this->seo()->setTitle( $user->name . ' &mdash; ' . $this->seo()->getTitle() );
+
     	return view('users.show', compact('user'));
     }
 
     public function edit(User $user)
     {
+        $this->seo()->setTitle( 'Edit Profile &mdash; ' . $this->seo()->getTitle() );
+
     	return view('users.edit', compact('user'));
     }
 

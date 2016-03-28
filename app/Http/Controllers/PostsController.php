@@ -32,6 +32,8 @@ class PostsController extends Controller
      */
     public function index()
     {
+        $this->seo()->setTitle( 'All Posts &mdash; ' . $this->seo()->getTitle() );
+
     	$posts = Post::where('status', 'publish')->paginate('6');
     	return view('posts.index', compact('posts'));
     }
@@ -44,6 +46,7 @@ class PostsController extends Controller
      */
     public function show(Post $post)
     {
+        $this->seo()->setTitle( $post->title . ' &mdash; ' . $this->seo()->getTitle() );
 
         Event::fire(new PostWasViewed($post));
 
@@ -58,6 +61,8 @@ class PostsController extends Controller
      */
     public function create()
     {
+        $this->seo()->setTitle( 'New Post &mdash; ' . $this->seo()->getTitle() );
+
         return view('posts.create');
     }
 
@@ -113,6 +118,8 @@ class PostsController extends Controller
      */   
     public function edit(Post $post)
     {
+        $this->seo()->setTitle( 'Edit Post '. $post->title.' &mdash; ' . $this->seo()->getTitle() );
+
         if ( Gate::denies('edit-post', $post) ) {
             session()->flash('flash_message', 'You are not authorized to do that!');
             return redirect('/read/' . $post->slug );
