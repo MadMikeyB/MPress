@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>No Sidebar - TXT by HTML5 UP</title>
+		{!! SEO::generate() !!}
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="{{ Theme::asset('js/ie/html5shiv.js', null, true) }}"></script><![endif]-->

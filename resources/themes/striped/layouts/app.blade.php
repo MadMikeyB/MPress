@@ -8,7 +8,7 @@
 -->
 <html>
 	<head>
-		<title>{{ Setting::get('site_title', 'MPress 2.0') }}</title>
+		{!! SEO::generate() !!}
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="{{ Theme::asset('js/ie/html5shiv.js', null, true) }}"></script><![endif]-->
