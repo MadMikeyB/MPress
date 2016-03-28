@@ -31,6 +31,16 @@
 					</div>
 
 					<div class="form-group">
+						<label>Home Page</label>
+						<select name="home_page" class="form-control input-lg">
+								<option value="default">Latest Posts</option>
+							@foreach ( $pages as $page)
+								<option value="{{ $page->slug }}">{{ $page->title }}</option>
+							@endforeach
+						</select>
+					</div>
+
+					<div class="form-group">
 						<label>Active Theme</label>
 						<select name="theme_name" class="form-control input-lg">
 							@foreach ( $themes as $theme)
@@ -39,11 +49,11 @@
 							@endif
 							@endforeach
 						</select>
-						<div class="container">
+						<div class="container" id="theme_preview">
 							<div class="row">
 							@foreach ( $themes as $theme )
 								@if ( $theme != 'themes/AdminLTE')
-								<div class="col-md-3">
+								<div class="col-md-8 col-md-offset-2 theme_image" id="{{ str_replace('themes/', '', $theme) }}">
 									<h3 style="text-align:center;">{{ str_replace('themes/', '', $theme) }}</h3>
 									<a href="/images/{{ $theme }}.png" target="_blank">
 										<img src="/images/{{ $theme }}.png" style="width:100%;">
@@ -54,6 +64,9 @@
 							</div>
 						</div>
 					</div>
+
+
+					<h2>Social Networks</h2>
 					
 					<div class="form-group">
 						<label for="">Facebook</label>
@@ -86,4 +99,18 @@
 		</div>
 	</div>
 </div>
+@stop
+
+@section('scripts')
+	<script>
+		// hide all
+		jQuery('.theme_image').hide();
+		// change preview on change
+		jQuery('select[name=theme_name]').change( function(event)
+		{
+			console.log( $(this).val() );
+			$('.theme_image').hide();
+			$('#' + $(this).val()).show();
+		});
+	</script>
 @stop

@@ -107,7 +107,8 @@ class AdminController extends Controller
         $this->seo()->setTitle( 'Settings Manager &mdash; ' . $this->seo()->getTitle() );
         $settings = Setting::all();
         $themes = Storage::disk('resources')->directories('themes');
-        return view('admin.settings.index', compact('settings', 'themes'));
+        $pages = Page::all();
+        return view('admin.settings.index', compact('settings', 'themes', 'pages'));
     }
 
     public function editor( $theme = null)

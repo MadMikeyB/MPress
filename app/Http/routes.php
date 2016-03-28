@@ -30,12 +30,30 @@ Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
 
 // Auth
 Route::group(['middleware' => ['web', 'menu']], function () {
-	// @todo dynamically set home page through settings 
     // Home
-    	Route::get('', 'HomeController@index');
+        $home = Setting::get('home_page');
+
+        if ( $home === 'default') 
+        {
+            Route::get('', 'HomeController@index');
+        }
+        else
+        {
+            Route::get('', function()
+            {
+                \Theme::init( Setting::get('theme_name') );   
+                $page = App\Page::where( 'slug', '=', Setting::get('home_page') )->first();
+                Event::fire(new App\Events\PageWasViewed($page));
+
+                $page->content = Markdown::convertToHtml($page->content);
+                return view('pages.show', compact('page'));
+            });
+        }
+
     	Route::get('home', function(){
     		return redirect()->action('HomeController@index');
     	});
+        
         Route::get('dashboard', 'DashboardController@index');
         Route::get('sendemail', function()
         {
