@@ -26,7 +26,7 @@
 				<p>posted by <span>@</span>{{ $post->user->name }}</small> on @datetime($post->created_at)</p>
 			</header>
 
-			{!! Markdown::convertToHtml(str_limit($post->content, 140)) !!}
+			{!! Markdown::convertToHtml(strip_tags(str_limit($post->content, 140))) !!}
 
 			<a class="button fit" href="/read/{{$post->slug}}">Read More</a>
 		</section>
