@@ -54,7 +54,7 @@
 	@endif
 @endcan
 
-<div class="box">
+<div class="box" id="comments">
 	<div class="12u">
 		<h3>Comments on &ldquo;{{ $post->title }}&rdquo;</h3>
 		
