@@ -26,6 +26,7 @@
 
     <section id="main" class="container">
         <div class="row">
+            @foreach ( $posts as $post)
             <div class="6u 12u(narrower)">
                 <section class="box special">
                     @unless ( $post->images->isEmpty() )
@@ -42,6 +43,7 @@
                     </ul>
                 </section>
             </div>
+            @endforeach
         </div>
     </section>
     @endunless
