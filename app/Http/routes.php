@@ -1,5 +1,16 @@
 <?php
 
+// Are we installed?
+if ( ! file_exists(storage_path('installed')) )
+{    
+    Route::get('/', function()
+    {
+        return redirect()->to('/install');
+    });
+} 
+else
+{
+
 // Admin
 Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
 
@@ -126,13 +137,6 @@ Route::group(['middleware' => ['web', 'menu']], function()
     Route::get('{page?}', 'PagesController@show');
 });
 
-// Are we installed?
-if ( ! file_exists(storage_path('installed')) )
-{    
-    Route::get('/', function()
-    {
-        return redirect()->to('/install');
-    });
 }
 
 // @todo redirects from MPress 1.x to MPress 2.x
