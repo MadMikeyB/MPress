@@ -19,11 +19,12 @@ class DatabaseSeeder extends Seeder
 	    	{
 	    		DB::table($table)->truncate();
 	    	}
-    	}
+    	
 
-        $this->call(UsersTableSeeder::class);
-        $this->call(PostsTableSeeder::class);
-        $this->call(CommentsTableSeeder::class);
-        // $this->call(PagesTableSeeder::class); 
+            $this->call(UsersTableSeeder::class);
+            $this->call(PostsTableSeeder::class);
+            $this->call(CommentsTableSeeder::class);
+            // $this->call(PagesTableSeeder::class);
+        }
     }
 }
