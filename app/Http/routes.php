@@ -42,7 +42,7 @@ Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
 // Auth
 Route::group(['middleware' => ['web', 'menu']], function () {
     // Home
-        $home = Setting::get('home_page');
+        $home = Setting::get('home_page', 'default');
 
         if ( $home === 'default') 
         {
