@@ -166,6 +166,7 @@ return [
         YAAP\Theme\ThemeServiceProvider::class, // Theme
         jdavidbakr\MailTracker\MailTrackerServiceProvider::class, // MailTracker
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class, // SEO Tools
+        RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class, // Installer!
     ],
 
     /*
