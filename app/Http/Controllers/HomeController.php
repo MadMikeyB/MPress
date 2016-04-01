@@ -13,7 +13,16 @@ class HomeController extends Controller
 	public function index()
     {
     	$post = Post::orderBy('id', 'DESC')->take('1')->first();
-    	$posts = Post::where('id', '!=', $post->id)->orderBy('id', 'DESC')->take('6')->get();
+    	
+    	if ( $post )
+    	{
+    		$posts = Post::where('id', '!=', $post->id)->orderBy('id', 'DESC')->take('6')->get();
+    	}
+    	else
+    	{
+    		$posts = Post::all();
+    	}
+
         return view('welcome', compact(['post', 'posts']));
     }
 }
