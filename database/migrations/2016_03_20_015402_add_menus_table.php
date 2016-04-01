@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Menu;
 
 class AddMenusTable extends Migration
 {
@@ -20,6 +21,16 @@ class AddMenusTable extends Migration
             $table->integer('group')->default('3'); // default to member group
             $table->timestamps();
         });
+
+        if ( Menu::count() < 1 )
+        {
+            Artisan::call( 'db:seed', 
+                [
+                    '--class' => 'MenuSeeder', 
+                    '--force' => true 
+                ]
+            );
+        }
     }
 
     /**

@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Config;
+use App\Setting;
 
 class CreateSettingsTable extends Migration
 {
@@ -29,6 +30,16 @@ class CreateSettingsTable extends Migration
 			$table->string('key')->index();
 			$table->text('value');
 		});
+
+		if ( Setting::count() < 1 )
+        {
+            Artisan::call( 'db:seed', 
+                [
+                    '--class' => 'SettingSeeder', 
+                    '--force' => true 
+                ]
+            );
+        }
 	}
 
 	/**
