@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    @unless ( $post->isEmpty() )
     <section class="box special">
         <header class="major">
             <h2>{{ $post->title }}</h2>
@@ -18,8 +17,6 @@
             <li><a href="/read/{{ $post->slug }}#comments" class="button alt">Share Your Thoughts</a></li>
         </ul>
     </section>
-    @endunless
-    
     @unless ( $posts->isEmpty() )
     </section> <!-- / section#main.container -->
     <section id="cta" style="padding: 1.5em 0 1em 0;">
