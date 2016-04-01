@@ -21,7 +21,7 @@ class MenuSeeder extends Seeder
 	    	Menu::create(
             	[
             		'title'   	=> $item,
-            		'url'		=> $this->app->make('url')->to('/'),
+            		'url'		=> app('url')->to('/'),
             		'position'	=> $i,
             		'group'		=> '3' // public
             	]
