@@ -39,12 +39,14 @@ class CommentsController extends Controller
 
         // Email the Post Author
         // @todo switch to event
-        Mail::send('emails.newcomment', ['post' => $post, 'comment' => $comment], function ($message) use ($post) {
+        if ( env('MAIL_USERNAME') !== null)
+        {
+	        Mail::send('emails.newcomment', ['post' => $post, 'comment' => $comment], function ($message) use ($post) {
 
-            $message->to( $post->user->email )->subject('New comment on ' . $post->title);
+	            $message->to( $post->user->email )->subject('New comment on ' . $post->title);
 
-        });
-
+	        });
+    	}
         session()->flash('flash_message', 'Thank you for reading!');
 
         return redirect('/read/' . $post->slug );

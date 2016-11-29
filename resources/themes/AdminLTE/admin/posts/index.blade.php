@@ -3,7 +3,7 @@
 @section('title')
 	@can('create-post', Auth::user())
 		<div class="pull-right">
-			<a type="button" class="btn btn-primary" href="/posts/create"><i class="fa fa-plus-circle"></i> Create Post</a>
+			<a type="button" class="btn btn-primary" href="/admin/posts/create"><i class="fa fa-plus-circle"></i> Create Post</a>
 		</div>
 	@endcan
 	<h1>{{ Setting::get('site_title', 'MPress 2.0')}}

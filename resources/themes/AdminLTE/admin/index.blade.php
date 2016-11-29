@@ -78,21 +78,21 @@
 			<span class="info-box-icon bg-maroon"><i class="fa fa-pencil-square-o"></i></span>
 			<div class="info-box-content">
 				<span class="info-box-text">Most Viewed Post</span>
-				<span><a href="">Download MPress Today!</a></span>
-				<span class="info-box-number">1,337 views</span>
+				<span><a href="{{ url('/read/' . $stats->most( 'App\Post', 'views' )->slug) }}">{{ $stats->most( 'App\Post', 'views' )->title }}</a></span>
+				<span class="info-box-number">{{ $stats->most( 'App\Post', 'views' )->views }} views</span>
 			</div>
 		</div>
 	</div>
 	@endunless
-	@unless ( $pages->all()->isEmpty() )
 
+	@unless ( $pages->all()->isEmpty() )
 	<div class="col-md-3 col-sm-6">
 		<div class="info-box">
 			<span class="info-box-icon bg-yellow"><i class="fa fa-file"></i></span>
 			<div class="info-box-content">
 				<span class="info-box-text">Most Viewed Page</span>
-				<span><a href="">About Me</a></span>
-				<span class="info-box-number">1,337 views</span>
+				<span><a href="{{ url('/' . $stats->most( 'App\Page', 'views' )->slug) }}">{{ $stats->most( 'App\Page', 'views' )->title }}</a></span>
+				<span class="info-box-number">{{ $stats->most( 'App\Page', 'views' )->views }} views</span>
 			</div>
 		</div>
 	</div>
@@ -118,7 +118,7 @@
 				<span class="info-box-text">Most Commented Post</span>
 				<span><a href="/read/{{ $stats->most( 'App\Comment', 'post_id' )->post->slug }}">{{ $stats->most( 'App\Comment', 'post_id' )->post->title }}</a></span>
 				<span class="info-box-number">{{ $stats->most( 'App\Comment', 'post_id' )->count }} comments</span>
-				<span>There are no comments, yet!</span>
+				{{-- <span>There are no comments, yet!</span> --}}
 			</div>
 		</div>
 	</div>
@@ -130,7 +130,13 @@
 	<div class="col-md-12">
 		<div class="box box-default color-palette-box">
 			<div class="box-header with-border">
-				<h3 class="box-title"><i class="fa fa-comments"></i> Latest 5 Comments</h3>
+				<h3 class="box-title"><i class="fa fa-comments"></i> Latest 
+				@if ( $comments->count() < 5)
+					{{ $comments->count() }}
+				@else 
+					5
+				@endif
+				Comments</h3>
 			</div>
 			<div class="box-body">
 				@foreach ( $comments->paginate(5) as $comment )
