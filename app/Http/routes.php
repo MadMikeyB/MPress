@@ -31,13 +31,15 @@ Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
 
     Route::post('admin/menus', 'AdminController@storeMenu');
     
-    Route::get('posts/create', 'PostsController@create');
-    Route::post('posts', 'PostsController@store');
+    Route::get('admin/posts/create', 'AdminController@createPost');
+    Route::post('admin/posts', 'AdminController@storePost');
 
-    Route::get('pages/create', 'AdminController@createPage');
-    Route::post('pages', 'AdminController@storePage');
+    Route::get('admin/pages/create', 'AdminController@createPage');
+    Route::post('admin/pages', 'AdminController@storePage');
 
 });
+
+
 
 // Auth
 Route::group(['middleware' => ['web', 'menu']], function () {

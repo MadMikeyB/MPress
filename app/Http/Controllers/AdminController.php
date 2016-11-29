@@ -188,4 +188,55 @@ class AdminController extends Controller
         return redirect('/' . $page->slug );
     }
 
+    /**
+     * Create the Post
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */
+    public function createPost()
+    {
+        $this->seo()->setTitle( 'New Post &mdash; ' . $this->seo()->getTitle() );
+
+        return view('admin.posts.create');
+    }
+
+    /**
+     * Store the Post
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */
+    public function storePost(Request $request)
+    {        
+        $this->validator($request);
+
+        $post = new Post($request->all());
+        $post->author_id = $request->user()->id;
+        
+        if ( $request->has('draft') )
+        {
+            $post->status = 'draft';
+        }
+        else
+        {
+            $post->status = 'publish';
+        }
+
+        if ( $request->has('category') )
+        {
+            $post->category_id = $request->category;
+        }
+        else
+        {
+            $post->category_id = '1';
+        }
+
+        $post->save();
+
+        session()->flash('flash_message', 'Congrats! Post Created');
+
+        return redirect('/read/' . $post->slug );
+    }
+
 }

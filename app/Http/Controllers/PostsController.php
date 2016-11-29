@@ -82,10 +82,12 @@ class PostsController extends Controller
         if ( $request->has('draft') )
         {
             $post->status = 'draft';
+            $flash_message = 'Draft post created!';
         }
         else
         {
             $post->status = 'publish';
+            $flash_message = 'Post created!';
         }
 
         if ( $request->has('category') )
@@ -99,7 +101,7 @@ class PostsController extends Controller
 
         $post->save();
 
-        session()->flash('flash_message', 'Yay! Something to read!');
+        session()->flash('flash_message', $flash_message);
 
         return redirect('/read/' . $post->slug );
     }
