@@ -95,6 +95,9 @@ Route::group(['middleware' => ['web', 'menu']], function () {
 
         // Get Post
         Route::get('read/{post}', 'PostsController@show');
+        Route::get('article/{post}', function($post) {
+        	return redirect()->to('read/' . $post->slug);
+        });
 
         // Delete Post
         Route::delete('posts/{post}/delete', 'PostsController@destroy');
