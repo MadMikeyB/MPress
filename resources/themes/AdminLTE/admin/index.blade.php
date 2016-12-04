@@ -147,7 +147,9 @@
 						<a class="btn btn-sm btn-danger" href="/comments/{{ $comment->id }}/delete" role="button"><i class="fa fa-trash"></i></a>
 					</div>
 					<p>{!! Markdown::convertToHtml( $comment->body ) !!}</p>
-					<small>{{ $comment->user->name }} on <cite title="{{ $comment->post->title }}"><a href="/read/{{ $comment->post->slug }}">{{ $comment->post->title }}</a></cite></small>
+					
+					
+					<small>@if ( $comment->user ) {{ $comment->user->name }} @else Guest @endif on <cite title="{{ $comment->post->title }}"><a href="/read/{{ $comment->post->slug }}">{{ $comment->post->title }}</a></cite></small>
 				</blockquote>
 				@endforeach
 			</div>
