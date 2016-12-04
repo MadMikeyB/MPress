@@ -6,13 +6,13 @@
             <h2>{{ $post->title }}</h2>
          </header>
             <article style="text-align:left !important;">{!! Markdown::convertToHtml(str_limit($post->content, 1337)) !!}</article>
-        @unless ( $post->images->isEmpty() )
+{{--         @unless ( $post->images->isEmpty() )
         <span class="image featured">
             @foreach ( $post->images as $image )
                 <a href="/{{$image->image_path}}" target="_blank"><img src="/{{ $image->image_path }}" alt="Featured Image for {{ $post->title }}" title="{{ $post->title }}"></a>
             @endforeach
         </span>
-        @endunless
+        @endunless --}}
         <ul class="actions">
             <li><a href="/read/{{ $post->slug }}#comments" class="button alt">Share Your Thoughts</a></li>
         </ul>
