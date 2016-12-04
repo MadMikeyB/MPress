@@ -2176,6 +2176,8 @@
 		.image img {
 			border-radius: 5px;
 			display: block;
+			max-width: 100%;
+			height: auto;
 		}
 
 		.image.left, .image.right {
