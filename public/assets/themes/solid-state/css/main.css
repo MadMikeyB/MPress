@@ -1849,13 +1849,18 @@
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
+		overflow-x: scroll;
 	}
 
 	pre {
-		-webkit-overflow-scrolling: touch;
+		background: rgba(255, 255, 255, 0.025);
+		border-radius: 5px;
+		border: solid 2px rgba(255, 255, 255, 0.125);
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
-		margin: 0 0 2em 0;
+		margin: 0 0.25em;
+		padding: 0.25em 0.65em;
+		overflow-x: scroll;
 	}
 
 		pre code {
