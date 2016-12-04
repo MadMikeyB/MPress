@@ -14,6 +14,7 @@
         </span>
         @endunless --}}
         <ul class="actions">
+            <li><a href="/read/{{ $post->slug }}" class="button">Read More</a></li>
             <li><a href="/read/{{ $post->slug }}#comments" class="button alt">Share Your Thoughts</a></li>
         </ul>
     </section>
