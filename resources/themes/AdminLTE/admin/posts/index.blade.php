@@ -45,9 +45,17 @@
 							@else
 							<td><span class="label label-primary">{{ ucfirst($post->status) }}</span></td>
 							@endif
+
 							<td><a href="/read/{{ $post->slug }}" class="btn btn-success"><i class="fa fa-eye"></i></td>
 							<td><a href="/posts/{{ $post->slug }}/edit" class="btn btn-info"><i class="fa fa-pencil"></i></td>
-							<td><a href="/posts/{{ $post->slug }}/delete" class="btn btn-danger"><i class="fa fa-trash"></i></td>
+					
+						@can('delete-post', $post)
+						<form action="/posts/{{ $post->slug }}/delete" method="POST" style="display:inline-block;">
+							{{ csrf_field() }}
+							{{ method_field('DELETE') }}
+							<td><input type="submit" class="btn btn-danger" value="Delete"></td>
+						</form>
+						@endcan
 						</tr>
 					@endforeach
 					@endunless

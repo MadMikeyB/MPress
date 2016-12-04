@@ -10,6 +10,7 @@ use App\Events\PageWasViewed;
 use App\Page;
 use Markdown;
 use Event;
+use Gate;
 
 class PagesController extends Controller
 {
@@ -35,5 +36,25 @@ class PagesController extends Controller
 
         $page->content = Markdown::convertToHtml($page->content);
         return view('pages.show', compact('page'));
+    }
+
+    /**
+     * Delete the Page
+     *
+     * @param \Illuminate\Http\Request    $request
+     * @return Response
+     */
+    public function destroy(Page $page)
+    {
+        if ( Gate::denies('delete-page', $page) ) {
+            session()->flash('flash_message', 'You are not authorized to do that!');
+            return back();
+        }
+        
+        $page->delete();
+
+        session()->flash('flash_message', 'Page Deleted.');
+
+        return redirect('/');
     }
 }

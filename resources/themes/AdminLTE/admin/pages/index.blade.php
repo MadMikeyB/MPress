@@ -27,8 +27,7 @@
 						<th>Title</th>
 						<th>Author</th>
 						<th>Excerpt</th>
-						<th></th>
-						<th></th>
+						<th>Status</th>
 						<th></th>
 					</tr>
 					@unless ( $pages->isEmpty() )
@@ -37,9 +36,22 @@
 							<td>{{ $page->title }}</td>
 							<td>{{ $page->user->name }}</td>
 							<td>{!! Markdown::convertToHtml(str_limit(strip_tags($page->content), 140)) !!}</td>
-							<td><a href="/{{ $page->slug }}" class="btn btn-success"><i class="fa fa-eye"></i></td>
-							<td><a href="/pages/{{ $page->slug }}/edit" class="btn btn-info"><i class="fa fa-pencil"></i></td>
-							<td><a href="/pages/{{ $page->slug }}/delete" class="btn btn-danger"><i class="fa fa-trash"></i></td>
+							@if ( $page->trashed() )
+							<td><span class="label label-danger">Deleted</span></td>
+							@else
+							<td><span class="label label-success">Published</span></td>
+							@endif
+							<td>
+							<a href="/{{ $page->slug }}" class="btn btn-success"><i class="fa fa-eye"></i></a>
+							<a href="/pages/{{ $page->slug }}/edit" class="btn btn-info"><i class="fa fa-pencil"></i></a>
+							@can('delete-page', $page)
+							<form action="/pages/{{ $page->slug }}/delete" method="POST" style="display:inline-block;">
+								{{ csrf_field() }}
+								{{ method_field('DELETE') }}
+								<input type="submit" class="btn btn-danger" value="Delete">
+							</form>
+							@endcan
+							</td>
 						</tr>
 					@endforeach
 					@endunless

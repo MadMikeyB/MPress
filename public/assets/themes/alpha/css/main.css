@@ -2263,6 +2263,7 @@
 
 		.box.special {
 			text-align: center;
+			min-height: 400px;
 		}
 
 		.box .image.featured {

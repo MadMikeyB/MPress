@@ -135,8 +135,11 @@ Route::group(['middleware' => ['web', 'menu']], function () {
 
 Route::group(['middleware' => ['web', 'menu']], function()
 {
-    // View Page
-    Route::get('{page?}', 'PagesController@show');
+	// Pages
+	    // View Page
+	    Route::get('{page?}', 'PagesController@show');
+	    // Delete Page
+	    Route::delete('pages/{page}/delete', 'PagesController@destroy');
 });
 
 }

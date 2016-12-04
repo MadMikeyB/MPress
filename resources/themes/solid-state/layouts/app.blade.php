@@ -41,14 +41,12 @@
 
 				<!-- Wrapper -->
 					<section id="wrapper">
-						@if ( Request::is('/') )
 						<header>
 							<div class="inner">
 								<h2>{{ Setting::get('site_title', 'MPress 2.0') }}</h2>
 								<p>{{ Setting::get('site_description', 'Best. MPress. Yet.') }}</p>
 							</div>
 						</header>
-						@endif
 
 						<!-- Content -->
 							<div class="wrapper">
