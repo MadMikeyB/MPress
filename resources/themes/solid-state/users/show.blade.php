@@ -5,7 +5,7 @@
 				<section id="banner">
 					<div class="inner">
 						<h2>{{$user->name}}</h2>
-						<p>Member since {{ $user->created_at->diffForHumans() }}</p>
+						<p>Member for {{ $user->created_at->diffForHumans() }}</p>
 						@if ( Auth::user() )
 						<ul class="actions">
 							<li><a href="#" class="button small special">Follow</a></li>
