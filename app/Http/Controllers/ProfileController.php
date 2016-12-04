@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 
 use App\User;
+use Auth;
 
 use Hash;
 
@@ -21,9 +22,12 @@ class ProfileController extends Controller
 
     public function edit(User $user)
     {
-        $this->seo()->setTitle( 'Edit Profile &mdash; ' . $this->seo()->getTitle() );
+    	if ( Auth::user()->id === $user->id )
+    	{
+        	$this->seo()->setTitle( 'Edit Profile &mdash; ' . $this->seo()->getTitle() );
 
-    	return view('users.edit', compact('user'));
+    		return view('users.edit', compact('user'));
+    	}
     }
 
     public function update(Request $request, User $user)

@@ -121,7 +121,7 @@ Route::group(['middleware' => ['web', 'menu']], function () {
         // Show Profile
         Route::get('@{user}', 'ProfileController@show');
         // Edit Profile
-        Route::get('@{user}/edit', 'ProfileController@edit');
+        Route::get('@{user}/edit', 'ProfileController@edit')->middleware('auth');
         // Update Profile
         Route::patch('@{user}', 'ProfileController@update');
         // Deactivate Profile
