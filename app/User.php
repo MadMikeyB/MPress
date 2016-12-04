@@ -46,6 +46,11 @@ class User extends Authenticatable implements SluggableInterface
         return $this->group()->where('id', 1)->first();
     }
 
+    public function isGuest()
+    {
+        return Auth::check() ? false : true;
+    }
+
     public function group()
     {
         return $this->hasOne(UserGroup::class, 'id', 'group');

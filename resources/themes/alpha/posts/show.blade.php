@@ -61,7 +61,11 @@
 		@unless ( $post->comments->isEmpty() )
 		@foreach ( $post->comments as $comment )
 			{{-- Comment  --}}
+			@if ( $comment->user )
 			<cite id="comment-{{ $comment->id }}"><a href="/&#64;{{$comment->user->slug}}"><span>@</span>{{ $comment->user->name }}</a></cite>
+			@else
+			<cite id="comment-{{ $comment->id }}">Guest Commenter</cite>
+			@endif
 			<blockquote>
 				<ul class="pull-right actions small">
 					@can( 'create-comment', $comment)
@@ -91,6 +95,43 @@
 	</div>
 </div>
 
+@if ( env('ALLOW_GUEST_COMMENTS') == '1')
+{{-- ------------- REPLY ------------- --}}
+<div class="box">
+	<div class="row uniform">
+		<div class="12u">
+			<header>
+				<h3>Add Comment</h3>
+			</header>
+		</div>
+	</div>
+
+	<div class="row uniform" id="reply">
+	    <div class="12u">
+			<form action="/posts/{{ $post->slug }}/comments" method="POST" role="form">
+				{{ csrf_field() }}
+			@if ( Auth::guest() )
+			<div class="field">
+				<input type="text" class="form-control" name="name" id="name" required="required" placeholder="Your name">
+			</div>
+			@endif
+			<div class="field">
+				<textarea name="body" id="body" class="form-control" rows="6" required="required" placeholder="
+Waiting for your comment,
+Anxious to hear what you say.
+Hope to read it soon!
+			    "></textarea>
+		    </div>
+		</div>
+	</div>
+
+    <div class="row uniform">
+	    <div class="12u">
+	    	<input type="submit" class="button fit" value="Reply">
+		</div>
+	</div>
+</div>
+@else
 @can('create-comment', $post)
 {{-- ------------- REPLY ------------- --}}
 <div class="box">
@@ -107,9 +148,9 @@
 			<form action="/posts/{{ $post->slug }}/comments" method="POST" role="form">
 				{{ csrf_field() }}
 			<textarea name="body" id="body" class="form-control" rows="6" required="required" placeholder="
-		        Waiting for your comment,
-		        Anxious to hear what you say.
-		        Hope to read it soon!
+Waiting for your comment,
+Anxious to hear what you say.
+Hope to read it soon!
 		    "></textarea>
 		</div>
 	</div>
@@ -121,6 +162,7 @@
 	</div>
 </div>
 @endcan
+@endif
 
 @stop
 

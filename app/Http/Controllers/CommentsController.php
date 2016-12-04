@@ -33,7 +33,19 @@ class CommentsController extends Controller
 
         // Save the Comment
         $comment = new Comment($request->all());
-        $comment->author_id = $request->user()->id;
+        if ( ! $request->user() )
+        {
+        	$comment->author_id = 0;
+        }
+        else
+        {
+        	$comment->author_id = $request->user()->id;
+        }
+        if ( $request->input('name') )
+        {
+        	$comment->body .= ' - ' . $request->input('name');
+        }
+
         $comment->post_id = $post->id;
         $comment->save();
 

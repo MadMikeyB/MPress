@@ -28,7 +28,7 @@ class AuthServiceProvider extends ServiceProvider
 
         // Is Admin?
         $gate->before(function ($user, $ability) {
-            if ($user->isAdmin()) {
+            if ( $user->isAdmin() ) {
                 // Allow everything. Update, creation, deletion of everything.
                 return true;
             }
@@ -74,6 +74,10 @@ class AuthServiceProvider extends ServiceProvider
         // Can Delete Post
         $gate->define('delete-post', function ($user, $post) {
             return $user->id === $post->author_id;
+        });
+        // Can Delete Post
+        $gate->define('delete-page', function ($user, $page) {
+            return $user->id === $page->author_id;
         });
         // Can Edit User
         $gate->define('edit-user', function ($user, $loggedInUser) {
