@@ -138,6 +138,7 @@
 			<script src="{{ Theme::asset('js/util.js', null, true) }}"></script>
 			<!--[if lte IE 8]><script src="{{ Theme::asset('js/ie/respond.min.js', null, true) }}"></script><![endif]-->
 			<script src="{{ Theme::asset('js/main.js', null, true) }}"></script>
+			@yield('scripts')
 
 	</body>
 </html>
