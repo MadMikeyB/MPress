@@ -4,7 +4,7 @@
 @can('create-post', Auth::user())
 <div class="box alt">
 	<div class="12u">
-		<a href="/posts/create" class="button fit special" name="create_post">Write Something Beautiful</a>
+		<a href="/admin/posts/create" class="button fit special" name="create_post">Write Something Beautiful</a>
 	</div>
 </div>
 @endcan
@@ -16,9 +16,7 @@
 		<section class="box special">
 			@unless ( $post->images->isEmpty() )
 				<span class="image featured">
-					@foreach ( $post->images as $image )
-						<a href="/{{$image->image_path}}" target="_blank"><img src="/{{ $image->image_path }}" alt="Featured Image for {{ $post->title }}" title="{{ $post->title }}"></a>
-					@endforeach
+					<a href="/{{ $post->images()->first()->image_path }}" target="_blank"><img src="/{{ $post->images()->first()->image_path }}" style="max-width: 100%;" alt="Featured Image for {{ $post->title }}" title="{{ $post->title }}"></a>
 				</span>
 			@endunless
 			<header>
@@ -37,7 +35,9 @@
 
 <div class="box alt">
 	<div class="12u">
+		<ul class="pagination">
 			{!! $posts->links() !!}
+		</ul>
 	</div>
 </div>
 

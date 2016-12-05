@@ -15,7 +15,7 @@
 		@unless ( $post->images->isEmpty() )
 		<span class="image featured">
 			@foreach ( $post->images as $image )
-				<a href="/{{$image->image_path}}" target="_blank"><img src="/{{ $image->image_path }}" alt="Featured Image for {{ $post->title }}" title="{{ $post->title }}"></a>
+				<a href="/{{$image->image_path}}" target="_blank"><img src="/{{ $image->image_path }}"  style="max-width: 100%;" alt="Featured Image for {{ $post->title }}" title="{{ $post->title }}"></a>
 			@endforeach
 		</span>
 		@endunless
