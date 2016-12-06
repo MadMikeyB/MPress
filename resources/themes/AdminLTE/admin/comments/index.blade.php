@@ -31,7 +31,7 @@
 					@foreach ($comments as $comment)
 						<tr>
 							<td>{{ $comment->post->title }}</td>
-							@if ( $comment->user->name )
+							@if ( $comment->user )
 							<td>{{ $comment->user->name }}</td>
 							@else
 							<td>Guest</td>
