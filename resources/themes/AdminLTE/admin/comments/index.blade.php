@@ -31,7 +31,11 @@
 					@foreach ($comments as $comment)
 						<tr>
 							<td>{{ $comment->post->title }}</td>
+							@if ( $comment->user->name )
 							<td>{{ $comment->user->name }}</td>
+							@else
+							<td>Guest</td>
+							@endif
 							<td>{!! Markdown::convertToHtml(str_limit($comment->body, 140)) !!}</td>
 							@if ( $comment->trashed() )
 							<td><span class="label label-danger">Deleted</span></td>
