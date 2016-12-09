@@ -72,7 +72,7 @@ class MenuMiddleware
             $menu->add('Posts', 'admin/posts')->prepend('<i class="fa fa-pencil-square-o"></i><span>')->prepend('</span>');
             $menu->add('Pages', 'admin/pages')->prepend('<i class="fa fa-file-o"></i><span>')->prepend('</span>');
             $menu->add('Comments', 'admin/comments')->prepend('<i class="fa fa-comments"></i><span>')->prepend('</span>');
-            $menu->add('Tools', 'admin/tools')->prepend('<i class="fa fa-wrench"></i><span>')->prepend('</span>');
+            $menu->add('Plugins', 'admin/plugins')->prepend('<i class="fa fa-wrench"></i><span>')->prepend('</span>');
             $menu->add('Log Out', 'logout')->prepend('<i class="fa fa-sign-out"></i><span>')->prepend('</span>');
         });
 

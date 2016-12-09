@@ -14,28 +14,34 @@ else
 // Admin
 Route::group(['middleware' => ['web', 'auth', 'menu', 'admin']], function() {
 
-    Route::get('admin', 'AdminController@index');
-    Route::get('admin/posts', 'AdminController@posts');
-    Route::get('admin/pages', 'AdminController@pages');
-    Route::get('admin/comments', 'AdminController@comments');
-    Route::get('admin/users', 'AdminController@users');
-    Route::get('admin/settings', 'AdminController@settings');
-    Route::post('admin/settings', 'AdminController@storeSettings');
+    Route::get('admin', 'Admin\Controller@index');
 
-    Route::get('admin/editor', 'AdminController@editor');
-    Route::get('admin/editor/{theme?}', 'AdminController@editor');
-    Route::get('admin/editor/edit/{path?}', 'AdminController@editFile')->where('path', '(.*)');
+    Route::get('admin/posts', 'Admin\PostsController@index');
+    Route::get('admin/posts/create', 'Admin\PostsController@create');
+    Route::post('admin/posts', 'Admin\PostsController@store');
 
-    Route::get('admin/tools', 'AdminController@tools');
-    Route::get('admin/menus', 'AdminController@menus');
+    Route::get('admin/pages', 'Admin\PagesController@index');
+    Route::get('admin/pages/create', 'Admin\PagesController@create');
+    Route::post('admin/pages', 'Admin\PagesController@store');
 
-    Route::post('admin/menus', 'AdminController@storeMenu');
-    
-    Route::get('admin/posts/create', 'AdminController@createPost');
-    Route::post('admin/posts', 'AdminController@storePost');
+    Route::get('admin/comments', 'Admin\CommentsController@index');
 
-    Route::get('admin/pages/create', 'AdminController@createPage');
-    Route::post('admin/pages', 'AdminController@storePage');
+    Route::get('admin/users', 'Admin\UsersController@index');
+
+    Route::get('admin/menus', 'Admin\MenusController@index');
+    Route::post('admin/menus', 'Admin\MenusController@store');
+
+    Route::get('admin/settings', 'Admin\SettingsController@index');
+    Route::post('admin/settings', 'Admin\SettingsController@store');
+
+    Route::get('admin/editor', 'Admin\ThemesController@index');
+    Route::get('admin/editor/{theme?}', 'Admin\ThemesController@index');
+    Route::get('admin/editor/edit/{path?}', 'Admin\ThemesController@view')->where('path', '(.*)');
+
+    Route::get('admin/plugins', 'Admin\PluginsController@index');
+
+
+
 
 });
 

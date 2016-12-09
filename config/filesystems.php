@@ -60,6 +60,12 @@ return [
             'visibility'=>  'public',
         ],
 
+        'plugins' => [
+            'driver'    =>  'local',
+            'root'      =>  app_path('Plugins'),
+            'visibility'=>  'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => 'your-key',
